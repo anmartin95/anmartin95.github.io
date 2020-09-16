@@ -1,3 +1,9 @@
 html{
-    background-color: fuchsia;
+    background-color: lavenderblush;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1{
+    color: rgb(197, 175, 248);
 }
