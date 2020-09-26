@@ -1,0 +1,15 @@
+body{
+    background-color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: rgb(61, 37, 23);
+    border-color: floralwhite;
+    border-style: groove;
+}
+.art
+{
+    padding: 2em;
+    border-color: floralwhite;
+    border-style: groove;
+}
