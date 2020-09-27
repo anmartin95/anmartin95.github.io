@@ -12,10 +12,23 @@ div.artTop{
     float: left;
     width: 180px;
 }
-div.art:hover {
+div.artTop:hover {
     border: 1px solid #777;
 }
-div.art img{
+div.artTop img{
+    width: 100%;
+    height: auto;
+}
+div.artBottom{
+    margin: 4px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+div.artBottom:hover{
+    border: 1px solid #777;
+}
+div.artBottom img{
     width: 100%;
     height: auto;
 }
