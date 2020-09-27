@@ -6,7 +6,7 @@ body{
 h1{
     color: rgb(104, 74, 57);
 }
-div.art{
+div.artTop{
     margin: 5px;
     border: 1px solid #ccc;
     float: left;
@@ -17,5 +17,5 @@ div.art:hover {
 }
 div.art img{
     width: 100%;
-    height: auto;
+    height: 100%;
 }
