@@ -1,6 +1,6 @@
 body{
     background-image: url(galleryTemplate.jpeg);
-    background-repeat: repeat-y;
+    background-repeat: repeat-x;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 h1{
