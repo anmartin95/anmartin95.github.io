@@ -1,5 +1,5 @@
 body{
-    background-image: url(galleryView.png);
+    background-image: url(galleryTemplate.png);
     background-repeat: repeat-x;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -10,7 +10,7 @@ div.art{
     margin: 10px;
     border: 4px solid rgb(204, 196, 196);
     float: left;
-    width: 180px;
+    width: 150px;
 }
 div.art:hover {
     border: 4px solid rgb(150, 192, 211);
