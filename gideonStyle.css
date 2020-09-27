@@ -8,8 +8,16 @@ body{
 h1{
     color: rgb(104, 74, 57);
 }
-.topleft
-{
-    margin-left: 25%;
-    margin-right: 50%;
+div.art{
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+div.art:hover {
+    border: 1px solid #777;
+}
+div.art img{
+    width: 100%;
+    height: auto;
 }
