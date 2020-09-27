@@ -6,29 +6,16 @@ body{
 h1{
     color: rgb(99, 83, 74);
 }
-div.artTop{
-    margin: 5px;
-    border: 1px solid #ccc;
+div.art{
+    margin: 10px;
+    border: 4px solid rgb(204, 196, 196);
     float: left;
     width: 180px;
 }
-div.artTop:hover {
-    border: 1px solid #777;
+div.art:hover {
+    border: 4px solid rgb(150, 192, 211);
 }
-div.artTop img{
-    width: 100%;
-    height: auto;
-}
-div.artBottom{
-    margin: 4px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 180px;
-}
-div.artBottom:hover{
-    border: 1px solid #777;
-}
-div.artBottom img{
+div.art img{
     width: 100%;
     height: auto;
 }
