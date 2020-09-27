@@ -1,6 +1,6 @@
 body{
-    background-image: url(galleryBackground.png);
-    background-repeat: repeat-x;
+    background-image: url(galleryView.png);
+    background-size: cover;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 h1{
