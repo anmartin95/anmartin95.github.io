@@ -1,5 +1,6 @@
 body{
     background-image: url(galleryTemplate.jpeg);
+    background-repeat: repeat-x;
     font-family: Arial, Helvetica, sans-serif;
 }
 h1{
@@ -7,9 +8,9 @@ h1{
     border-color: whitesmoke;
     border-style: double;
 }
-.art
+.topleft
 {
-    border-color: whitesmoke;
-    border-style: double;
-    border-width: 2em;
+    position: absolute;
+    left: 100px;
+    width: 300px;
 }
