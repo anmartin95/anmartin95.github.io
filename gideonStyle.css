@@ -2,7 +2,7 @@ body{
     background-image: url(galleryTemplate.jpeg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: 100%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 h1{
