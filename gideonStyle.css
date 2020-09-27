@@ -1,6 +1,6 @@
 body{
     background-image: url(galleryTemplate.jpeg);
-    background-repeat: repeat-x;
+    background-repeat: no-repeat;
     font-family: Arial, Helvetica, sans-serif;
 }
 h1{
