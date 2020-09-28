@@ -1,44 +1,40 @@
 body{
     background-image: url(galleryView.png);
     background-repeat: no-repeat;
-    background-size: 1400px 800px;
+    background-size: cover;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 h1{
     color: slategray;
     font-size: 50px;
     margin-top: 55px;
-    margin-left: 590px;
+    margin-left: 550px;
 }
 div.home{ 
     margin-top: 60px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 475px;
 }
 div.home img{
     width: 450px;
     height: 475px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 475px;
 }
 h2{
     color: slategray;
     font-size: 50px;
     margin-top: 55px;
-    margin-left: 590px;
+    margin-left: 600px;
 }
 div.art{
     margin-top: 40px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 475px;
 }
 div.art img{
     width: 450px;
     height: 475px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 475px;
 }
 div.title{
     color: slategray;
