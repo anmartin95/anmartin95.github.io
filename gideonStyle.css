@@ -32,7 +32,7 @@ h2{
     margin-top: 105px;
 }
 div.art{
-    border: 1px double rgb(204, 196, 196);
+    border: 4px double rgb(204, 196, 196);
     margin-top: 120px;
     margin-left: auto;
     margin-right: auto;
@@ -40,7 +40,7 @@ div.art{
     height: 750px;
 }
 div.art:hover {
-    border: 1px double rgb(150, 192, 211);
+    border: 4px double rgb(150, 192, 211);
 }
 div.art img{
     width: 100%;
@@ -66,7 +66,7 @@ div.title{
 .back:hover{
     background-color: rgb(212, 194, 212);
 }
-.beck:active{
+.back:active{
     background-color: rgb(212, 194, 212);
 }
 .next{
