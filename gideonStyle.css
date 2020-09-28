@@ -16,10 +16,10 @@ div.home{
     margin-right: auto;
     width: 700px;
     height: 750px;
-    border: 1px double rgb(255, 255, 255);
+    border: 4px groove rgb(255, 255, 255);
 }
 div.home:hover{
-    border: 1px double rgb(231, 216, 198);
+    border: 4px groove rgb(231, 216, 198);
 }
 div.home img{
     width: 100%;
