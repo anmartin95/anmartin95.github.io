@@ -22,3 +22,6 @@
             </a>
             <div class="title"><i>Night Out</i></div>
         </div>
+
+        margin: 10px;
+    border: 4px solid rgb(231, 216, 198);
