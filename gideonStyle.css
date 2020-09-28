@@ -9,14 +9,13 @@ h1{
     font-size: 50px;
     margin-top: 55px;
     text-align: center;
-    
 }
 div.home{ 
-    margin-top: 60px;
+    margin-top: 10px;
 }
 div.home img{
-    width: 450px;
-    height: 475px;
+    width: 350px;
+    height: 400px;
     display: block;
     margin-left: auto;
     margin-right: auto;
