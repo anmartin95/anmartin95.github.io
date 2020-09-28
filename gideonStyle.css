@@ -44,6 +44,10 @@ div.art img{
     width: auto;
     height: auto;
 }
+.painting{
+    width: 450px;
+    height: 550px;
+}
 div.title{
     color: slategray;
     text-align: center;
