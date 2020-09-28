@@ -37,7 +37,7 @@ div.art{
     margin-left: auto;
     margin-right: auto;
     width: 700px;
-    height: 700px;
+    height: auto;
 }
 div.art:hover {
     border: 4px double rgb(150, 192, 211);
@@ -51,13 +51,15 @@ div.title{
     text-align: center;
     font-size: 35px;
 }
-.back:link{
-    margin-left: 300px;
+.back{
     margin-top: auto;
     margin-bottom: auto;
+    margin-left: 300px;
+    font-size: 75px;
+}
+.back:link{
     background-color: slategray;
     color: white;
-    font-size: 75px;
 }
 .back:visited{
     background-color: slategray;
@@ -72,9 +74,12 @@ div.title{
 .next{
     margin-top: auto;
     margin-bottom: auto;
+    margin-left: 1100px;
+    font-size: 75px;
+}
+.next:link{
     background-color: slategray;
     color: white;
-    font-size: 75px;
 }
 .next:visited{
     background-color: slategray;
