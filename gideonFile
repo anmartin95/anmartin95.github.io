@@ -1,0 +1,24 @@
+        <div class="art">
+            <a target="_blank" href="Trench-Coat.jpg">
+                <img src="Trench-Coat.jpg" alt="Trench Coat" width="600" height="400">
+            </a>
+            <div class="title"><i>Trench Coat</i></div>
+        </div>
+        <div class="art">
+            <a target="_blank" href="Facemask.jpeg">
+                <img src="Facemask.jpeg" alt="Facemask" width="600" height="400">
+            </a>
+            <div class="title"><i>Facemask</i></div>
+        </div>
+        <div class="art">
+            <a target="_blank" href="The-Couple.jpg">
+                <img src="The-Couple.jpg" alt="The Couple" width="600" height="400">
+            </a>
+            <div class="title"><i>The Couple</i></div>
+        </div>
+        <div class="art">
+            <a target="_blank" href="Night-Out.jpg">
+                <img src="Night-Out.jpg" alt="Night Out" width="600" height="400">
+            </a>
+            <div class="title"><i>Night Out</i></div>
+        </div>
