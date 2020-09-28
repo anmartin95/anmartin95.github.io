@@ -5,7 +5,7 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 h1{
-    color: rgb(99, 83, 74);
+    color: slategray;
     font-size: 60px;
     text-align: center;
     margin-top: 100px;
@@ -14,7 +14,8 @@ div.home{
     margin-top: 125px;
     margin-left: auto;
     margin-right: auto;
-    width: 550px;
+    width: 700px;
+    height: 950px;
     border: 4px solid rgb(255, 255, 255);
 }
 div.home:hover{
@@ -25,13 +26,13 @@ div.home img{
     height: auto;
 }
 h2{
-    color: rgb(99, 83, 74);
+    color: slategray;
     font-size: 60px;
     text-align: center;
     margin-top: 100px;
 }
 div.art{
-    border: 4px solid rgb(204, 196, 196);
+    border: 2px solid rgb(204, 196, 196);
     margin-top: 125px;
     margin-left: auto;
     margin-right: auto;
@@ -39,7 +40,7 @@ div.art{
     height: 950px;
 }
 div.art:hover {
-    border: 4px solid rgb(150, 192, 211);
+    border: 2px solid rgb(150, 192, 211);
 }
 div.art img{
     width: 100%;
