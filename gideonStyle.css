@@ -16,8 +16,8 @@ div.home{
     margin-right: auto;
 }
 div.home img{
-    width: auto;
-    height: auto;
+    width: 450px;
+    height: 500px;
 }
 h2{
     color: slategray;
@@ -31,8 +31,8 @@ div.art{
     margin-right: auto;
 }
 div.art img{
-    width: auto;
-    height: auto;
+    width: 450px;
+    height: 500px;
 }
 div.title{
     color: slategray;
