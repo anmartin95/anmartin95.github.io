@@ -37,7 +37,7 @@ div.art{
     margin-left: auto;
     margin-right: auto;
     width: 700px;
-    height: auto;
+    height: 700px;
 }
 div.art:hover {
     border: 4px double rgb(150, 192, 211);
