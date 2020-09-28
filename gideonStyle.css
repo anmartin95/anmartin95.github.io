@@ -8,7 +8,7 @@ h1{
     color: slategray;
     font-size: 60px;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 105px;
 }
 div.home{ 
     margin-top: 120px;
@@ -16,10 +16,10 @@ div.home{
     margin-right: auto;
     width: 700px;
     height: 950px;
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px double rgb(255, 255, 255);
 }
 div.home:hover{
-    border: 1px solid rgb(231, 216, 198);
+    border: 1px double rgb(231, 216, 198);
 }
 div.home img{
     width: 100%;
@@ -29,10 +29,10 @@ h2{
     color: slategray;
     font-size: 60px;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 105px;
 }
 div.art{
-    border: 1px solid rgb(204, 196, 196);
+    border: 1px double rgb(204, 196, 196);
     margin-top: 120px;
     margin-left: auto;
     margin-right: auto;
@@ -40,7 +40,7 @@ div.art{
     height: 950px;
 }
 div.art:hover {
-    border: 1px solid rgb(150, 192, 211);
+    border: 1px double rgb(150, 192, 211);
 }
 div.art img{
     width: 100%;
