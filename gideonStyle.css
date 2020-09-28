@@ -51,3 +51,23 @@ div.title{
     text-align: center;
     font-size: 35px;
 }
+.back{
+    margin-left: 300px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: slategray;
+    color: white;
+}
+.back:hover{
+    background-color: rgb(212, 194, 212);
+}
+.next{
+    margin-right: 300px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: slategray;
+    color: white;
+}
+.next:hover{
+    background-color: rgb(212, 194, 212);
+}
