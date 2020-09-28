@@ -51,7 +51,7 @@ div.title{
     text-align: center;
     font-size: 35px;
 }
-.back{
+.back:link{
     margin-left: 300px;
     margin-top: auto;
     margin-bottom: auto;
@@ -59,7 +59,14 @@ div.title{
     color: white;
     font-size: 75px;
 }
+.back:visited{
+    background-color: slategray;
+    color: white;
+}
 .back:hover{
+    background-color: rgb(212, 194, 212);
+}
+.beck:active{
     background-color: rgb(212, 194, 212);
 }
 .next{
@@ -69,6 +76,13 @@ div.title{
     color: white;
     font-size: 75px;
 }
+.next:visited{
+    background-color: slategray;
+    color: white;
+}
 .next:hover{
+    background-color: rgb(212, 194, 212);
+}
+.next:active{
     background-color: rgb(212, 194, 212);
 }
