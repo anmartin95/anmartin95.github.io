@@ -165,10 +165,12 @@ div.title{
     color: white;
 }
 .back:hover{
-    background-color: rgb(212, 194, 212);
+    background-color: lightgray;
+    color: slategray;
 }
 .back:active{
-    background-color: rgb(212, 194, 212);
+    background-color: lightgray;
+    color: slategray;
 }
 .next{
     margin-top: auto;
@@ -186,8 +188,10 @@ div.title{
     color: white;
 }
 .next:hover{
-    background-color: rgb(212, 194, 212);
+    background-color: lightgray;
+    color: slategray;
 }
 .next:active{
-    background-color: rgb(212, 194, 212);
+    background-color: lightgray;
+    color: slategray;
 }
