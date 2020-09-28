@@ -45,8 +45,9 @@ div.title:hover{
     color: gold;
 }
 .back{
-    margin-top: 400px;
-    margin-left: 300px;;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 300px;
     font-size: 35px;
     background-color: slategray;
     color: white;
@@ -73,8 +74,8 @@ div.title:hover{
     text-decoration: none;
 }
 .next{
-    margin-top: 400px;
-    margin-left: 1100px;
+    margin-top: auto;
+    margin-bottom: auto;
     font-size: 35px;
     background-color: slategray;
     color: white;
