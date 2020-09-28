@@ -27,7 +27,8 @@ h2{
 }
 div.art{
     margin-top: 80px;
-    margin-left: 500px;
+    margin-left: auto;
+    margin-right: auto;
 }
 div.art img{
     width: auto;
