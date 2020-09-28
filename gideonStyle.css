@@ -6,6 +6,9 @@ body{
 }
 h1{
     color: rgb(99, 83, 74);
+    font-size: 60px;
+    padding: 1em;
+    background-color: seashell;
 }
 div.home{ 
     display: block;
