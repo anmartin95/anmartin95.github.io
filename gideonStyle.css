@@ -25,6 +25,12 @@ div.home img{
     width: 100%;
     height: auto;
 }
+h2{
+    color: rgb(99, 83, 74);
+    font: 60px;
+    text-align: center;
+    margin-top: 25%;
+}
 div.art{
     margin: 10px;
     border: 4px solid rgb(204, 196, 196);
