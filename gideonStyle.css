@@ -12,8 +12,9 @@ div.home{
     border: 4px solid rgb(231, 216, 198);
     position: relative;
     top: 200px;
-    width: 700px;
-    height: 1000px;
+    width: 550px;
+    height: 850px;
+    object-position: center;
 }
 div.home:hover{
     border: 4px solid rgb(224, 188, 188);
