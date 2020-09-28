@@ -15,7 +15,7 @@ div.home{
     margin-left: auto;
     margin-right: auto;
     width: 700px;
-    height: 950px;
+    height: 800px;
     border: 1px double rgb(255, 255, 255);
 }
 div.home:hover{
@@ -37,7 +37,7 @@ div.art{
     margin-left: auto;
     margin-right: auto;
     width: 700px;
-    height: 950px;
+    height: 800px;
 }
 div.art:hover {
     border: 1px double rgb(150, 192, 211);
