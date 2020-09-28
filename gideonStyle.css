@@ -60,18 +60,22 @@ div.title{
 .back:link{
     background-color: slategray;
     color: white;
+    text-decoration: none;
 }
 .back:visited{
     background-color: slategray;
     color: white;
+    text-decoration: none;
 }
 .back:hover{
     background-color: white;
     color: slategray;
+    text-decoration: none;
 }
 .back:active{
     background-color: white;
     color: slategray;
+    text-decoration: none;
 }
 .next{
     margin-top: 400px;
@@ -84,16 +88,20 @@ div.title{
 .next:link{
     background-color: slategray;
     color: white;
+    text-decoration: none;
 }
 .next:visited{
     background-color: slategray;
     color: white;
+    text-decoration: none;
 }
 .next:hover{
     background-color: white;
     color: slategray;
+    text-decoration: none;
 }
 .next:active{
     background-color: white;
     color: slategray;
+    text-decoration: none;
 }
