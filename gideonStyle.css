@@ -52,7 +52,7 @@ div.title{
     font-size: 35px;
 }
 .back{
-    margin-top: 50%
+    margin-top: 50%;
     margin-left: 300px;
     font-size: 75px;
 }
@@ -71,9 +71,12 @@ div.title{
     background-color: rgb(212, 194, 212);
 }
 .next{
-    margin-top: 50%
+    margin-top: 50%;
     margin-left: 1400px;
+    padding: 20px 25px;
+    display: inline-block;
     font-size: 75px;
+    text-decoration: none;
 }
 .next:link{
     background-color: slategray;
@@ -84,8 +87,10 @@ div.title{
     color: white;
 }
 .next:hover{
-    background-color: rgb(212, 194, 212);
+    background-color: lightgray;
+    color: slategray;
 }
 .next:active{
-    background-color: rgb(212, 194, 212);
+    background-color: lightgray;
+    color: slategray;
 }
