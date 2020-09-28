@@ -15,7 +15,7 @@ div.home{
     margin-top: 150px;
     margin-left: auto;
     margin-right: auto;
-    width: 33%;
+    width: 50%;
     border: 4px solid rgb(255, 255, 255);
 }
 div.home:hover{
