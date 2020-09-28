@@ -57,16 +57,17 @@ div.title{
     margin-bottom: auto;
     background-color: slategray;
     color: white;
+    font-size: 75px;
 }
 .back:hover{
     background-color: rgb(212, 194, 212);
 }
 .next{
-    margin-right: 300px;
     margin-top: auto;
     margin-bottom: auto;
     background-color: slategray;
     color: white;
+    font-size: 75px;
 }
 .next:hover{
     background-color: rgb(212, 194, 212);
