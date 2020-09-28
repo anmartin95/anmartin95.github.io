@@ -8,11 +8,10 @@ h1{
     color: slategray;
     font-size: 50px;
     margin-top: 55px;
-    margin-left: 550px;
+    margin-left: 500px;
 }
 div.home{ 
     margin-top: 60px;
-    margin-left: 475px;
 }
 div.home img{
     width: 450px;
@@ -24,11 +23,10 @@ h2{
     color: slategray;
     font-size: 50px;
     margin-top: 55px;
-    margin-left: 600px;
+    margin-left: 650px;
 }
 div.art{
-    margin-top: 40px;
-    margin-left: 475px;
+    margin-top: 10px;
 }
 div.art img{
     width: 450px;
@@ -45,13 +43,13 @@ div.title:hover{
     color: gold;
 }
 .back{
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 300px;
+    margin-bottom: 200px;
+    margin-left: 250px;
     font-size: 35px;
     background-color: slategray;
     color: white;
     border: 2px solid white;
+    text-decoration: none;
 }
 .back:link{
     background-color: slategray;
@@ -74,12 +72,13 @@ div.title:hover{
     text-decoration: none;
 }
 .next{
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-bottom: 200px;
+    margin-right: 250px;
     font-size: 35px;
     background-color: slategray;
     color: white;
     border: 2px solid white;
+    text-decoration: none;
 }
 .next:link{
     background-color: slategray;
