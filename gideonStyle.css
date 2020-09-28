@@ -6,7 +6,7 @@ body{
 }
 h1{
     color: slategray;
-    font-size: 50px;
+    font-size: 30px;
     margin-top: 50px;
     margin-left: 525px;
 }
@@ -14,9 +14,6 @@ div.home{
     margin-top: 80px;
     margin-left: auto;
     margin-right: auto;
-}
-div.home:hover{
-    border: 4px solid rgb(231, 216, 198);
 }
 div.home img{
     width: auto;
@@ -31,9 +28,6 @@ h2{
 div.art{
     margin-top: 80px;
     margin-left: 500px;
-}
-div.art:hover {
-    border: 2px solid rgb(235, 218, 197);
 }
 div.art img{
     width: auto;
