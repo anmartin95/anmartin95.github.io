@@ -7,13 +7,12 @@ body{
 h1{
     color: slategray;
     font-size: 50px;
-    text-align: center;
-    margin-top: 105px;
+    margin-top: 50px;
+    margin-left: 525px;
 }
 div.home{ 
     margin-top: 80px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 525px;
     width: 450px;
     height: 550px;
     border: 4px groove rgb(255, 255, 255);
@@ -21,15 +20,15 @@ div.home{
 div.home:hover{
     border: 4px groove rgb(231, 216, 198);
 }
-div.home img{
+/*div.home img{
     width: 100%;
     height: auto;
-}
+}*/
 h2{
     color: slategray;
     font-size: 50px;
-    text-align: center;
     margin-top: 80px;
+    margin-left: 525px;
 }
 div.art{
     border: 4px double rgb(204, 196, 196);
@@ -42,10 +41,10 @@ div.art{
 div.art:hover {
     border: 4px double rgb(150, 192, 211);
 }
-div.art img{
+/*div.art img{
     width: 100%;
     height: auto;
-}
+}*/
 div.title{
     color: slategray;
     text-align: center;
@@ -54,7 +53,7 @@ div.title{
 .back{
     margin-top: 400px;
     margin-left: 300px;
-    font-size: 75px;
+    font-size: 35px;
 }
 .back:link{
     background-color: slategray;
@@ -73,8 +72,6 @@ div.title{
 .next{
     margin-top: 400px;
     margin-left: 1100px;
-    padding: 20px 25px;
-    display: inline-block;
     font-size: 35px;
 }
 .next:link{
