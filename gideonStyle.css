@@ -1,7 +1,7 @@
-/*body{
+body{
     background-image: url(galleryView.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 h1{
@@ -77,107 +77,6 @@ div.title{
     display: inline-block;
     font-size: 75px;
     text-decoration: none;
-}
-.next:link{
-    background-color: slategray;
-    color: white;
-}
-.next:visited{
-    background-color: slategray;
-    color: white;
-}
-.next:hover{
-    background-color: lightgray;
-    color: slategray;
-}
-.next:active{
-    background-color: lightgray;
-    color: slategray;
-}*/
-body{
-    background-image: url(galleryView.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-h1{
-    color: slategray;
-    font-size: 60px;
-    text-align: center;
-    margin-top: 105px;
-}
-div.home{ 
-    margin-top: 120px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 700px;
-    height: 750px;
-    border: 4px double rgb(255, 255, 255);
-}
-div.home:hover{
-    border: 4px double rgb(231, 216, 198);
-}
-div.home img{
-    width: 100%;
-    height: auto;
-}
-h2{
-    color: slategray;
-    font-size: 60px;
-    text-align: center;
-    margin-top: 105px;
-}
-div.art{
-    border: 4px double rgb(204, 196, 196);
-    margin-top: 120px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 700px;
-    height: 700px;
-}
-div.art:hover {
-    border: 4px double rgb(150, 192, 211);
-}
-div.art img{
-    width: 100%;
-    height: auto;
-}
-div.title{
-    color: slategray;
-    text-align: center;
-    font-size: 35px;
-}
-.back{
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 300px;
-    background-color: slategray;
-    color: white;
-    font-size: 75px;
-
-}
-.back:link{
-    background-color: slategray;
-    color: white;
-}
-.back:visited{
-    background-color: slategray;
-    color: white;
-}
-.back:hover{
-    background-color: lightgray;
-    color: slategray;
-}
-.back:active{
-    background-color: lightgray;
-    color: slategray;
-}
-.next{
-    margin-top: auto;
-    margin-bottom: auto;
-    background-color: slategray;
-    color: white;
-    font-size: 75px;
 }
 .next:link{
     background-color: slategray;
