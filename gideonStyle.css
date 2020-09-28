@@ -52,8 +52,7 @@ div.title{
     font-size: 35px;
 }
 .back{
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-top: 50%
     margin-left: 300px;
     font-size: 75px;
 }
@@ -72,9 +71,8 @@ div.title{
     background-color: rgb(212, 194, 212);
 }
 .next{
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 1100px;
+    margin-top: 50%
+    margin-left: 1400px;
     font-size: 75px;
 }
 .next:link{
