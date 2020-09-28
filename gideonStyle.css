@@ -27,7 +27,7 @@ h2{
     text-align: center;
 }
 div.art{
-    margin-top: 10px;
+    margin-top: 5px;
 }
 div.art img{
     display: block;
@@ -35,12 +35,12 @@ div.art img{
     margin-right: auto;
 }
 #portrait img{
-    width: 450px;
-    height: 475px;
+    width: 350px;
+    height: 400px;
 }
 #landscape img{
-    width: 550px;
-    height: 475px;
+    width: 350px;
+    height: 300px;
 }
 div.title{
     color: slategray;
@@ -50,57 +50,29 @@ div.title{
 div.title:hover{
     color: gold;
 }
-.back{
+.click{
     font-size: 35px;
     background-color: slategray;
     color: white;
     border: 2px solid white;
     text-decoration: none;
 }
-.back:link{
+.click:link{
     background-color: slategray;
     color: white;
     text-decoration: none;
 }
-.back:visited{
+.click:visited{
     background-color: slategray;
     color: white;
     text-decoration: none;
 }
-.back:hover{
+.click:hover{
     background-color: white;
     color: slategray;
     text-decoration: none;
 }
-.back:active{
-    background-color: white;
-    color: slategray;
-    text-decoration: none;
-}
-.next{
-    font-size: 35px;
-    margin-right: 0px;
-    background-color: slategray;
-    color: white;
-    border: 2px solid white;
-    text-decoration: none;
-}
-.next:link{
-    background-color: slategray;
-    color: white;
-    text-decoration: none;
-}
-.next:visited{
-    background-color: slategray;
-    color: white;
-    text-decoration: none;
-}
-.next:hover{
-    background-color: white;
-    color: slategray;
-    text-decoration: none;
-}
-.next:active{
+.click:active{
     background-color: white;
     color: slategray;
     text-decoration: none;
