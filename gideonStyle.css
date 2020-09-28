@@ -2,13 +2,13 @@ body{
     background-image: url(galleryView.png);
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 h1{
     color: rgb(99, 83, 74);
     font-size: 60px;
     text-align: center;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 div.home{ 
     margin-top: 150px;
