@@ -18,6 +18,9 @@ div.home{
 div.home img{
     width: 450px;
     height: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 h2{
     color: slategray;
@@ -37,6 +40,7 @@ div.art:hover{
 div.art img{
     width: 450px;
     height: 500px;
+    display: block;
     margin-left: auto;
     margin-right: auto;
 }
