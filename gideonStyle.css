@@ -79,6 +79,7 @@ div.title:hover{
 }
 .next{
     font-size: 35px;
+    margin-right: 0px;
     background-color: slategray;
     color: white;
     border: 2px solid white;
