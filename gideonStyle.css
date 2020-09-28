@@ -14,8 +14,6 @@ div.home{
     margin-top: 80px;
     margin-left: auto;
     margin-right: auto;
-    width: 450px;
-    height: 550px;
 }
 div.home:hover{
     border: 4px solid rgb(231, 216, 198);
@@ -28,14 +26,11 @@ h2{
     color: slategray;
     font-size: 50px;
     margin-top: 50px;
-    margin-left: 525px;
+    margin-left: 575px;
 }
 div.art{
     margin-top: 80px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 200px;
-    height: 300px;
+    margin-left: 500px;
 }
 div.art:hover {
     border: 2px solid rgb(235, 218, 197);
@@ -43,10 +38,6 @@ div.art:hover {
 div.art img{
     width: auto;
     height: auto;
-}
-.painting{
-    width: 450px;
-    height: 550px;
 }
 div.title{
     color: slategray;
