@@ -6,16 +6,16 @@ body{
 }
 h1{
     color: slategray;
-    font-size: 60px;
+    font-size: 50px;
     text-align: center;
     margin-top: 105px;
 }
 div.home{ 
-    margin-top: 120px;
+    margin-top: 80px;
     margin-left: auto;
     margin-right: auto;
-    width: 700px;
-    height: 750px;
+    width: 450px;
+    height: 550px;
     border: 4px groove rgb(255, 255, 255);
 }
 div.home:hover{
@@ -27,17 +27,17 @@ div.home img{
 }
 h2{
     color: slategray;
-    font-size: 60px;
+    font-size: 50px;
     text-align: center;
-    margin-top: 105px;
+    margin-top: 80px;
 }
 div.art{
     border: 4px double rgb(204, 196, 196);
     margin-top: 120px;
     margin-left: auto;
     margin-right: auto;
-    width: 700px;
-    height: 700px;
+    width: 450px;
+    height: 550px;
 }
 div.art:hover {
     border: 4px double rgb(150, 192, 211);
@@ -52,7 +52,7 @@ div.title{
     font-size: 35px;
 }
 .back{
-    margin-top: 50%;
+    margin-top: 400px;
     margin-left: 300px;
     font-size: 75px;
 }
@@ -71,12 +71,11 @@ div.title{
     background-color: rgb(212, 194, 212);
 }
 .next{
-    margin-top: 50%;
-    margin-left: 1400px;
+    margin-top: 400px;
+    margin-left: 1100px;
     padding: 20px 25px;
     display: inline-block;
-    font-size: 75px;
-    text-decoration: none;
+    font-size: 35px;
 }
 .next:link{
     background-color: slategray;
