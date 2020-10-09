@@ -1,5 +1,7 @@
 body{
     background-image: url("brickWall.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: 'Josefin Slab', serif;
 }
 h1{

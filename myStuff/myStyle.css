@@ -1,0 +1,8 @@
+body{
+    background-image: url(wallpaper.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    color: lightblue;
+}
