@@ -50,29 +50,29 @@ div.title{
 div.title:hover{
     color: gold;
 }
-.click{
+button.click{
     font-size: 35px;
     background-color: slategray;
     color: white;
     border: 2px solid white;
     text-decoration: none;
 }
-.click:link{
+button.click:link{
     background-color: slategray;
     color: white;
     text-decoration: none;
 }
-.click:visited{
+button.click:visited{
     background-color: slategray;
     color: white;
     text-decoration: none;
 }
-.click:hover{
+button.click:hover{
     background-color: white;
     color: slategray;
     text-decoration: none;
 }
-.click:active{
+button.click:active{
     background-color: white;
     color: slategray;
     text-decoration: none;

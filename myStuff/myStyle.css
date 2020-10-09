@@ -5,4 +5,9 @@ body{
 }
 h1{
     color: lightblue;
+    text-align: center;
+    font-size: 60px;
+    padding: 1em;
+    background-color: rgb(252, 244, 228);
+    border-radius: 1em;
 }

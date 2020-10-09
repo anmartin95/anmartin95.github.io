@@ -12,20 +12,20 @@ h2{
     font-size: 35px;
     color: rgb(153, 201, 194);
 }
-.header
+div.header
 {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
 }
-#lists{
+div#lists{
     display: flex;
     justify-content: space-around;
 }
-.projects{
+div.projects{
     flex-direction: column;
 }
-.responses{
+div.responses{
     flex-direction: column;
 }
 a{
