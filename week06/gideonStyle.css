@@ -46,9 +46,11 @@ div.title{
     color: slategray;
     text-align: center;
     font-size: 35px;
+    text-decoration: none;
 }
 div.title:hover{
     color: gold;
+    text-decoration: none;
 }
 button.click{
     font-size: 35px;

@@ -1,23 +1,26 @@
 body{
     background-image: url("brickWall.webp");
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-size: cover;
     font-family: 'Josefin Slab', serif;
 }
 h1{
     color: rgb(66, 60, 82);
     font-size: 50px;
+    padding: 1em;
+    border-color: rgb(226, 231, 195);
+    border-radius: 1em;
 }
 h2{
     font-size: 35px;
     color: rgb(153, 201, 194);
-    
+    background-color: rgb(226, 231, 195);
+    border-radius: 1em;
 }
 div.header
 {
     display: flex;
     justify-content: space-around;
-    align-items: flex-start;
 }
 div#lists{
     display: flex;
@@ -32,23 +35,11 @@ div.responses{
 a{
     font-size: 25px;
 }
-a:link
-{
+a.projects:link, a.projects:visited, a.responses:link, a.responses:visited{
     color: rgb(224, 154, 73);
     text-decoration: none;
 } 
-a:visited
-{
-    color: rgb(224, 154, 73);
-    text-decoration: none;
-}
-a:hover
-{
-    color: rgb(167, 72, 9);
-    text-decoration: none;
-}
-a:active
-{
+a.projects:hover, a.projects:active, a.responses:hover, a.responses:active{
     color: rgb(167, 72, 9);
     text-decoration: none;
 }
