@@ -1,0 +1,51 @@
+body{
+    background-image: url("brickWall.jpg");
+    font-family: 'Josefin Slab', serif;
+}
+h1{
+    color: rgb(66, 60, 82);
+    font-size: 50px;
+}
+h2{
+    font-size: 35px;
+    color: rgb(153, 201, 194);
+}
+.header
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+#lists{
+    display: flex;
+    justify-content: space-around;
+}
+.projects{
+    flex-direction: column;
+}
+.responses{
+    flex-direction: column;
+}
+a{
+    font-size: 25px;
+}
+a:link
+{
+    color: rgb(224, 154, 73);
+    text-decoration: none;
+} 
+a:visited
+{
+    color: rgb(224, 154, 73);
+    text-decoration: none;
+}
+a:hover
+{
+    color: rgb(167, 72, 9);
+    text-decoration: none;
+}
+a:active
+{
+    color: rgb(167, 72, 9);
+    text-decoration: none;
+}
