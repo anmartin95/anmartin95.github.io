@@ -1,19 +1,44 @@
 body{
-    background-color: rgb(255, 236, 209);
     font-family: 'Exo', sans-serif;
-}
-.pictures{
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    border-color: white;
 }
 h1{
     color: rgb(209, 86, 14);
+    font-size: 50px;
     display: flex;
     justify-content: center;
 }
-.pictures__img{
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 15px;
+}
+.pictures{
     width: 100%;
-    height: 400px;
+    height: 100%;
     object-fit: cover;   
 }   
+.picture1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.picture2{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.picture3{
+grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+.picture4{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 6;
+}
