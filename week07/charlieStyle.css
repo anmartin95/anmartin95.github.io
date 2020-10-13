@@ -1,5 +1,6 @@
 body{
     background-color: rgb(255, 236, 209);
+    font-family: 'Exo', sans-serif;
 }
 .pictures{
     display: grid;
