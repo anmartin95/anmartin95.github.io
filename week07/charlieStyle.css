@@ -4,6 +4,8 @@ body{
 .pictures{
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
+    width: auto;
+    height: 400px;
     border-color: white;
 }
 h1{
