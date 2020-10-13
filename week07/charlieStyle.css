@@ -2,11 +2,9 @@ body{
     background-color: rgb(255, 236, 209);
 }
 .pictures{
-    size: contain;
-    width: 100%;
-    height: 400px;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
     border-color: white;
 }
 h1{
