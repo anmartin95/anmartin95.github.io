@@ -17,6 +17,8 @@ h1{
     width: 100%;
     height: 100%;
     object-fit: cover;   
+    opacity: 1;
+    transition: .5s ease;
 }   
 .picture1{
     grid-area: 1/1/4/3;
@@ -32,4 +34,26 @@ h1{
 }
 .picture5{
     grid-area: 5/5/9/9;
+}
+.click{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+a:hover .pictures{
+    opacity: 0.5;
+}
+a:hover .click{
+    opacity: 1;
+}
+h1{
+    background-color: rgb(255, 248, 236);
+    color: rgb(0, 83, 0);
+    font-size: 25px;
+    padding: 1em;
 }
