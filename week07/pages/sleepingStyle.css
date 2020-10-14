@@ -45,10 +45,10 @@ body{
     -ms-transform: translate(-50%, -50%);
     text-align: center;
 }
-a:hover .pictures{
+#message:hover .pictures{
     opacity: 0.5;
 }
-a:hover .click{
+#message:hover .click{
     opacity: 1;
 }
 h2{
