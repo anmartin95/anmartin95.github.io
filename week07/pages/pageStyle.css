@@ -6,3 +6,33 @@ img{
     height: 100%;
     object-fit: cover;
 }
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 5vw);
+    grid-gap: 10px;
+}
+.xmas1{
+    grid-area: 1/1/5/4;
+}
+.funfact{
+    grid-row: 5;
+    font-size: 15px;
+    color: darkred;
+}
+.pillow1{
+    grid-area: 1/4/5/8;
+}   
+.socks{
+    grid-area: 1/8/5/12;
+}
+.pillow2{
+    grid-area: 1/12/5/16;
+}
+.header1{
+    grid-row-start: 6;
+    grid-row-end: 8;
+}
+
+
+
