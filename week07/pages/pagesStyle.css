@@ -20,6 +20,9 @@ body{
     opacity: 1;
     transition: .5 ease;
 }   
+.picturemain{
+    grid-area: 1/1/8/8;
+}
 .picture1{
     grid-area: 1/1/4/3;
 }
