@@ -15,11 +15,6 @@ img{
 .xmas1{
     grid-area: 1/1/5/4;
 }
-.funfact{
-    grid-row: 5;
-    font-size: 15px;
-    color: darkred;
-}
 .pillow1{
     grid-area: 1/4/5/8;
 }   
@@ -29,10 +24,22 @@ img{
 .pillow2{
     grid-area: 1/12/5/16;
 }
-.header1{
+.funfact{
+    grid-row: 5;
+    font-size: 15px;
+    color: darkred;
+}
+.happybirthday{
     grid-row-start: 6;
     grid-row-end: 8;
+    background-color: rgb(245, 191, 145);
+    color: white;
 }
-
+.birthday1{
+    grid-area: 8/1/16/8;
+}
+.birthday2{
+    grid-area: 8/8/16/16;
+}
 
 
