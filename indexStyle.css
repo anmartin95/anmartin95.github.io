@@ -12,8 +12,8 @@ h1{
     border-radius: 1em;
 }
 h2{
-    font-size: 35px;
-    width: 200px;
+    font-size: 50px;
+    width: 150px;
     color: rgb(153, 201, 194);
     padding: 2em;
     background-color: rgb(248, 248, 248);
@@ -70,7 +70,6 @@ a.header:active{
 #pro3{
     grid-area: 4/1/5/2;
 }
-
 #res1{
     grid-area: 2/2/3/3;
 }
@@ -81,9 +80,10 @@ a.header:active{
     grid-area: 4/2/5/3;
 }
 a.project, a.response{
-    font-size: 25px;
+    font-size: 40px;
     width: 400px;
     border-radius: 1em;
+    text-align: center;
 }
 a.project:link, a.response:link{
     color: rgb(224, 154, 73);
