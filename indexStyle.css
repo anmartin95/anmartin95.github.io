@@ -15,10 +15,10 @@ h2{
     font-size: 50px;
     width: 150px;
     color: rgb(153, 201, 194);
-    padding: 2em;
+    padding: 1em;
     background-color: rgb(248, 248, 248);
     text-align: center;
-    border-radius: 2em;
+    border-radius: 1em;
 }
 .header{
     display: flex;
