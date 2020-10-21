@@ -10,19 +10,20 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 400px;
+    max-width: 600px;
     height: 400px;
     animation-name: crescent;
     animation-duration: 5s;
 }
 @keyframes crescent {
-    from {background: 50px solid white;
+    from {border: 400px solid white;
         border-radius: 50%;}
     to {border-left: 50px solid white;
         border-radius: 100%;}
 }
-h1{
+.prompt{
     justify-content: center;
+    color: white;
 }
 
 
