@@ -18,7 +18,7 @@ body{
 @keyframes crescent {
     from {background: 50px solid white;
         border-radius: 50%;}
-    to {border-left: 10px solid white;
+    to {border-left: 50px solid white;
         border-radius: 100%;}
 }
 h1{
