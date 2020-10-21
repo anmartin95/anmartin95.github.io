@@ -10,7 +10,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 800px;
+    max-width: 600px;
     height: 400px;
     padding: 20px;
     animation-name: crescent;
@@ -19,8 +19,8 @@ body{
 }
 @keyframes crescent {
     from {border: transparent}
-    to {border-left: 50px solid white;
-        border-radius: 100%;}
+    to {border-left: 60px solid white;
+        border-radius: 50%;}
 }
 .prompt{
     justify-content: center;
