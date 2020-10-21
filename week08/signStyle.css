@@ -24,6 +24,8 @@ body{
 .prompt{
     justify-content: center;
     color: white;
+    font-size: 50px;
+    padding: 20px;
 }
 .months .days{
     background-color: white;
@@ -36,5 +38,3 @@ body{
     font-size: 16px;
     margin: 4px 2px;
 }
-
-
