@@ -14,10 +14,11 @@ body{
     height: 400px;
     animation-name: crescent;
     animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
 }
 @keyframes crescent {
-    from {border: 400px solid white;
-        border-radius: 50%;}
+    from {border: transparent}
     to {border-left: 50px solid white;
         border-radius: 100%;}
 }
