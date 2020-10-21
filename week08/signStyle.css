@@ -35,13 +35,9 @@ body{
     background-color: white;
     border: none;
     color: rgb(45, 0, 128);
-    padding: 15px;
+    padding: 10px;
     text-decoration: none;
     display: inline-block;
-    font-size: 30px;
-    margin: 4px 2px;
-}
-.select-selected:{
-    background-color: rgb(48, 44, 255);
-    color: white;
+    font-size: 10px;
+    margin: 4px;
 }
