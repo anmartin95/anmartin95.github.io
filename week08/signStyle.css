@@ -26,6 +26,16 @@ body{
     justify-content: center;
     color: white;
 }
-
+.months .days{
+    background-color: white;
+    border: none;
+    color: navy;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+}
 
 
