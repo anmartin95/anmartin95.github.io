@@ -2,16 +2,16 @@ body{
     font-family: 'Lemonada', cursive;
     background-image: linear-gradient(white, rgb(197, 197, 197));
 }
-.loadingSun{
+.loader{
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 100px;
+    height: 100px;
 }
 .spinningSun{
     color: rgba(red, green, blue, 0);
     animation: rotation 3s infinite linear;
-    max-width: 100px;
-    max-height: fit-content;
 }
 @keyframes rotation {
     from {

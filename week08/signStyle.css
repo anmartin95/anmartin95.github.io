@@ -10,12 +10,14 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     max-width: 800px;
     height: 400px;
     padding: 20px;
     animation-name: crescent;
     animation-duration: 3s;
     animation-fill-mode: forwards;
+
 }
 @keyframes crescent {
     from {border: transparent}
