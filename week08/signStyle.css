@@ -1,6 +1,6 @@
 body{
     font-family: 'Lemonada', cursive;
-    background-image: url(sky.jpg);
+    background-image: url(constellation.jpg);
     background-size: cover;
 }
 .box{
@@ -10,7 +10,7 @@ body{
     max-width: 600px;
     height: 300px;
     padding: 2em;
-    background: linear-gradient(rgb(131, 154, 255), rgb(163, 130, 255));
+    background: white;
 }
 h1{
     justify-content: center;
