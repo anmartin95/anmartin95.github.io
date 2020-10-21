@@ -21,3 +21,10 @@ body{
       transform: rotate(359deg);
     }
   }
+  .main{
+      display: flex;
+      justify-content: center;
+      opacity: 0;
+      display: none;
+      transition: opacity 3s ease-in;
+  }
