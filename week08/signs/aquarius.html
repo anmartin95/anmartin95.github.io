@@ -13,7 +13,11 @@
             <img src="sun.png" class="spinningSun">
         </div>
         <script>
-            $(window).on(load, function(){$(".loadingSun").fadeOut("slow")});
+            let loadingSpin = document.querySelector('.loadingSun');
+            window.addEventListener('load', function()
+            {
+                loadingSpin.style.display = 'none';
+            });
         </script>
     </body>
 </html>
