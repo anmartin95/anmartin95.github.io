@@ -1,6 +1,6 @@
 body{
     font-family: 'Lemonada', cursive;
-    background-image: linear-gradient(white, rgb(197, 197, 197));
+    background-color: linear-gradient(white, rgb(197, 197, 197));
 }
 .loader{
     display: flex;
