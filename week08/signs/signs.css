@@ -1,13 +1,16 @@
 body{
     font-family: 'Lemonada', cursive;
     background-color: linear-gradient(white, rgb(197, 197, 197));
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .loader{
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 100px;
-    height: 100px;
+    max-width: 20px;
+    height: 20px;
     animation: rotation 3s infinite linear;
 }
 .spinningSun{

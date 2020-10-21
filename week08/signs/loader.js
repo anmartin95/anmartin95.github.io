@@ -8,7 +8,7 @@ function initial()
         loader.style.display = 'none';
         main.style.display = 'block';
         setTimeout(() => main.style.opacity = 1, 50);
-    }, 5000); // in milliseconds, = 5 seconds
+    }, 3000); // in milliseconds, = 3 seconds
 }
 
 initial();
