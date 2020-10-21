@@ -9,12 +9,12 @@ body{
 .moon{
     display: flex;
     justify-content: center;
-    align-self: center;
+    align-items: center;
     max-width: 800px;
     height: 400px;
     padding: 20px;
     animation-name: crescent;
-    animation-duration: 4s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
 }
 @keyframes crescent {
