@@ -14,7 +14,6 @@ body{
     height: 400px;
     animation-name: crescent;
     animation-duration: 4s;
-    animation-timing-function: ease;
     animation-fill-mode: forwards;
 }
 @keyframes crescent {
