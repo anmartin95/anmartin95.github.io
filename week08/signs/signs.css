@@ -8,10 +8,10 @@ body{
     align-items: center;
     max-width: 100px;
     height: 100px;
+    animation: rotation 3s infinite linear;
 }
 .spinningSun{
     color: rgba(red, green, blue, 0);
-    animation: rotation 3s infinite linear;
 }
 @keyframes rotation {
     from {
