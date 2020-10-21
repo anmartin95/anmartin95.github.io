@@ -2,20 +2,27 @@ body{
     font-family: 'Lemonada', cursive;
     background-image: url(constellation.jpg);
     background-size: cover;
-}
-.box{
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 600px;
-    height: 300px;
-    padding: 2em;
-    background: white;
+}
+.moon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    height: 400px;
+    animation-name: crescent;
+    animation-duration: 5s;
+}
+@keyframes crescent {
+    from {background: 50px solid white;
+        border-radius: 50%;}
+    to {border-left: 10px solid white;
+        border-radius: 100%;}
 }
 h1{
     justify-content: center;
-    color: white;
-    font-size: 70px;
 }
 
 
