@@ -27,7 +27,7 @@ body{
 .prompt{
     justify-content: center;
     color: white;
-    font-size: 20px;
+    font-size: 40px;
     padding: 20px;
 }
 .monthOpt .dayOpt{
