@@ -1,3 +1,20 @@
 body{
     font-family: 'Lemonada', cursive;
 }
+.aquarius{
+    background-color: rgb(158, 255, 247);
+}
+.leo{
+    background-color: gold;
+}
+.loadingSun{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.spinningSun{
+    background-color: transparent;
+    animation: rotation 3s infinite linear;
+    max-width: 100px;
+    max-height: fit-content;
+}
