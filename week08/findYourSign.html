@@ -10,6 +10,7 @@
         // array of signs
         var signs = {Aries, Taurus, Gemini, Cancer, Leo, Virgo, Libra, Scorpio, Sagittarius, Capricorn, Aquarius, Pisces};
         // function to calculate your sun sign
+        var bMonth, bDay, sunSign;
         function calcSunSign (date, month)
         {
             if (month == "March")
@@ -97,12 +98,57 @@
                     return signs.Pisces;
             }
         }
+        document.getElementById("birthmonth").value = bMonth;
+        document.getElementById("birthday").value = bDay;
+        if (bMonth != "Month" && bDay != "Day")
+        {
+            calcSunSign(bDay, bMonth) = sunSign;
+        }
+        function goToSign(sign)
+        {
+            if (sunSign == "Aries")
+                document.getElementById("options").innerHTML='<object type="type/html" data="aries.html" ></object>';
+            else if (sunSign == "Taurus")
+                document.getElementById("options").innerHTML='<object type="type/html" data="taurus.html" ></object>';
+            else if (sunSign == "Gemini")
+                document.getElementById("options").innerHTML='<object type="type/html" data="gemini.html" ></object>';
+            else if (sunSign == "Cancer")
+                document.getElementById("options").innerHTML='<object type="type/html" data="cancer.html" ></object>';
+            else if (sunSign == "Leo")
+                document.getElementById("options").innerHTML='<object type="type/html" data="leo.html" ></object>';
+            else if (sunSign == "Virgo")
+                document.getElementById("options").innerHTML='<object type="type/html" data="virgo.html" ></object>';
+            else if (sunSign == "Libra")
+                document.getElementById("options").innerHTML='<object type="type/html" data="libra.html" ></object>';
+            else if (sunSign == "Taurus")
+                document.getElementById("options").innerHTML='<object type="type/html" data="taurus.html" ></object>';
+            else if (sunSign == "Gemini")
+                document.getElementById("options").innerHTML='<object type="type/html" data="gemini.html" ></object>';
+            else if (sunSign == "Cancer")
+                document.getElementById("options").innerHTML='<object type="type/html" data="cancer.html" ></object>';
+            else if (sunSign == "Leo")
+                document.getElementById("options").innerHTML='<object type="type/html" data="leo.html" ></object>';
+            else if (sunSign == "Virgo")
+                document.getElementById("options").innerHTML='<object type="type/html" data="virgo.html" ></object>';
+            else if (sunSign == "Libra")
+                document.getElementById("options").innerHTML='<object type="type/html" data="libra.html" ></object>';
+            else if (sunSign == "Scorpio")
+                document.getElementById("options").innerHTML='<object type="type/html" data="scorpio.html" ></object>';
+            else if (sunSign == "Sagittarius")
+                document.getElementById("options").innerHTML='<object type="type/html" data="sagittarius.html" ></object>';
+            else if (sunSign == "Capricorn")
+                document.getElementById("options").innerHTML='<object type="type/html" data="capricorn.html" ></object>';
+            else if (sunSign == "Aquarius")
+                document.getElementById("options").innerHTML='<object type="type/html" data="aquarius.html" ></object>';
+            else if (sunSign == "Pisces")
+                document.getElementById("options").innerHTML='<object type="type/html" data="pisces.html" ></object>';
+        }
     </script>
     <body>
         <div class="moon">
             <div class="prompt">Enter Your Birthday</div>
-            <form class="options" target="_blank" action="signs/leo.html">
-                <select class="months" name="birthMonth">
+            <form class="options" target="_blank">
+                <select class="months" name="birthMonth" id="birthmonth">
                     <option class="monthOpt">Month</option>
                     <option class="monthOpt">January</option>
                     <option class="monthOpt">February</option>
@@ -117,7 +163,7 @@
                     <option class="monthOpt">November</option>
                     <option class="monthOpt">December</option>
                 </select>
-                <select class="days" name="birthDay">
+                <select class="days" name="birthDay" id = "birthday">
                     <option class="dayOpt">Day</option>
                     <option class="dayOpt">1</option>
                     <option class="dayOpt">2</option>
@@ -151,7 +197,7 @@
                     <option class="dayOpt">30</option>
                     <option class="dayOpt">31</option>
                 </select>
-                <input type="submit">
+                <input type="submit" onclick="goToSign(sunSign)" >
             </form>
         </div>
     </body>
