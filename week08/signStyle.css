@@ -4,7 +4,7 @@ body{
     background-size: cover;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-content: center;
 }
 .moon{
     display: flex;
@@ -25,10 +25,10 @@ body{
 .prompt{
     justify-content: center;
     color: white;
-    font-size: 40px;
+    font-size: 30px;
     padding: 20px;
 }
-.months .days{
+.monthOpt .dayOpt{
     background-color: white;
     border: none;
     color: navy;
