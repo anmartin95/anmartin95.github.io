@@ -7,101 +7,101 @@
         <title>Calculate Your Sun Sign</title>
     </head>
     <script>
-        // array of signs
-        var signs = ["Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo", "Libra", "Scorpio", "Sagittarius", "Capricorn", "Aquarius", "Pisces"];
         // function to calculate your sun sign
-        function calcSunSign (date, month)
+        function calcSunSign()
         {
+            var date = document.getElementById("birthday").value;
+            var month = document.getElementById("birthmonth").value;
             if (month == "March")
             {
                 if (date <= 20)
-                    document.getElementById("options").innerHTML='<object type="type/html" data="signs/pisces.html" ></object>';
+                    document.getElementById("goToSign").action = "signs/pisces.html";
                 else    
-                    document.getElementById("options").innerHTML='<object type="type/html" data="signs/aries.html" ></object>';
+                    document.getElementById("goToSign").action = "signs/aries.html";
             }
             else if (month == "April")
             {
                 if (date <= 19)
-                    document.getElementById("options").innerHTML='<object type="type/html" data="signs/aries.html" ></object>';
+                    document.getElementById("goToSign").action = "signs/aries.html";
                 else    
-                    document.getElementById("options").innerHTML='<object type="type/html" data="signs/taurus.html" ></object>';
+                    document.getElementById("goToSign").action = "signs/taurus.html";
             }
             else if (month == "May")
             {
                 if (date <= 20)
-                    document.getElementById("options").innerHTML='<object type="type/html" data="signs/taurus.html" ></object>';
+                    document.getElementById("goToSign").action = "signs/taurus.html";
                 else 
-                    document.getElementById("options").innerHTML='<object type="type/html" data="signs/gemini.html" ></object>';
+                    document.getElementById("goToSign").action = "signs/gemini.html";
             }
             else if (month == "June")
             {
                 if (date <= 21)
-                    document.getElementById("options").innerHTML='<object type="type/html" data="signs/gemini.html" ></object>';
+                    document.getElementById("goToSign").action = "signs/gemini.html";
                 else
-                    document.getElementById("options").innerHTML='<object type="type/html" data="signs/cancer.html" ></object>';
+                    document.getElementById("goToSign").action = "signs/cancer.html";
             }
             else if (month == "July")
             {
                 if (date <= 22)
-                    document.getElementById("options").innerHTML='<object type="type/html" data="signs/cancer.html" ></object>';
+                    document.getElementById("goToSign").action = "signs/cancer.html";
                 else
-                    document.getElementById("options").innerHTML='<object type="type/html" data="signs/leo.html" ></object>';
+                    document.getElementById("goToSign").action = "signs/leo.html";
             }
             else if (month == "August")
             {
                 if (date <= 22)
-                    document.getElementById("options").innerHTML='<object type="type/html" data="signs/leo.html" ></object>';
+                    document.getElementById("goToSign").action = "signs/leo.html";
                 else
-                    document.getElementById("options").innerHTML='<object type="type/html" data="signs/virgo.html" ></object>';
+                    document.getElementById("goToSign").action = "signs/virgo.html";
             }
             else if (month == "September")
             {
                 if (date <= 22)
-                    document.getElementById("options").innerHTML='<object type="type/html" data="signs/virgo.html" ></object>';
+                    document.getElementById("goToSign").action = "signs/virgo.html";
                 else
-                    document.getElementById("options").innerHTML='<object type="type/html" data="signs/libra.html" ></object>';
+                    document.getElementById("goToSign").action = "signs/libra.html";
             }
             else if (month == "October")
             {
                 if (date <= 23)
-                    document.getElementById("options").innerHTML='<object type="type/html" data="signs/libra.html" ></object>';
+                    document.getElementById("goToSign").action = "signs/libra.html";
                 else    
-                    document.getElementById("options").innerHTML='<object type="type/html" data="signs/scorpio.html" ></object>';
+                    document.getElementById("goToSign").action = "signs/scorpio.html";
             }
             else if (month == "November")
             {
                 if (date <= 22)
-                    document.getElementById("options").innerHTML='<object type="type/html" data="signs/scorpio.html" ></object>';
+                    document.getElementById("goToSign").action = "signs/scorpio.html";
                 else    
-                    document.getElementById("options").innerHTML='<object type="type/html" data="signs/sagittarius.html" ></object>';
+                    document.getElementById("goToSign").action = "signs/sagittarius.html";
             }
             else if (month == "December")
             {
                 if (date <= 21)
-                    document.getElementById("options").innerHTML='<object type="type/html" data="signs/sagittarius.html" ></object>';
+                    document.getElementById("goToSign").action = "signs/sagittarius.html";
                 else 
-                    document.getElementById("options").innerHTML='<object type="type/html" data="signs/capricorn.html" ></object>';
+                    document.getElementById("goToSign").action = "signs/capricorn.html";
             }
             else if (month == "January")
             {
                 if (date <= 19)
-                    document.getElementById("options").innerHTML='<object type="type/html" data="signs/capricorn.html" ></object>';
+                    document.getElementById("goToSign").action = "signs/capricorn.html";
                 else 
-                    document.getElementById("options").innerHTML='<object type="type/html" data="signs/aquarius.html" ></object>';
+                    document.getElementById("goToSign").action = "signs/aquarius.html";
             }
             else if (month == "February")
             {
                 if (date <= 18)
-                    document.getElementById("options").innerHTML='<object type="type/html" data="signs/aquarius.html" ></object>';
+                    document.getElementById("goToSign").action = "signs/aquarius.html";
                 else 
-                    document.getElementById("options").innerHTML='<object type="type/html" data="signs/pisces.html" ></object>';
+                    document.getElementById("goToSign").action = "signs/pisces.html";
             }
         }
     </script>
     <body>
         <div class="moon">
             <div class="prompt">Enter Your Birthday</div>
-            <form id="options" target="_blank">
+            <form id="goToSign" action="error.html">
                 <select class="months" name="birthMonth" id="birthmonth">
                     <option class="monthOpt">Month</option>
                     <option class="monthOpt">January</option>
@@ -151,7 +151,7 @@
                     <option class="dayOpt">30</option>
                     <option class="dayOpt">31</option>
                 </select>
-                <input type="submit" onclick="calcSunSign(document.getElementById(birthday), document.getElementById(birthmonth))" >
+                <input type="submit" onclick="calcSunSign()">
             </form>
         </div>
     </body>
