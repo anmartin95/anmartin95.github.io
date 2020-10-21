@@ -1,11 +1,6 @@
 body{
     font-family: 'Lemonada', cursive;
-}
-.aquarius{
-    background-color: rgb(158, 255, 247);
-}
-.leo{
-    background-color: gold;
+    background-image: linear-gradient(white, rgb(197, 197, 197));
 }
 .loadingSun{
     display: flex;
@@ -13,7 +8,7 @@ body{
     align-items: center;
 }
 .spinningSun{
-    background-color: transparent;
+    color: rgba(red, green, blue, 0);
     animation: rotation 3s infinite linear;
     max-width: 100px;
     max-height: fit-content;
