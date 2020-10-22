@@ -28,3 +28,7 @@ body{
       display: none;
       transition: opacity 3s ease-in;
   }
+  .constImg{
+      max-width: 100px;
+      height: 200px;
+  }
