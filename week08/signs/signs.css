@@ -1,34 +1,50 @@
 body{
     font-family: 'Lemonada', cursive;
-    background-color: linear-gradient(white, rgb(197, 197, 197));
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .loader{
     display: flex;
+    margin-top: 300px;
     justify-content: center;
     align-items: center;
+    border-radius: 50%;
     max-width: 20px;
     height: 20px;
     animation: rotation 3s infinite linear;
 }
-@keyframes rotation {
+@keyframes rotation 
+{
     from {
       transform: rotate(0deg);
     }
     to {
       transform: rotate(359deg);
     }
-  }
-  .main{
-      display: flex;
-      justify-content: center;
-      opacity: 0;
-      display: none;
-      transition: opacity 3s ease-in;
-  }
-  .constImg{
-      max-width: 100px;
-      height: 200px;
-  }
+}
+.main{
+    opacity: 0;
+    display: none;
+    transition: opacity 3s ease-in;
+}
+.constImg{
+    display: flex;
+    justify-self: left;
+    max-width: 300px;
+    height: 400px;
+}
+.symbol{
+    max-width: 200px;
+    height: 175px;
+    margin-top: 50px;
+}
+header{
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px 8px rgb(39, 248, 255) ;
+    background-color: black;
+    width: max-content;
+    padding: 10px;
+}
+
