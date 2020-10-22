@@ -3,12 +3,14 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: black;
 }
+
 .loader{
     display: flex;
-    margin-top: 300px;
     justify-content: center;
     align-items: center;
+    margin-top: 300px;
     border-radius: 50%;
     max-width: 20px;
     height: 20px;
@@ -28,23 +30,69 @@ body{
     display: none;
     transition: opacity 3s ease-in;
 }
-.constImg{
-    display: flex;
-    justify-self: left;
-    max-width: 300px;
-    height: 400px;
-}
 .symbol{
-    max-width: 200px;
-    height: 175px;
-    margin-top: 50px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
 }
 header{
-    font-size: 50px;
+    font-size: 70px;
     color: white;
     text-shadow: 2px 2px 8px rgb(39, 248, 255) ;
     background-color: black;
-    width: max-content;
     padding: 10px;
 }
+main{
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+}
+.constImg{
+    justify-content: center;
+    max-width: 400px;
+    height: 500px;
+    border-radius: 20%;
+    box-shadow: 2px 2px 8px gold;
+}
+.element{
+    justify-content: center;
+    max-width: 700px;
+    height: 170px;
+    margin-left: 30px;
+    border-radius: 20%;
+    box-shadow: 3px 3px 10px gold;
+}
+.container{
+    position: relative;
+}
+.text{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 20%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: white;
+    color: rgb(39, 248, 255);
+    text-shadow: 1px 1px 4px black;
+    box-shadow: 2px 2px 8px gold;
+    text-align: center;
+}
+.container:hover .text{
+    opacity: 1;
+}
+#signText{
+    max-width: 400px;
+    height: 500px;
+}
+#elementText{
+    max-width: 700px;
+    height: 170px;
+    margin-left: 30px;
+}
+
+
 
