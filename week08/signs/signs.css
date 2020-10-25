@@ -49,6 +49,15 @@ header{
     text-shadow: 2px 2px 8px rgb(39, 248, 255);
     box-shadow: 4px 4px 4px rgb(39, 248, 255);
 }
+.pisces{
+    background-color: snow;
+    text-shadow: 2px 2px 8px rgb(98, 0, 117);
+    box-shadow: 4px 4px 8px rgb(98, 0, 117);
+}
+.aries{
+    background-color: rgb(255, 130, 81);
+    text-shadow: 2px 2px 8px white;
+}
 main{
     width: 1000px;
     display: grid;
