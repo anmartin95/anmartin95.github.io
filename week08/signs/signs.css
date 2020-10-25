@@ -35,32 +35,39 @@ body{
     height: 50px;
     display: flex;
     justify-content: center;
+    margin-top: 10px;
 }
 header{
     font-size: 70px;
-    color: white;
-    text-shadow: 2px 2px 8px rgb(39, 248, 255) ;
+    color: gold;
+    box-shadow: 2px 2px 8px gold;
     background-color: black;
     padding: 10px;
 }
+.aquarius{
+    background-color: white;
+    text-shadow: 2px 2px 8px rgb(39, 248, 255);
+    box-shadow: 4px 4px 4px rgb(39, 248, 255);
+}
 main{
     width: 1000px;
-    display: flex;
-    flex-direction: row;
+    display: grid;
 }
 .constImg{
-    justify-content: center;
     max-width: 400px;
     height: 500px;
-    border-radius: 20%;
+    margin-top: 20px;
     box-shadow: 2px 2px 8px gold;
+    grid-column: 1/ span 3;
+    grid-row: 1/span 7;
 }
 .element{
     justify-content: center;
-    max-width: 700px;
+    max-width: 1000px;
     height: 170px;
     margin-left: 30px;
-    border-radius: 20%;
+    margin-top: 20px;
+    background-color: white;
     box-shadow: 3px 3px 10px gold;
 }
 .container{
@@ -72,7 +79,6 @@ main{
     bottom: 0;
     left: 0;
     right: 0;
-    border-radius: 20%;
     opacity: 0;
     transition: .5s ease;
     background-color: white;
