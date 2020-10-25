@@ -71,13 +71,14 @@ main{
     grid-row: 1/span 7;
 }
 .element{
-    justify-content: center;
     max-width: 1000px;
     height: 170px;
     margin-left: 30px;
     margin-top: 20px;
     background-color: white;
     box-shadow: 3px 3px 10px gold;
+    grid-column: 3/ span 6;
+    grid-row: 1/ span 3;
 }
 .container{
     position: relative;
@@ -102,11 +103,13 @@ main{
 #signText{
     max-width: 400px;
     height: 500px;
+    margin-top: 20px;
 }
 #elementText{
-    max-width: 700px;
+    max-width: 1000px;
     height: 170px;
     margin-left: 30px;
+    margin-top: 20px;
 }
 
 
