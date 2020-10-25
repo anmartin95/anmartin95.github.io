@@ -70,6 +70,10 @@ body{
     color: rgb(255, 130, 81);
     box-shadow: rgb(255, 130, 81);
 }
+#taur{
+    color: rgb(12, 122, 85);
+    box-shadow: 1px 1px 4px rgb(12, 122, 85);
+}
 header{
     font-size: 70px;
     padding: 10px;
@@ -106,6 +110,10 @@ a:hover{
 .aries{
     text-shadow: 4px 4px 8px rgb(255, 130, 81);
     color: white;
+}
+.taurus{
+    color: honeydew;
+    text-shadow: rgb(12, 122, 85);
 }
 main{
     width: 1000px;
