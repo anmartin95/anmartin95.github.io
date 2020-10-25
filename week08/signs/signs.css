@@ -2,10 +2,8 @@ body{
     font-family: 'Lemonada', cursive;
     display: flex;
     justify-content: center;
-    align-items: center;
     background-color: black;
 }
-
 .loader{
     display: flex;
     justify-content: center;
@@ -28,57 +26,8 @@ body{
 .main{
     opacity: 0;
     display: none;
+    background-image: url(twinkleLights.gif);
     transition: opacity 3s ease-in;
-}
-.symbol{
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
-header{
-    font-size: 70px;
-    color: gold;
-    box-shadow: 2px 2px 8px gold;
-    background-color: black;
-    padding: 10px;
-}
-.aquarius{
-    background-color: white;
-    text-shadow: 2px 2px 8px rgb(39, 248, 255);
-    box-shadow: 4px 4px 4px rgb(39, 248, 255);
-}
-.pisces{
-    background-color: snow;
-    text-shadow: 2px 2px 8px rgb(98, 0, 117);
-    box-shadow: 4px 4px 8px rgb(98, 0, 117);
-}
-.aries{
-    background-color: rgb(255, 130, 81);
-    text-shadow: 2px 2px 8px white;
-}
-main{
-    width: 1000px;
-    display: grid;
-}
-.constImg{
-    max-width: 400px;
-    height: 500px;
-    margin-top: 20px;
-    box-shadow: 2px 2px 8px gold;
-    grid-column: 1/ span 3;
-    grid-row: 1/span 7;
-}
-.element{
-    max-width: 1000px;
-    height: 170px;
-    margin-left: 30px;
-    margin-top: 20px;
-    background-color: white;
-    box-shadow: 3px 3px 10px gold;
-    grid-column: 3/ span 6;
-    grid-row: 1/ span 3;
 }
 .container{
     position: relative;
@@ -91,26 +40,157 @@ main{
     right: 0;
     opacity: 0;
     transition: .5s ease;
-    background-color: white;
-    color: rgb(39, 248, 255);
-    text-shadow: 1px 1px 4px black;
-    box-shadow: 2px 2px 8px gold;
     text-align: center;
+    background-color: black;
 }
 .container:hover .text{
     opacity: 1;
 }
-#signText{
+.symbol{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    box-shadow: 1px 1px 8px gold;
+    border-radius: 10%;
+}
+#item1{
+    font-size: 33px;
+    background-color: black;
+}
+#aqua{
+    color: rgb(39, 248, 255);
+}
+#pisc{
+    color: rgb(98, 0, 117);
+    box-shadow: 1px 1px 4px rgb(98, 0, 117);
+}
+#ari{
+    color: rgb(255, 130, 81);
+    box-shadow: rgb(255, 130, 81);
+}
+header{
+    font-size: 70px;
+    padding: 10px;
+}
+.home{
+    font-size: 15px;
+    justify-content: start;
+}
+a{
+    font-style: italic;
+    text-decoration: none;
+    color: gold
+}
+a:hover{
+    color: white;
+    text-decoration: none;
+}
+.intro{
+    font-size: 30px;
+    font-style: italic;
+    margin-top: 0%;
+}
+.name{
+    color: gold;
+}
+.aquarius{
+    text-shadow: 2px 2px 8px rgb(39, 248, 255);
+    color: white;
+}
+.pisces{
+    color: snow;
+    text-shadow: 2px 2px 8px rgb(98, 0, 117);
+}
+.aries{
+    text-shadow: 4px 4px 8px rgb(255, 130, 81);
+    color: white;
+}
+main{
+    width: 1000px;
+    display: grid;
+}
+.constImg{
     max-width: 400px;
     height: 500px;
     margin-top: 20px;
+    box-shadow: 1px 1px 8px gold;
 }
-#elementText{
-    max-width: 1000px;
-    height: 170px;
-    margin-left: 30px;
+#item2{
+    grid-area: 1/1/7/3;
+    font-size: 30px;
+}
+.sunInfo{
+    font-size: 20px;
+    color: white;
+    grid-area: 1/3/7/8;
+    padding: 15px;
+}
+.secHeading{
+    color: gold;
+    text-shadow: 2px 2px 4px gold;
+    text-align: center;
+    font-size: 30px;
+}
+.element{
+    max-width: 700px;
+    height: 190px;
     margin-top: 20px;
+    background-color: white;
+    box-shadow: 1px 1px 10px gold;
 }
-
-
+#item3{
+    grid-area: 7/5/9/8;
+    font-size: 30px;
+}
+.others{
+    font-size: 20px;
+    color: white;
+    text-shadow: 4px 4px 8px gold;
+}
+.elementInfo{
+    font-size: 15px;
+    color: white;
+    grid-area: 7/1/9/5;
+    padding: 15px;
+}
+.celebrities{
+    grid-area: 9/1/12/4;
+}
+.celeb{
+    width: 300px;
+    box-shadow: 3px 3px 6px gold;
+}
+.celebName{
+    color: gold;
+    font-size: 20px;
+}
+.planet{
+    grid-area: 9/5/10/8;
+    margin-left: 20px;
+}
+.planetIntro{
+    color: gold;
+    font-size: 40px;
+}
+.planetInfo{
+    font-size: 22px;
+}
+.planetImg{
+    max-width: 600px;
+    border-radius: 50%;
+}
+.quality{
+    grid-area: 10/5/11/8;
+    margin-left: 20px;
+}
+.podcast{
+    grid-area: 11/4/12/8;
+}
+.podIntro{
+    color: gold;
+    font-size: 30px;
+    text-align: center;
+}
 

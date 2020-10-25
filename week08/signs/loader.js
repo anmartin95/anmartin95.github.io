@@ -1,7 +1,7 @@
 const loader = document.querySelector('.loader');
 const main = document.querySelector('.main');
 
-function initial()
+function loadingScreen()
 {
     setTimeout(() => {
         loader.style.opacity = 0;
@@ -11,4 +11,4 @@ function initial()
     }, 3000); // in milliseconds - 'loads' for 3 seconds
 }
 
-initial();
+loadingScreen();
