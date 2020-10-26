@@ -64,15 +64,15 @@ body{
 }
 #pisc{
     color: rgb(98, 0, 117);
-    box-shadow: 1px 1px 4px rgb(98, 0, 117);
 }
 #ari{
     color: rgb(255, 130, 81);
-    box-shadow: rgb(255, 130, 81);
 }
 #taur{
     color: rgb(12, 122, 85);
-    box-shadow: 1px 1px 4px rgb(12, 122, 85);
+}
+#vir{
+    color: rgb(194, 0, 0);
 }
 header{
     font-size: 70px;
@@ -113,7 +113,7 @@ a:hover{
 }
 .taurus{
     color: honeydew;
-    text-shadow: rgb(12, 122, 85);
+    text-shadow: 1px 1px 4px rgb(52, 146, 115);
 }
 main{
     width: 1000px;
