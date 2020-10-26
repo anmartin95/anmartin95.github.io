@@ -193,8 +193,11 @@ main{
     grid-area: 10/5/11/8;
     margin-left: 20px;
 }
+.compatible{
+    grid-area: 11/5/12/8;
+}
 .podcast{
-    grid-area: 11/4/12/8;
+    grid-area: 12/4/13/8;
 }
 .podIntro{
     color: gold;
