@@ -185,7 +185,7 @@ main{
 .elementInfo{
     font-size: 15px;
     color: white;
-    grid-area: 7/1/9/5;
+    grid-area: 7/1/8/5;
     padding: 15px;
 }
 .celebrities{
@@ -200,7 +200,7 @@ main{
     font-size: 20px;
 }
 .planet{
-    grid-area: 9/5/10/8;
+    grid-area: 8/5/10/8;
     margin-left: 20px;
 }
 .planetIntro{
@@ -220,10 +220,12 @@ main{
     margin-left: 20px;
     font-size: 18px;
 }
+.funfacts{
+    grid-area: 11/5/12/8;
+}
 .compatible{
     margin-top: 500px;
     margin-bottom: 20px;
-    grid-area: 10/5/11/8;
     font-size: 23px;
     text-align: center;
 }
@@ -231,7 +233,7 @@ main{
     margin-top: 660px;
 }
 .podcast{
-    grid-area: 11/4/12/8;
+    grid-area: 12/4/13/8;
 }
 .podIntro{
     color: gold;
