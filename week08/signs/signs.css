@@ -228,6 +228,13 @@ main{
     font-size: 23px;
     text-align: center;
 }
+.stereotypes{
+    font-size: 25px;
+}
+.podcast{
+    grid-area: 11/2/12/7;
+    margin-top: 240px;
+}
 .podIntro{
     color: gold;
     font-size: 25px;
