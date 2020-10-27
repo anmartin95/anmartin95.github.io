@@ -224,13 +224,9 @@ main{
     grid-area: 11/5/12/8;
 }
 .compatible{
-    margin-top: 500px;
     margin-bottom: 20px;
     font-size: 23px;
     text-align: center;
-}
-#addMargin{
-    margin-top: 660px;
 }
 .podIntro{
     color: gold;
