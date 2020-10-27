@@ -189,7 +189,7 @@ main{
     padding: 15px;
 }
 .celebrities{
-    grid-area: 9/1/12/4;
+    grid-area: 8/1/12/4;
 }
 .celeb{
     width: 300px;
@@ -220,7 +220,7 @@ main{
     margin-left: 20px;
     font-size: 18px;
 }
-.funfacts{
+.otherInfo{
     grid-area: 11/5/12/8;
 }
 .compatible{
@@ -231,9 +231,6 @@ main{
 }
 #addMargin{
     margin-top: 660px;
-}
-.podcast{
-    grid-area: 12/4/13/8;
 }
 .podIntro{
     color: gold;
