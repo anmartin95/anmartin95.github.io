@@ -87,7 +87,10 @@ body{
     color: rgb(255, 119, 85);
 }
 #taur{
-    color: rgb(12, 122, 85);
+    color: rgb(0, 163, 122);
+}
+#gem{
+    color: rgb(96, 34, 240);
 }
 #vir{
     color: rgb(194, 0, 0);
@@ -131,7 +134,11 @@ a:hover{
 }
 .taurus{
     color: honeydew;
-    text-shadow: 1px 1px 4px rgb(52, 146, 115);
+    text-shadow: 1px 1px 4px rgb(55, 240, 138);
+}
+.gemini{
+    color: white;
+    text-shadow: 4px 4px 8px rgb(96, 34, 240);
 }
 main{
     width: 1000px;
@@ -173,6 +180,7 @@ main{
     color: white;
     text-shadow: 4px 4px 8px gold;
     margin-top: 20px;
+    text-align: center;
 }
 .elementInfo{
     font-size: 15px;
@@ -203,23 +211,27 @@ main{
     font-size: 22px;
 }
 .planetImg{
-    max-width: 600px;
+    width: 600px;
     border-radius: 50%;
 }
 .quality{
+    margin-top: 50px;
     grid-area: 10/5/11/8;
     margin-left: 20px;
     font-size: 18px;
 }
 .compatible{
-    margin-top: 1000px;
-    margin-bottom: 30px;
-    grid-area: 11/5/12/8;
+    margin-top: 500px;
+    margin-bottom: 20px;
+    grid-area: 10/5/11/8;
     font-size: 23px;
     text-align: center;
 }
+#addMargin{
+    margin-top: 660px;
+}
 .podcast{
-    grid-area: 12/4/13/8;
+    grid-area: 11/4/12/8;
 }
 .podIntro{
     color: gold;
