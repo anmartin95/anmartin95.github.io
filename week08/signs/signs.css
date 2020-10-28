@@ -81,7 +81,7 @@ body{
     color: rgb(255, 119, 85);
 }
 #taur{
-    color: rgb(0, 163, 122);
+    color: rgb(55, 240, 138);
 }
 #gem{
     color: rgb(96, 34, 240);
@@ -145,7 +145,7 @@ a:hover{
     color: white;
 }
 .taurus{
-    color: honeydew;
+    color: white;
     text-shadow: 2px 2px 8px rgb(55, 240, 138);
 }
 .gemini{
