@@ -89,11 +89,14 @@ body{
 #can{
     color: rgb(255, 140, 159);
 }
-#vir{
-    color: rgb(194, 0, 0);
-}
 #le{
-    color: rgb(255, 153, 0);
+    color: rgb(255, 145, 0);
+}
+#vir{
+    color: rgb(224, 126, 108);
+}
+#lib{
+    color: blue;
 }
 #cap{
     color: rgb(216, 122, 0);
@@ -149,17 +152,21 @@ a:hover{
     color: white;
     text-shadow: 4px 4px 8px rgb(96, 34, 240);
 }
-.virgo{
-    color: rgb(253, 242, 228);
-    text-shadow: 4px 4px 8px rgb(194, 0, 0);
-}
 .cancer{
     color: white;
     text-shadow: 4px 4px 8px rgb(255, 140, 159);
 }
 .leo{
     color: white;
-    text-shadow: 4px 4px 8px rgb(255, 153, 0);
+    text-shadow: 4px 4px 8px rgb(255, 145, 0);
+}
+.virgo{
+    color: rgb(253, 242, 228);
+    text-shadow: 4px 4px 8px rgb(224, 126, 108);
+}
+.libra{
+    color: snow;
+    text-shadow: 4px 4px 8px blue;
 }
 .capricorn{
     color: rgb(255, 249, 249);
