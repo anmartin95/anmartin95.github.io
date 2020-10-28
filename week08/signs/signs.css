@@ -26,7 +26,7 @@ body{
 .main{
     opacity: 0;
     display: none;
-    background-image: url(twinkleLights.gif);
+    background-image: url(pictures/twinkleLights.gif);
     transition: opacity 3s ease-in;
 }
 .container{
@@ -92,8 +92,14 @@ body{
 #gem{
     color: rgb(96, 34, 240);
 }
+#can{
+    color: rgb(255, 140, 159);
+}
 #vir{
     color: rgb(194, 0, 0);
+}
+#le{
+    color: rgb(255, 153, 0);
 }
 header{
     font-size: 70px;
@@ -134,11 +140,23 @@ a:hover{
 }
 .taurus{
     color: honeydew;
-    text-shadow: 1px 1px 4px rgb(55, 240, 138);
+    text-shadow: 2px 2px 8px rgb(55, 240, 138);
 }
 .gemini{
     color: white;
     text-shadow: 4px 4px 8px rgb(96, 34, 240);
+}
+.virgo{
+    color: rgb(253, 242, 228);
+    text-shadow: 4px 4px 8px rgb(194, 0, 0);
+}
+.cancer{
+    color: white;
+    text-shadow: 4px 4px 8px rgb(255, 140, 159);
+}
+.leo{
+    color: white;
+    text-shadow: 4px 4px 8px rgb(255, 153, 0);
 }
 main{
     width: 1000px;
@@ -151,12 +169,12 @@ main{
     box-shadow: 1px 1px 8px gold;
 }
 #item2{
-    grid-area: 1/1/7/3;
+    grid-area: 1/1/3/3;
     font-size: 30px;
 }
 .sunInfo{
     font-size: 22px;
-    grid-area: 1/3/7/8;
+    grid-area: 1/3/3/8;
     padding: 15px;
 }
 .secHeading{
@@ -172,7 +190,7 @@ main{
     box-shadow: 1px 1px 8px gold;
 }
 #item3{
-    grid-area: 7/5/9/8;
+    grid-area: 3/5/4/8;
     font-size: 30px;
 }
 .others{
@@ -185,11 +203,11 @@ main{
 .elementInfo{
     font-size: 15px;
     color: white;
-    grid-area: 7/1/8/5;
+    grid-area: 3/1/4/5;
     padding: 15px;
 }
 .celebrities{
-    grid-area: 8/1/12/4;
+    grid-area: 4/1/12/4;
 }
 .celeb{
     width: 300px;
@@ -200,7 +218,7 @@ main{
     font-size: 20px;
 }
 .planet{
-    grid-area: 8/5/10/8;
+    grid-area: 4/5/6/8;
     margin-left: 20px;
 }
 .planetIntro{
@@ -208,7 +226,7 @@ main{
     font-size: 40px;
 }
 .planetInfo{
-    font-size: 22px;
+    font-size: 23px;
 }
 .planetImg{
     width: 600px;
@@ -216,28 +234,32 @@ main{
 }
 .quality{
     margin-top: 50px;
-    grid-area: 10/5/11/8;
+    grid-area: 6/5/7/8;
     margin-left: 20px;
-    font-size: 18px;
+    font-size: 21px;
 }
 .otherInfo{
-    grid-area: 11/5/12/8;
+    grid-area: 7/5/8/8;
+}
+.stereotype{
+    margin-top: 50px;
+    font-size: 25px;
+    text-align: center;
+    box-shadow: 1px 1px 20px gold;
 }
 .compatible{
-    margin-bottom: 20px;
+    margin-top: 50px;
     font-size: 23px;
     text-align: center;
 }
-.stereotype{
-    font-size: 25px;
-}
 .podcast{
-    grid-area: 11/2/12/7;
-    margin-top: 240px;
+    grid-area: 8/2/9/7;
+    margin-top: 80px;
 }
 .podIntro{
     color: gold;
     font-size: 25px;
     text-align: center;
 }
+
 
