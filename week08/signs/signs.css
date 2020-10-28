@@ -77,12 +77,6 @@ body{
     font-size: 33px;
     background-color: black;
 }
-#aqua{
-    color: rgb(39, 248, 255);
-}
-#pisc{
-    color: rgb(244, 126, 255);
-}
 #ari{
     color: rgb(255, 119, 85);
 }
@@ -100,6 +94,15 @@ body{
 }
 #le{
     color: rgb(255, 153, 0);
+}
+#cap{
+    color: rgb(216, 122, 0);
+}
+#aqua{
+    color: rgb(39, 248, 255);
+}
+#pisc{
+    color: rgb(244, 126, 255);
 }
 header{
     font-size: 70px;
@@ -157,6 +160,10 @@ a:hover{
 .leo{
     color: white;
     text-shadow: 4px 4px 8px rgb(255, 153, 0);
+}
+.capricorn{
+    color: rgb(255, 249, 249);
+    text-shadow: 4px 4px 8px rgb(216, 122, 0);
 }
 main{
     width: 1000px;
