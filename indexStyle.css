@@ -3,10 +3,7 @@ body{
     color: rgb(255, 243, 234);
     font-family: 'Source Code Pro', monospace;
     display: flex;
-}
-main{
-    background-color: rgb(255, 243, 234);
-    font-size: 25px;
+    justify-content: center;
 }
 h1{
     justify-content: center;
@@ -14,6 +11,10 @@ h1{
     font-size: 30px;
     background-color: darksalmon;
     color: rgb(255, 243, 234);
+}
+main{
+    background-color: rgb(255, 243, 234);
+    font-size: 25px;
 }
 h1:hover{
     background-image: url(myStuff/confetti.gif);
@@ -27,6 +28,12 @@ a:hover{
 .stuff{
     justify-content: space-around;
 }
+.probtn{
+    background-color: thistle;
+    color: rgb(255, 243, 234);
+    padding: 15px;
+    border: none;
+}
 .projects{
     position: relative;
     display: inline-block;
@@ -36,6 +43,16 @@ a:hover{
     position: absolute;
     background-color: rgb(255, 243, 234);
     color: darksalmon;
+    z-index: 1;
+}
+.projectContent a:hover{
+    background-color: #ddd;
+}
+.projects:hover .projectContent{
+    display: block;
+}
+.projectContent:hover .proBtn{
+    background-color: grey;
 }
 .responses{
     position: relative;
@@ -47,12 +64,7 @@ a:hover{
     position: absolute;
     background-color: rgb(255, 243, 234);
     color: darksalmon;
-}
-.btn{
-    background-color: thistle;
-    color: rgb(255, 243, 234);
-    padding: 15px;
-    border: none;
+    z-index: 1;
 }
 .smallMoon{
     margin-top: 100px;
