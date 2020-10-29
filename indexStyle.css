@@ -14,6 +14,7 @@ h1{
 main{
     background-color: rgb(255, 243, 234);
     font-size: 25px;
+    max-width: 1000px;
 }
 h1:hover{
     background-image: url(myStuff/confetti.gif);
@@ -77,13 +78,13 @@ a:hover{
     color: darksalmon;
     z-index: 1;
 }
-.projectContent a:hover{
+.responseContent a:hover{
     background-color: #ddd;
 }
-.projects:hover .projectContent{
+.responses:hover .responseContent{
     display: block;
 }
-.projectContent:hover .proBtn{
+.responseContent:hover .resBtn{
     background-color: darkmagenta;
     color: rgb(255, 243, 234);
 }
