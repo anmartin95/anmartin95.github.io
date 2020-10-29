@@ -21,9 +21,11 @@ h1:hover{
 }
 a{
     text-decoration: none;
+    color: grey;
 }
 a:hover{
     text-decoration: none;
+    color: lightblue;
 }
 .stuff{
     justify-content: space-around;
@@ -88,4 +90,7 @@ a:hover{
     from {border: transparent}
     to {border-left: 50px solid white;
         border-radius: 100%;}
+}
+#message{
+    justify-content: center;
 }
