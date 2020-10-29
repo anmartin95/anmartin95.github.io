@@ -2,6 +2,12 @@ main{
     background-color: darksalmon;
     color: rgb(255, 243, 234);
 }
+h1{
+    background-color: rgb(255, 250, 221);
+}
+h1:hover{
+    background-image: url(myStuff/confetti.gif);
+}
 .smallMoon{
     margin-top: 100px;
     display: flex;
