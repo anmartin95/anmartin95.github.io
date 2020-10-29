@@ -8,9 +8,8 @@ body{
 h1{
     justify-content: center;
     padding: 40px;
-    font-size: 30px;
-    background-color: darksalmon;
-    color: rgb(255, 243, 234);
+    font-size: 50px;
+    color: darksalmon;
 }
 main{
     background-color: rgb(255, 243, 234);
@@ -35,6 +34,8 @@ a:hover{
     color: rgb(255, 243, 234);
     padding: 15px;
     border: none;
+    font-size: 30px;
+    width: 100px;
 }
 .projects{
     position: relative;
@@ -54,10 +55,18 @@ a:hover{
     display: block;
 }
 .projectContent:hover .proBtn{
-    background-color: grey;
+    background-color: darkmagenta;
+    color: rgb(255, 243, 234);
+}
+.resbtn{
+    background-color: thistle;
+    color: rgb(255, 243, 234);
+    padding: 15px;
+    border: none;
+    font-size: 30px;
+    width: 100px;
 }
 .responses{
-    position: relative;
     position: relative;
     display: inline-block;
 }
@@ -68,13 +77,23 @@ a:hover{
     color: darksalmon;
     z-index: 1;
 }
+.projectContent a:hover{
+    background-color: #ddd;
+}
+.projects:hover .projectContent{
+    display: block;
+}
+.projectContent:hover .proBtn{
+    background-color: darkmagenta;
+    color: rgb(255, 243, 234);
+}
 .smallMoon{
     margin-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    max-width: 200px;
+    max-width: 230px;
     height: 150px;
     padding: 20px;
 }
