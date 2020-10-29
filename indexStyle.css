@@ -14,7 +14,8 @@ h1{
 main{
     background-color: rgb(255, 243, 234);
     font-size: 25px;
-    max-width: 1000px;
+    width: 1000px;
+    height: max-content;
 }
 h1:hover{
     background-image: url(myStuff/confetti.gif);
