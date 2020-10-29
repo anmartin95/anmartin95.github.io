@@ -2,7 +2,7 @@ body{
     font-family: 'Lemonada', cursive;
     display: flex;
     justify-content: center;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 }
 .loader{
     display: flex;
@@ -96,7 +96,10 @@ body{
     color: rgb(224, 126, 108);
 }
 #lib{
-    color: blue;
+    color: rgb(0, 38, 255);
+}
+#scorp{
+    color: rgb(214, 0, 0);
 }
 #cap{
     color: rgb(216, 122, 0);
@@ -166,7 +169,11 @@ a:hover{
 }
 .libra{
     color: snow;
-    text-shadow: 4px 4px 8px blue;
+    text-shadow: 4px 4px 8px rgb(0, 38, 255);
+}
+.scorpio{
+    color: white;
+    text-shadow: 4px 4px 8px rgb(214, 0, 0);
 }
 .capricorn{
     color: rgb(255, 249, 249);
