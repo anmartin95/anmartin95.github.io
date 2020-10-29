@@ -24,13 +24,43 @@ a{
 a:hover{
     text-decoration: none;
 }
+.stuff{
+    justify-content: space-around;
+}
+.projects{
+    position: relative;
+    display: inline-block;
+}
+.projectContent{
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 243, 234);
+    color: darksalmon;
+}
+.responses{
+    position: relative;
+    position: relative;
+    display: inline-block;
+}
+.responseContent{
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 243, 234);
+    color: darksalmon;
+}
+.btn{
+    background-color: thistle;
+    color: rgb(255, 243, 234);
+    padding: 15px;
+    border: none;
+}
 .smallMoon{
     margin-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    max-width: 300px;
+    max-width: 200px;
     height: 150px;
     padding: 20px;
 }
