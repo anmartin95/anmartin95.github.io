@@ -101,6 +101,9 @@ body{
 #scorp{
     color: rgb(214, 0, 0);
 }
+#sag{
+    color: rgb(129, 131, 255);
+}
 #cap{
     color: rgb(216, 122, 0);
 }
@@ -135,14 +138,6 @@ a:hover{
 .name{
     color: gold;
 }
-.aquarius{
-    text-shadow: 2px 2px 8px rgb(39, 248, 255);
-    color: white;
-}
-.pisces{
-    color: snow;
-    text-shadow: 4px 4px 8px rgb(241, 91, 255);
-}
 .aries{
     text-shadow: 4px 4px 8px rgb(255, 119, 85);
     color: white;
@@ -175,9 +170,21 @@ a:hover{
     color: white;
     text-shadow: 4px 4px 8px rgb(214, 0, 0);
 }
+.sagittarius{
+    color: white;
+    text-shadow: 4px 4px 8px rgb(129, 131, 255)
+}
 .capricorn{
     color: rgb(255, 249, 249);
     text-shadow: 4px 4px 8px rgb(216, 122, 0);
+}
+.aquarius{
+    text-shadow: 2px 2px 8px rgb(39, 248, 255);
+    color: white;
+}
+.pisces{
+    color: snow;
+    text-shadow: 4px 4px 8px rgb(241, 91, 255);
 }
 main{
     width: 1000px;
