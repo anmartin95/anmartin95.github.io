@@ -35,7 +35,7 @@ a:hover{
     color: rgb(255, 243, 234);
     padding: 15px;
     border: none;
-    font-size: 30px;
+    font-size: 50px;
     width: 100px;
 }
 .projects{
@@ -64,7 +64,7 @@ a:hover{
     color: rgb(255, 243, 234);
     padding: 15px;
     border: none;
-    font-size: 30px;
+    font-size: 50px;
     width: 100px;
 }
 .responses{
@@ -89,7 +89,6 @@ a:hover{
     color: rgb(255, 243, 234);
 }
 .smallMoon{
-    margin-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
