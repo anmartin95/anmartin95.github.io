@@ -101,9 +101,9 @@ a:hover{
 .smallMoon{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-self: center;
     flex-direction: column;
-    max-width: 230px;
+    max-width: 270px;
     height: 150px;
     padding: 20px;
 }
