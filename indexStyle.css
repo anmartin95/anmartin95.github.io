@@ -98,6 +98,10 @@ a:hover{
     background-color: darkmagenta;
     color: rgb(255, 243, 234);
 }
+#message{
+    background-color: thistle;
+    box-shadow: 1px 1px 8px rgb(139, 139, 139);
+}
 .smallMoon{
     display: flex;
     justify-content: center;
