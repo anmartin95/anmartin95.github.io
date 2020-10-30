@@ -43,6 +43,7 @@ a:hover{
     border: none;
     font-size: 50px;
     width: 400px;
+    box-shadow: 4px 4px 8px rgb(139, 139, 139);
 }
 .projects{
     position: relative;
@@ -54,7 +55,6 @@ a:hover{
     background-color: rgb(255, 243, 234);
     color: darksalmon;
     z-index: 1;
-
 }
 .projectContent a:hover{
     background-color: gold;
@@ -74,6 +74,7 @@ a:hover{
     border: none;
     font-size: 50px;
     width: 400px;
+    box-shadow: 4px 4px 8px rgb(139, 139, 139);
 }
 .responses{
     position: relative;
