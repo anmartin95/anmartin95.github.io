@@ -10,15 +10,19 @@ h1{
     padding: 40px;
     font-size: 50px;
     color: darksalmon;
+    box-shadow: 1px 1px 8px rgb(139, 139, 139);
 }
 main{
     background-color: rgb(255, 243, 234);
     font-size: 25px;
     width: 1000px;
     height: max-content;
+    box-shadow: 1px 1px 8px rgb(139, 139, 139);
 }
 h1:hover{
     background-image: url(myStuff/confetti.gif);
+    box-shadow: 1px 1px 10px gold;
+    transition: ease-in-out;
 }
 a{
     text-decoration: none;
@@ -26,9 +30,10 @@ a{
 }
 a:hover{
     text-decoration: none;
-    color: lightblue;
+    color: gold;
 }
 .stuff{
+    display: flex;
     justify-content: space-around;
 }
 .probtn{
@@ -51,7 +56,7 @@ a:hover{
     z-index: 1;
 }
 .projectContent a:hover{
-    background-color: #ddd;
+    background-color: gold;
 }
 .projects:hover .projectContent{
     display: block;
@@ -66,7 +71,7 @@ a:hover{
     padding: 15px;
     border: none;
     font-size: 50px;
-    width: 100px;
+    width: 400px;
 }
 .responses{
     position: relative;
@@ -80,7 +85,7 @@ a:hover{
     z-index: 1;
 }
 .responseContent a:hover{
-    background-color: #ddd;
+    background-color: gold;
 }
 .responses:hover .responseContent{
     display: block;
