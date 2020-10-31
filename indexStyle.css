@@ -40,6 +40,10 @@ a:hover{
 .border{
     justify-content: space-between;
 }
+img{
+    background-color: rgb(255, 243, 234);
+    color: rgb(255, 243, 234);
+}
 .stuff{
     display: flex;
     justify-content: space-around;
