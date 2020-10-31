@@ -22,6 +22,7 @@ main{
     width: 1000px;
     height: max-content;
     box-shadow: 1px 1px 8px rgb(139, 139, 139);
+    margin-bottom: 400px;
 }
 h1:hover{
     background-image: url(myStuff/confetti.gif);
