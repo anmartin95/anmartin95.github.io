@@ -35,14 +35,9 @@ a{
 a:hover{
     text-decoration: none;
     color: gold;
-    background-image: url(myStuff/subtleSparkle.gif);
-}
-.border{
-    justify-content: space-between;
 }
 img{
-    background-color: rgb(255, 243, 234);
-    color: rgb(255, 243, 234);
+    border-radius: 50%;
     height: 150px;
 }
 .stuff{
@@ -111,10 +106,9 @@ img{
     background-color: darkmagenta;
     color: rgb(255, 243, 234);
 }
-#message{
-    background-color: thistle;
-    box-shadow: 1px 1px 8px rgb(139, 139, 139);
-    width: 300px;
+.message{
+    color: thistle;
+    justify-content: space-between;
 }
 .smallMoon{
     display: flex;
