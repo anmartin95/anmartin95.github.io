@@ -42,8 +42,6 @@ a:hover{
     justify-content: center;
     align-self: center;
     flex-direction: column;
-    max-width: 270px;
-    height: 150px;
     padding: 20px;
 }
 .mePage:hover .sunflower{
