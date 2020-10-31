@@ -30,12 +30,15 @@ h1:hover{
 }
 a{
     text-decoration: none;
-    color: grey;
+    color: rgb(139, 139, 139);
 }
 a:hover{
     text-decoration: none;
     color: gold;
     background-image: url(myStuff/subtleSparkle.gif);
+}
+.border{
+    justify-content: space-between;
 }
 .stuff{
     display: flex;
@@ -62,7 +65,7 @@ a:hover{
     z-index: 1;
 }
 .projectContent a:hover{
-    background-color: rgb(207, 96, 96);
+    background-color: darksalmon;
     color: gold;
 }
 .projects:hover .projectContent{
@@ -93,7 +96,7 @@ a:hover{
     z-index: 1;
 }
 .responseContent a:hover{
-    background-color: rgb(207, 96, 96);
+    background-color: darksalmon;
     color: gold;
 }
 .responses:hover .responseContent{
