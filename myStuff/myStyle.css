@@ -9,3 +9,9 @@ h1{
     font-size: 60px;
     text-shadow: 1px 1px 8px rgb(67, 78, 78);
 }
+.row{
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    justify-content: space-around;
+}
