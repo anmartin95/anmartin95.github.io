@@ -36,9 +36,27 @@ a:hover{
     text-decoration: none;
     color: gold;
 }
-img{
+.sunflower{
     border-radius: 50%;
     height: 150px;
+}
+.mePage{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+    max-width: 270px;
+    height: 150px;
+    padding: 20px;
+}
+.mePage:hover .sunflower{
+    animation: spin 4s infinite linear;
+}
+@keyframes spin {
+    from 
+    {transform: rotate(0deg);}
+    to 
+    {transform: rotate(359deg);}
 }
 .stuff{
     display: flex;
@@ -131,7 +149,4 @@ img{
     from {border: transparent}
     to {border-left: 40px solid white;
         border-radius: 100%;}
-}
-#message{
-    justify-content: center;
 }
