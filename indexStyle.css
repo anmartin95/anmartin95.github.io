@@ -31,6 +31,7 @@ a{
 a:hover{
     text-decoration: none;
     color: gold;
+    background-image: url(myStuff/subtleSparkle.gif);
 }
 .stuff{
     display: flex;
@@ -57,8 +58,8 @@ a:hover{
     z-index: 1;
 }
 .projectContent a:hover{
-    background-color: gold;
-    color: rgb(207, 96, 96);
+    background-color: rgb(207, 96, 96);
+    color: gold;
 }
 .projects:hover .projectContent{
     display: block;
@@ -87,8 +88,8 @@ a:hover{
     z-index: 1;
 }
 .responseContent a:hover{
-    background-color: gold;
-    color: rgb(207, 96, 96);
+    background-color: rgb(207, 96, 96);
+    color: gold;
 }
 .responses:hover .responseContent{
     display: block;
@@ -100,6 +101,7 @@ a:hover{
 #message{
     background-color: thistle;
     box-shadow: 1px 1px 8px rgb(139, 139, 139);
+    width: 200px;
 }
 .smallMoon{
     display: flex;
@@ -120,7 +122,7 @@ a:hover{
 }
 @keyframes crescent {
     from {border: transparent}
-    to {border-left: 50px solid white;
+    to {border-left: 40px solid white;
         border-radius: 100%;}
 }
 #message{
