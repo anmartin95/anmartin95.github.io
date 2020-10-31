@@ -43,6 +43,7 @@ a:hover{
 img{
     background-color: rgb(255, 243, 234);
     color: rgb(255, 243, 234);
+    height: 150px;
 }
 .stuff{
     display: flex;
