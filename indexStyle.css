@@ -4,10 +4,7 @@ body{
     font-family: 'Source Code Pro', monospace;
     display: flex;
     justify-content: center;
-    border-image: url(myStuff/merryChristmas.gif);
 }
-.xmasLights{
-    max-width: max-content;
 }
 h1{
     justify-content: center;
