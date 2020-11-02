@@ -123,6 +123,7 @@ a:hover{
 .message{
     color: thistle;
     justify-content: space-between;
+    flex-direction: row;
 }
 .smallMoon{
     display: flex;
