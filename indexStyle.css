@@ -35,12 +35,10 @@ a:hover{
 }
 .sunflower{
     border-radius: 50%;
-    height: 150px;
-    width: 150px;
-    display: flex;
-    float: right;
+    height: 50px;
+    width: 50px;
 }
-.sunflower:hover {
+h1:hover .sunflower{
     animation: spin 5s infinite linear;
 }
 @keyframes spin {
