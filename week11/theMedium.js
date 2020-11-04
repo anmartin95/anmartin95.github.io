@@ -9,5 +9,5 @@ theButton.addEventListener('click', theClick);
 function theClick(){
     console.log("click for election updates");
     const randSite = sites[Math.floor(Math.random()*sites.length)];
-    location.replace(randSite);
+    location.href(randSite);
 }
