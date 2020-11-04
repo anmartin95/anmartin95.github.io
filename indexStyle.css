@@ -37,16 +37,11 @@ a:hover{
     border-radius: 50%;
     height: 150px;
     width: 150px;
-}
-.mePage{
     display: flex;
-    justify-content: center;
-    align-self: center;
-    flex-direction: column;
-    padding: 20px;
+    float: right;
 }
-.mePage:hover .sunflower{
-    animation: spin 4s infinite linear;
+.sunflower:hover {
+    animation: spin 5s infinite linear;
 }
 @keyframes spin {
     from 
@@ -124,6 +119,10 @@ a:hover{
     color: thistle;
     justify-content: space-between;
     flex-direction: row;
+}
+.container{
+    display: flex;
+    justify-content: center;
 }
 .smallMoon{
     display: flex;
