@@ -37,6 +37,8 @@ a:hover{
     border-radius: 50%;
     height: 50px;
     width: 50px;
+    display: flex;
+    float: right;
 }
 h1:hover .sunflower{
     animation: spin 5s infinite linear;
