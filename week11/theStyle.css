@@ -1,3 +1,4 @@
+
 div {
     display: flex;
 }
@@ -13,4 +14,7 @@ img{
 button:hover {
     background-color: blue;
     border: 5px solid rgb(0,0,0);
+}
+body {
+    background-color: rgb(63, 63, 160);
 }
