@@ -15,9 +15,6 @@ function randOrder(){
     console.log(order);
 }
 function startGame() {
-    $('button').click(function(){
-        window.location.href='game.html';
-     })
     randOrder();
     myGameArea.start();
 }
@@ -37,21 +34,24 @@ function randObj(){
     var img = "images/" + newObj + ".jpg";
     return img;
 }
+var temp = randObj();
+console.log(temp);
 
 function generateNew(){
     // generating new object every 3 seconds
     setInterval(function(){
-        var myObject = new thing(20, 30, randObj(), 10, 120, "image");
+        var myObject = new newObj(20, 30, temp, 10, 120, "image");
         }, 3000);
-    
-
 }
 function newImg (width, height, image, x, y, type){
-    $this.css("background-image", img);
-    $this.width() = 20;
-    this.height() = 30;
+    this.type = type;
+    if (type == "image"){
+        this.image = new Image();
+        this.image.src = image;
+    }
+    this.width = width;
+    this.height = height;
 
-    
 
 }
 
