@@ -34,13 +34,13 @@ function randObj(){
     var img = "images/" + newObj + ".jpg";
     return img;
 }
-var temp = randObj();
-console.log(temp);
+var temporary = randObj();
+console.log(temporary);
 
 function generateNew(){
     // generating new object every 3 seconds
     setInterval(function(){
-        var myObject = new newObj(20, 30, temp, 10, 120, "image");
+        var myObject = new newObj(20, 30, temporary, 10, 120, "image");
         }, 3000);
 }
 function newImg (width, height, image, x, y, type){
@@ -51,6 +51,9 @@ function newImg (width, height, image, x, y, type){
     }
     this.width = width;
     this.height = height;
+    this.speed = 1;
+    this.x = x;
+    this.y = y;
 
 
 }
