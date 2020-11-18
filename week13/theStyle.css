@@ -1,12 +1,40 @@
 body{
-font-family: 'Crete Round', serif;
+    font-family: 'Crete Round', serif;
 }
 h1{
-    color: brown;
+    color: rgb(87, 28, 28);
+    font-size: 100px;
+    border-style: double;
+    border-width: thick;
+    border-color: rgb(87, 28, 28);
+}
+h2{
+    font-size: 75px;
+    
 }
 .order{
     font-family: 'Cedarville Cursive', cursive;
 }
 img{
     width: 20px;
+}
+p{
+    font-size: 50px;
+}
+.onclick {
+    background-color: rgb(87, 28, 28);
+    color: tan;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+html{
+    background-color: tan;
+    display: flex;
+    justify-content: center;
 }

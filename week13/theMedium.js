@@ -1,8 +1,15 @@
+// arrays of order options
 const milks = ["whole milk", "skim milk", "2% milk", "oat milk", "almond milk", "coconut milk", "soy milk", "no milk", "cream", "foam"];
 const addIns = ["splenda", "sweet n low", "cinnamon", "sugar", "no sugar"];
 const syrups = ["caramel", "vanilla", "mocha", "hazelnut", "no", "pumpkin spice", "white chocolate"];
 const drinks = ["dark roast", "light roast", "medium roast", "americano", "espresso", "macchiato", "latte", "cold brew", "green tea", "black tea", "chai"];
 const temp = ["hot", "iced"];
+
+// global variables
+var myfallingObject;
+var myCup;
+var myScore;
+var myOrder;
 
 // function to generate new coffee order each game
 function randOrder(){
@@ -11,17 +18,13 @@ function randOrder(){
     const randSyrup = syrups[Math.floor(Math.random()* syrups.length)];
     const randDrink = drinks[Math.floor(Math.random()* drinks.length)];
     const randTemp = temp[Math.floor(Math.random()* temp.length)];
-    const order = randTemp + " " + randDrink + " with " + randMilk + ", " + randAddIn + ", and " + randSyrup + " syrup";
-    console.log(order);
+    myOrder = randTemp + " " + randDrink + " with " + randMilk + ", " + randAddIn + ", and " + randSyrup + " syrup";
+    console.log(myOrder);
+    document.write(myOrder);
 }
 
-var myfallingObject;
-var myCup;
-var myScore;
-var myOrder;
-
 function startGame() {
-    myOrder = randOrder();
+    randOrder();
     myGameArea.start();
 }
 var myGameArea = {
