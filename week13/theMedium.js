@@ -18,9 +18,10 @@ function randOrder(){
 var myfallingObject;
 var myCup;
 var myScore;
+var myOrder;
 
 function startGame() {
-    randOrder();
+    myOrder = randOrder();
     myGameArea.start();
 }
 var myGameArea = {
@@ -54,11 +55,10 @@ function randObj(){
     return img;
 }
 var temporary = randObj();
-
 function generateNew(){
     // generating new object every 3 seconds
     setInterval(function(){
-        var myObject = new newImg(20, 30, temporary, 10, 120, "image");
+        myfallingObject = new newImg(20, 30, temporary, 10, 120, "image");
         }, 3000);
 }
 function newImg (width, height, image, x, y, type){
