@@ -14,9 +14,28 @@ function randOrder(){
     const order = randTemp + " " + randDrink + " with " + randMilk + ", " + randAddIn + ", and " + randSyrup + " syrup";
     console.log(order);
 }
+
+var myfallingObject;
+var myCup;
+var myScore;
+
 function startGame() {
     randOrder();
     myGameArea.start();
+}
+var myGameArea = {
+    canvas : document.createElement("canvas"),
+    start : function() {
+        this.canvas.width = 700;
+        this.canvas.height = 400;
+        this.context = this.canvas.getContext("2d");
+        document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+        this.frameNo = 0;
+        this.interval = setInterval(updateGameArea, 3000);
+        },
+    clear : function() {
+        this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+    }
 }
 
 // using each() function to iterate through divs and push id of each div into array $objs
@@ -35,12 +54,11 @@ function randObj(){
     return img;
 }
 var temporary = randObj();
-console.log(temporary);
 
 function generateNew(){
     // generating new object every 3 seconds
     setInterval(function(){
-        var myObject = new newObj(20, 30, temporary, 10, 120, "image");
+        var myObject = new newImg(20, 30, temporary, 10, 120, "image");
         }, 3000);
 }
 function newImg (width, height, image, x, y, type){
@@ -54,11 +72,24 @@ function newImg (width, height, image, x, y, type){
     this.speed = 1;
     this.x = x;
     this.y = y;
-
-
+    
+    this.gravity = 0;
+    this.gravitySpeed = 0;
+    this.update = function() {
+        ctx = myGameArea.context;
+        if (type == "image") {
+            ctx.drawImage(this.image, 
+                this.x, 
+                this.y,
+                this.width, this.height);
+            }
+    
+        }
 }
 
-
+function updateGameArea() {
+    myfallingObject.generateNew();
+}
 
 
 
