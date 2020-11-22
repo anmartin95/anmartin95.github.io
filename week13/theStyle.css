@@ -1,27 +1,34 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
+  font-family: 'Crete Round', serif; 
+  background-image: url(images/cafeBG.jpg);
+  background-size: cover;
 }
-
+.order{
+  background-color: cornsilk;
+  color: brown;
+  font-family: 'Cedarville Cursive', serif;
+  
+}
 .button {
   margin: 0 10px 10px 0;
-  float:left;
+  float: left;
   cursor: pointer;
   padding: 10px 15px;
-  background: #888;
-  color: #fff;
+  background: white;
+  color: tan;
 }
 
 .canvas {
-  width: 600px;
-  height: 300px;
-  border: 1px solid #000;
-  background: #444;
+  max-width: 800px;
+  height: 500px;
+  box-shadow: 1px 1px 8px slategray ;
+  background: white;
   overflow: hidden;
   position: relative;
+  margin-top: 100px;
 }
 
-.falling-object {
+.fallingImg {
   opacity: 1;
   z-index: 90;
   top: -50px;
@@ -31,5 +38,17 @@ body {
   background-position: center center;
 }
 
-.milks1 {width: 53px; height: 33px; background-image: url(images/wholeMilk.jpg);}
-.milks2 {width: 53px; height: 33px; background-image: url(images/oatMilk.jpg);}
+.milks1 { width: 30px; height: 70px; background-image: url(images/wholeMilk.png);}
+.milks2 {width: 30px; height: 73px; background-image: url(images/skimMilk.jpg);}
+.milks3 {width: 33px; height: 73px; background-image: url(images/oatMilk.jpg);}
+.milks4 { width: 30px; height: 70px; background-image: url(images/wholeMilk.png);}
+.milks5 {width: 30px; height: 73px; background-image: url(images/skimMilk.jpg);}
+.milks6 {width: 33px; height: 73px; background-image: url(images/oatMilk.jpg);}
+
+.addIns1 { width: 30px; height: 70px; background-image: url(images/wholeMilk.png);}
+.addIns2 {width: 30px; height: 73px; background-image: url(images/skimMilk.jpg);}
+.addIns3 {width: 33px; height: 73px; background-image: url(images/oatMilk.jpg);}
+.addIns4 { width: 30px; height: 70px; background-image: url(images/wholeMilk.png);}
+.addIns5 {width: 30px; height: 73px; background-image: url(images/skimMilk.jpg);}
+.addIns6 {width: 33px; height: 73px; background-image: url(images/oatMilk.jpg);}
+
