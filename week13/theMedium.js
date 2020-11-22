@@ -1,7 +1,7 @@
 
 // arrays of order options
 const milks = ["whole milk", "skim milk", "2% milk", "oat milk", "almond milk", "coconut milk", "soy milk", "cream", "foam", "no milk"];
-const addIns = ["splenda", "sweet n low", "cinnamon", "sugar", "no sugar"];
+const addIns = ["splenda", "sweet n low", "sugar in the raw", "cinnamon", "sugar", "no sugar"];
 const syrups = ["caramel", "vanilla", "mocha", "hazelnut", "no", "pumpkin spice", "white chocolate"];
 const drinks = ["dark roast", "light roast", "medium roast", "americano", "espresso", "macchiato", "latte", "cold brew", "green tea", "black tea", "chai"];
 const temp = ["hot", "iced"];
