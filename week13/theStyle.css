@@ -1,40 +1,45 @@
-body{
-    font-family: 'Crete Round', serif;
-}
-h1{
-    color: rgb(87, 28, 28);
-    font-size: 100px;
-    border-style: double;
-    border-width: thick;
-    border-color: rgb(87, 28, 28);
-}
-h2{
-    font-size: 75px;
+.game{
+    background: #efefef;
+    width:100%;
+    height:750px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .score{
+    font-size: 500px;
+    z-index: 20;
+    font-family: arial;
+    color: #d7e4d9;
+    user-select:none;
+    width:100%;
+    text-align:center;
+  }
+  
+  .box{
     
-}
-.order{
-    font-family: 'Cedarville Cursive', cursive;
-}
-img{
-    width: 20px;
-}
-p{
-    font-size: 50px;
-}
-.onclick {
-    background-color: rgb(87, 28, 28);
-    color: tan;
-    padding: 15px 32px;
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
+    width: 100px;
+    height:100px;
+    position:absolute;
+    top: -150px;
+    transition: transform 1.5s linear;
     cursor: pointer;
-    text-decoration: none;
-    
-}
-html{
-    background-color: tan;
-    display: flex;
-    justify-content: center;
-}
+    z-index:100;
+  }
+  
+  .move{
+     transform:translateY(120vh);
+  }
+  
+  .counter{
+    width:100%;
+    margin: 0 auto;
+    text-align:center;
+    font-family:arial;
+    color:red;
+    font-weight:bold;
+    padding-top:10px;
+    font-size:20px;
+    position:relative;
+    z-index:9999;
+  }

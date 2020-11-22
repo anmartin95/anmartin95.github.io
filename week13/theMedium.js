@@ -6,21 +6,67 @@ const drinks = ["dark roast", "light roast", "medium roast", "americano", "espre
 const temp = ["hot", "iced"];
 
 // global variables
-var myfallingObject;
-var myCup;
-var myScore;
+var myFallingObject;
 var myOrder;
+var correctOrder = [];
 
-// function to generate new coffee order each game
-function randOrder(){
-    const randMilk = milks[Math.floor(Math.random()* milks.length)];
-    const randAddIn = addIns[Math.floor(Math.random()* addIns.length)];
-    const randSyrup = syrups[Math.floor(Math.random()* syrups.length)];
-    const randDrink = drinks[Math.floor(Math.random()* drinks.length)];
-    const randTemp = temp[Math.floor(Math.random()* temp.length)];
-    myOrder = randTemp + " " + randDrink + " with " + randMilk + ", " + randAddIn + ", and " + randSyrup + " syrup";
-    console.log(myOrder);
-    document.write(myOrder);
+// using each() function to iterate through divs and push id of each div into array $objs
+var $objs = [];
+$('div').each(function(){
+    var id = $(this).attr('id');
+    $objs.push(id);
+});
+console.log($objs);
+
+// selecting random id of divs from $objs and storing it in newObj
+function randObj(){
+  const newObj = $objs[Math.floor(Math.random()* $objs.length)];
+  //storing randomly selected img in url string
+  var img = "images/" + newObj + ".jpg";
+  return img;
+}
+
+// generating new object every 3 seconds
+function generateNew(){
+    setInterval(function(){
+        myFallingObject= new createImg(20, 30, randObj(), 10, 120, "image");
+        }, 3000);
+}
+
+function createImg (width, height, imgUrl, x, y, type){
+  this.type = type;
+  if (type == "image"){
+      this.image = new Image();
+      this.image.src = imgUrl;
+  }
+  this.width = width;
+  this.height = height;
+  this.speed = 1;
+  this.x = x;
+  this.y = y;
+  this.gravity = 0;
+  this.gravitySpeed = 0;
+  this.update = function() {
+      var ctx = myGameArea.context;
+      ctx.drawImage(this.image, this.x, this.y, this.width, this.height);
+  }
+}
+
+function dropBox(){
+    var length = random(100, ($(".game").width() - 100));
+    var velocity = random(850, 3000);
+    var thisBox = $("<div/>", {
+      class: "box",
+      style:  "width:" +size+ "px; height:"+size+"px; left:" + length+  "px; transition: transform " +velocity+ "ms linear;"
+    }); 
+    
+    //set data and bg based on data
+    thisBox.data("test", Math.round(Math.random()));
+    if(thisBox.data("test")){
+      thisBox.css({"background": "url('images/wholeMilk.jpg')", "background-size":"contain"});
+    } else {
+      thisBox.css({"background": "url('images/oatMilk.jpg')", "background-size":"contain"});
+    }
 }
 
 function startGame() {
@@ -42,57 +88,6 @@ var myGameArea = {
     }
 }
 
-// using each() function to iterate through divs and push id of each div into array $objs
-var $objs = [];
-$('div').each(function(){
-    var id = $(this).attr('id');
-    $objs.push(id);
-});
-console.log($objs);
-
-// selecting random id of divs and storing it in newObj
-function randObj(){
-    const newObj = $objs[Math.floor(Math.random()* $objs.length)];
-    //storing randomly selected img in url string
-    var img = "images/" + newObj + ".jpg";
-    return img;
-}
-var temporary = randObj();
-function generateNew(){
-    // generating new object every 3 seconds
-    setInterval(function(){
-        myfallingObject = new newImg(20, 30, temporary, 10, 120, "image");
-        }, 3000);
-}
-function newImg (width, height, image, x, y, type){
-    this.type = type;
-    if (type == "image"){
-        this.image = new Image();
-        this.image.src = image;
-    }
-    this.width = width;
-    this.height = height;
-    this.speed = 1;
-    this.x = x;
-    this.y = y;
-    
-    this.gravity = 0;
-    this.gravitySpeed = 0;
-    this.update = function() {
-        ctx = myGameArea.context;
-        if (type == "image") {
-            ctx.drawImage(this.image, 
-                this.x, 
-                this.y,
-                this.width, this.height);
-            }
-    
-        }
-}
-
 function updateGameArea() {
-    myfallingObject.generateNew();
+    myFallingObject.generateNew();
 }
-
-
-
