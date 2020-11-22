@@ -117,7 +117,6 @@ $(document).ready(function() {
       var spread = $('.canvas').width(); //fill whole canvas
       setInterval(function(){
         var type = types[Math.floor(Math.random()* types.length)];
-        var numOptions = type
         RandomFalling(type, 1, 2, -100, -20, spread, 10, 120, 100, 150, 1400, 1700);
         }, 3000);
   });
