@@ -66,7 +66,7 @@ function fallingImg(numTotal, y, x, spread, minRotate, maxRotate, minStartTime, 
 		startTime = startTime + Math.floor((Math.random() * (maxStartTime-minStartTime)) + minStartTime);
 		$element = $('<div class="fallingImg '+className+variation+'" style="top: '+y+'px; left: '+leftMargin+'px;" />');
 		$element.appendTo('.canvas');
-		$element.delay(startTime).animate({ top: 510, rotateZ: rotateImg}, {
+		$element.delay(startTime).animate({ top: 500, rotateZ: rotateImg}, {
 			duration: time,
 			easing: 'linear',
 			step: function(now, tween) {
@@ -76,6 +76,9 @@ function fallingImg(numTotal, y, x, spread, minRotate, maxRotate, minStartTime, 
 					$(this).css('transform','rotateZ('+now+'deg)');  
 				}
 			},
+			complete: function() {
+				$(this).remove();	//clean up the element
+			}
 		});
 	}
 }

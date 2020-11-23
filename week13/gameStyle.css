@@ -65,7 +65,7 @@ body{
     background-position: center center;
 }
   
-.milks1 {background-image: url(images/milkPics/wholeMilk.png);}
+.milks1 {background-image: url(images/milkPics/wholeMilk.png); background-size: cover;}
 .milks2 {background-image: url(images/milkPics/skimMilk.png);}
 .milks3 {background-image: url(images/milkPics/2%Milk.png);}
 .milks4 {background-image: url(images/milkPics/oatMilk.png);}
@@ -104,7 +104,7 @@ width: 40px; height: 47px; */
 .drinks8 {background-image: url(images/drinkPics/coldBrew.png);}
 .drinks9 {background-image: url(images/drinkPics/greenTea.png);}
 .drinks10 {background-image: url(images/drinkPics/blackTea.png);}
-.drinks11 {background-image: url(images/drinkPics/chaiTea.png);}
+.drinks11 {background-image: url(images/drinkPics/chaiTea.png); height: 50px; background-size: cover;}
 /*width: 40px; height: 63px; */
 
   
