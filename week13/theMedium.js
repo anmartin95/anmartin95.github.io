@@ -1,7 +1,7 @@
 
 // arrays of order options
 const milks = ["whole milk", "skim milk", "2% milk", "oat milk", "almond milk", "coconut milk", "soy milk", "cream", "foam", "no milk"];
-const addIns = ["splenda", "sweet n low", "sugar in the raw", "cinnamon", "sugar", "no sugar"];
+const addIns = ["splenda", "sweet n low", "sugar in the raw", "cinnamon", "sugar"];
 const syrups = ["caramel", "vanilla", "mocha", "hazelnut", "no", "pumpkin spice", "white chocolate"];
 const drinks = ["dark roast", "light roast", "medium roast", "americano", "espresso", "macchiato", "latte", "cold brew", "green tea", "black tea", "chai"];
 const temp = ["hot", "iced"];
@@ -42,31 +42,25 @@ $(document).ready(function() {
         startGame();
     });
 });
-/* $('.cup').animate({opacity: "1"});
-	$('.cup').click(function(){
-		if ($('.cup').aatr('id') == randTemp)
-		{
-			$('.cup').animate({opacity: "0"});
-		}
-		else{
-			$('.cup').animate({opacity: "0"});
-			$('.canvas').text('Game Over');
-		}
-	});
-	*/
+
 function startGame(){
-	var type = $objs[Math.floor(Math.random() * $objs.length)]; //type of graphic
-	var width = $('.canvas').width(); //fill whole canvas
-	fallingImg(type, 3, 100, -100, -20, width, 10, 120, 50, 3000, 3000, 7000);
+	$('.choose').animate({opacity: "1"});
+	$('.cup').click(function(){
+		$('.cup').animate({opacity: "0"});
+		var width = $('.canvas').width(); //fill whole canvas
+		fallingImg(100, -100, -20, width, 10, 120, 50, 3000, 3000, 7000);
+	});
 }
 
 var variation, className;
 //sprinkle falling elements
-function fallingImg(classname, numVars, numTotal, y, x, spread, minRotate, maxRotate, minStartTime, maxStartTime, minTime, maxTime) {
-	var leftMargin, time, startTime = 0, rotateImg;
+function fallingImg(numTotal, y, x, spread, minRotate, maxRotate, minStartTime, maxStartTime, minTime, maxTime) {
+	var leftMargin, time, startTime = 0, rotateImg, classname, tempNum, numVars;
 	for (var i=1; i <= numTotal; i++) {
-		className = classname;
-		variation = Math.floor((Math.random() * numVars) + 1); //random CSS img
+		className = $objs[Math.floor(Math.random() * $objs.length)];;
+		tempNum = className.length;
+		console.log(tempNum);
+		variation = Math.floor((Math.random() * tempNum) + 1); //random CSS img
 		leftMargin = Math.floor((Math.random() * spread) + x); //set left position
 		time = Math.floor((Math.random() * (maxTime-minTime)) + minTime); //random fall duration
 		rotateImg = Math.floor((Math.random() * (maxRotate-minRotate)) + minRotate);	//random rotation angle
@@ -86,6 +80,25 @@ function fallingImg(classname, numVars, numTotal, y, x, spread, minRotate, maxRo
 		});
 	}
 }
+
+//creates game piece 'cup' for user to move and collect order options
+let cup = document.querySelector('.cup');
+let moveBy = 10;
+window.addEventListener('load', () => {
+    cup.style.position = 'absolute';
+    cup.style.left = 0;
+    cup.style.bottom = 0;
+});
+window.addEventListener('keyup', (e) => {
+    switch (e.key) {
+        case 'ArrowLeft':
+            cup.style.left = parseInt(cup.style.left) - moveBy + '.8px';
+            break;
+        case 'ArrowRight':
+            cup.style.left = parseInt(cup.style.left) + moveBy + '.8px';
+            break;
+    }
+});
 
 /*function correctOption(){
 	if (className==)

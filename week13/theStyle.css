@@ -1,63 +1,58 @@
-body {
-  font-family: 'Crete Round', serif; 
-  background-image: url(images/cafeBG.jpg);
-  background-size: cover;
+body{
+  font-family: 'Crete Round', serif;
+  background-color: tan;
+  padding: 20px;
+  border-style: ridge;
+  border-width: thick;
+  border-color: rgb(65, 34, 34);
+
 }
-.container{
+h1{
+  color: rgb(87, 28, 28);
+  font-size: 150px;
+  border-style: ridge;
+  border-width: solid;
+  border-color: rgb(87, 28, 28);
+  padding: 10px;
   display: flex;
+  justify-content: center;
+}
+h2{
+  font-size: 75px;
+  color: rgb(51, 27, 27);
+  display: flex;
+  justify-content: center;
+  
 }
 .order{
-  background-color: tan;
-  color: brown;
+  font-family: 'Cedarville Cursive', cursive;
+}
+img{
+  width: 20px;
+}
+p{
   font-size: 30px;
-  font-family: 'Cedarville Cursive', serif;
-  flex-direction: column;
-  float: left;
-  width: 200px;
-  height: fit-content;
+  color: rgb(51, 27, 27);
+  display: flex;
+  justify-content: center;
 }
-
-.button {
-  position: absolute;
-  cursor: pointer;
-  padding: 10px 15px;
-  background: white;
+button {
+  background-color: rgb(87, 28, 28);
   color: tan;
-  opacity: 1;
-  font-size: 100px;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 25px;
+  margin: 4px 2px;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  
 }
-
-.canvas {
-  max-width: 1000px;
-  height: 500px;
-  box-shadow: 1px 1px 8px slategray ;
-  background: white;
-  overflow: hidden;
-  position: relative;
-  margin-left: 220px;
-  margin-top: -300px;
+html{
+  background-color: tan;
+  display: flex;
+  justify-content: center;
+  background-image: url('images/coffeebean.jpg');
 }
-
-.cup{
-  width: 300px;
-  position: absolute;
-  opacity: 0;
-}
-.fallingImg {
-  opacity: 1;
-  z-index: 90;
-  top: -50px;
-  left: 0;
-  position: absolute;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.milks1 { width: 30px; height: 40px; background-image: url(images/wholeMilk.png);}
-.milks2 {width: 30px; height: 73px; background-image: url(images/skimMilk.jpg);}
-.milks3 {width: 33px; height: 73px; background-image: url(images/oatMilk.jpg);}
-
-.addIns1 { width: 30px; height: 70px; background-image: url(images/wholeMilk.png);}
-.addIns2 {width: 30px; height: 73px; background-image: url(images/skimMilk.jpg);}
-.addIns3 {width: 33px; height: 73px; background-image: url(images/oatMilk.jpg);}
-
