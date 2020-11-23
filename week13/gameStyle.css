@@ -9,12 +9,12 @@ body{
 .order{
     background-color: tan;
     color: brown;
-    font-size: 30px;
+    font-size: 38px;
     font-family: 'Cedarville Cursive', serif;
     flex-direction: column;
     float: right;
-    width: 200px;
-    height: 370px;
+    width: 220px;
+    height: 600px;
     padding: 30px;
 }
 .button {
@@ -33,15 +33,15 @@ body{
     background: white;
     overflow: hidden;
     position: relative;
-    margin-top: -300px;
-    margin-left: 300px;
+    margin-top: -550px;
+    margin-left: 330px;
 }
 .choose{
-    width: 800px;
+    width: 500px;
     opacity: 0;
 }
 .movingCup{
-    height: 40px;
+    height: 20px;
     width: 25px;
 }
 .cup img{
@@ -54,8 +54,8 @@ body{
     height: 50px;
 }
 #iced{
-    margin-top: -240px;
-    margin-left: 800px;
+    margin-top: -500px;
+    margin-left: 900px;
     height: 30px;
 }
 .fallingImg {

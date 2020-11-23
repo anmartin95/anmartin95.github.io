@@ -92,10 +92,10 @@ function fallingImg(maxVars, numTotal, y, x, spread, minRotate, maxRotate, minSt
 //creates game piece 'cup' for user to move and collect order options
 
 if (cupID == "iced"){
-	$('.movingCup').css({"background-image": "url(images/jar.jpg)", "height": "40px"});
+	$('.movingCup').css({"background-image": "url(images/jar.jpg)", "height": "20px"});
 }
 else if (cupID == "hot"){
-	$('.movingCup').css({"background-image": "url(images/jar.jpg)", "height": "40px"});
+	$('.movingCup').css({"background-image": "url(images/jar.jpg)", "height": "20px"});
 }
 let cup = $('.movingCup');
 $('.movingCup').appendTo('.canvas');
