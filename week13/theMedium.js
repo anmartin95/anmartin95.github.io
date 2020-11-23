@@ -11,7 +11,7 @@ var milkNum = Math.floor(Math.random()* milks.length);
 var addInNum = Math.floor(Math.random()* addIns.length);
 var syrupNum = Math.floor(Math.random()* syrups.length);
 var drinkNum = Math.floor(Math.random()* drinks.length);
-var tempNum = Math.floor(Math.random()* temp.length)
+var tempNum = Math.floor(Math.random()* temp.length);
 var correctRands = [];
 var myOrder = "";
 
@@ -44,22 +44,19 @@ $(document).ready(function() {
 });
 
 function startGame(){
-	$('.choose').animate({opacity: "1"});
-	$('.cup').click(function(){
-		$('.cup').animate({opacity: "0"});
-		var width = $('.canvas').width(); //fill whole canvas
-		fallingImg(100, -100, -20, width, 10, 120, 50, 3000, 3000, 7000);
-	});
+	//$('.choose').animate({opacity: "1"});
+	//$('.cup').click(function(){
+		//$('.cup').animate({opacity: "0"});
+	var width = $('.canvas').width(); //fill whole canvas
+	fallingImg(5, 100, -100, -20, width, 10, 120, 50, 3000, 3000, 7000);
 }
 
-var variation, className;
 //sprinkle falling elements
-function fallingImg(numTotal, y, x, spread, minRotate, maxRotate, minStartTime, maxStartTime, minTime, maxTime) {
-	var leftMargin, time, startTime = 0, rotateImg, tempNum;
+function fallingImg(maxVars, numTotal, y, x, spread, minRotate, maxRotate, minStartTime, maxStartTime, minTime, maxTime) {
+	var variation, className, leftMargin, time, startTime = 0, rotateImg;
 	for (var i=1; i <= numTotal; i++) {
-		className = $objs[Math.floor(Math.random() * $objs.length)];;
-		tempNum = className.length;
-		variation = Math.floor((Math.random() * tempNum) + 1); //random CSS img
+		className = $objs[Math.floor(Math.random() * $objs.length)]; 
+		variation = Math.floor((Math.random() * maxVars) + 1); //random CSS img
 		leftMargin = Math.floor((Math.random() * spread) + x); //set left position
 		time = Math.floor((Math.random() * (maxTime-minTime)) + minTime); //random fall duration
 		rotateImg = Math.floor((Math.random() * (maxRotate-minRotate)) + minRotate);	//random rotation angle
@@ -83,7 +80,7 @@ function fallingImg(numTotal, y, x, spread, minRotate, maxRotate, minStartTime, 
 	}
 }
 
-//creates game piece 'cup' for user to move and collect order options
+/*creates game piece 'cup' for user to move and collect order options
 let cup = document.querySelector('.cup');
 let moveBy = 10;
 window.addEventListener('load', () => {
@@ -102,8 +99,9 @@ window.addEventListener('keyup', (e) => {
     }
 });
 
-/*function correctOption(){
+function correctOption(){
 	if (className==)
 }
 */
+
 
