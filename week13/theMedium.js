@@ -43,12 +43,20 @@ $(document).ready(function() {
     });
 });
 
+let cupID;
 function startGame(){
 	$('.choose').animate({opacity: "1"});
-	$('.cup').click(function(){
+	$('#iced').click(function(){
+		cupID = "iced";
 		$('.cup').animate({opacity: "0"});
 		var width = $('.canvas').width(); //fill whole canvas
-		fallingImg(11, 100, -100, -20, width, 10, 120, 50, 3000, 3000, 7000);
+		fallingImg(11, 100, -220, -20, width, 10, 120, 50, 3000, 8000, 12000);
+	});
+	$('#hot').click(function(){
+		cupID = "hot";
+		$('.cup').animate({opacity: "0"});
+		var width = $('.canvas').width(); //fill whole canvas
+		fallingImg(11, 100, -220, -20, width, 10, 120, 50, 3000, 8000, 12000);
 	});
 }
 
@@ -81,8 +89,17 @@ function fallingImg(maxVars, numTotal, y, x, spread, minRotate, maxRotate, minSt
 	}
 }
 
-/*creates game piece 'cup' for user to move and collect order options
-let cup = document.querySelector('.cup');
+//creates game piece 'cup' for user to move and collect order options
+
+if (cupID == "iced"){
+	$('.movingCup').css({"background-image": "url(images/jar.jpg)", "height": "40px"});
+}
+else if (cupID == "hot"){
+	$('.movingCup').css({"background-image": "url(images/jar.jpg)", "height": "40px"});
+}
+let cup = $('.movingCup');
+$('.movingCup').appendTo('.canvas');
+console.log(cup);
 let moveBy = 10;
 window.addEventListener('load', () => {
     cup.style.position = 'absolute';
@@ -100,9 +117,9 @@ window.addEventListener('keyup', (e) => {
     }
 });
 
-function correctOption(){
-	if (className==)
-}
-*/
+//function correctOption(){
+//	if (className==)
+//}
+
 
 
