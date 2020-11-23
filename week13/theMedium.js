@@ -7,24 +7,26 @@ const drinks = ["dark roast", "light roast", "medium roast", "americano", "espre
 const temp = ["hot", "iced"];
 
 // global vars
-var myOrder;
 var milkNum = Math.floor(Math.random()* milks.length);
 var addInNum = Math.floor(Math.random()* addIns.length);
 var syrupNum = Math.floor(Math.random()* syrups.length);
 var drinkNum = Math.floor(Math.random()* drinks.length);
 var tempNum = Math.floor(Math.random()* temp.length)
+var correctRands = [];
+var myOrder = "";
 
 // function to generate new coffee order each game
 function randOrder(){
-
   const randMilk = milks[milkNum];
   const randAddIn = addIns[addInNum];
   const randSyrup = syrups[syrupNum];
   const randDrink = drinks[drinkNum];
   const randTemp = temp[tempNum];
   myOrder = randTemp + " " + randDrink + " with " + randMilk + ", " + randAddIn + ", and " + randSyrup + " syrup";
-  $('.order').text('myOrder');
+  correctRands = [randMilk, randAddIn, randSyrup, randDrink, randTemp];
+  $('.order').text('Order: '+myOrder);
 }
+randOrder();
 
 var $objs = [];
 $('.options').each(function(){
@@ -36,14 +38,26 @@ console.log($objs);
 //bind buttons on document ready
 $(document).ready(function() {
     $('.button').click(function() {
+		$('.button').animate({opacity: "0"});
         startGame();
     });
 });
-
+/* $('.cup').animate({opacity: "1"});
+	$('.cup').click(function(){
+		if ($('.cup').aatr('id') == randTemp)
+		{
+			$('.cup').animate({opacity: "0"});
+		}
+		else{
+			$('.cup').animate({opacity: "0"});
+			$('.canvas').text('Game Over');
+		}
+	});
+	*/
 function startGame(){
-	var type = $objs[Math.floor(Math.random() * $objs.length)]; //type of graphic dependent on button clicked
+	var type = $objs[Math.floor(Math.random() * $objs.length)]; //type of graphic
 	var width = $('.canvas').width(); //fill whole canvas
-	fallingImg(type, 6, 100, -100, -20, width, 10, 120, 50, 3000, 3000, 7000);
+	fallingImg(type, 3, 100, -100, -20, width, 10, 120, 50, 3000, 3000, 7000);
 }
 
 var variation, className;
@@ -59,7 +73,7 @@ function fallingImg(classname, numVars, numTotal, y, x, spread, minRotate, maxRo
 		startTime = startTime + Math.floor((Math.random() * (maxStartTime-minStartTime)) + minStartTime);
 		$element = $('<div class="fallingImg '+classname+variation+'" style="top: '+y+'px; left: '+leftMargin+'px;" />');
 		$element.appendTo('.canvas');
-		$element.delay(startTime).animate({ top: 300, rotateZ: rotateImg}, {
+		$element.delay(startTime).animate({ top: 510, rotateZ: rotateImg}, {
 			duration: time,
 			easing: 'linear',
 			step: function(now, tween) {
@@ -69,9 +83,6 @@ function fallingImg(classname, numVars, numTotal, y, x, spread, minRotate, maxRo
 					$(this).css('transform','rotateZ('+now+'deg)');  
 				}
 			},
-			complete: function() {
-				$(this).remove();	//clean up the element
-			}
 		});
 	}
 }
