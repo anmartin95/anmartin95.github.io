@@ -36,35 +36,14 @@ body{
     margin-top: -550px;
     margin-left: 330px;
 }
-.choose{
-    width: 500px;
-    opacity: 0;
-}
-.movingCup{
-    height: 20px;
-    width: 25px;
-    opacity: 0;
-}
-.cup img{
+.cup{
+    height: 150px;
+    width: 152px;
+    background:url('images/cup.jpg');
+    background-size: cover;
     position: absolute;
-    cursor: pointer;
-}
-#hot{
-    margin-top: 120px;
-    margin-left: 400px;
-    height: 50px;
-}
-#iced{
-    margin-top: -500px;
-    margin-left: 800px;
-    height: 20px;
-    width: 15px;
-}
-.jar{
-    height: 20px;
-}
-.mug{
-    height: 20px;
+    margin-bottom: 120px;
+    margin-left: 360px;
 }
 .fallingImg {
     z-index: 90;
@@ -74,6 +53,11 @@ body{
     position: absolute;
     background-repeat: no-repeat;
     background-position: center center;
+}
+.gameOver{
+    opacity: 0;
+    font-size: 100px;
+    background-color: white;
 }
   
 .milks1 {width: 80px; height: 150px; background-image: url(images/milkPics/wholeMilk.png); }
