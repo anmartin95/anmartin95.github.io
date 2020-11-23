@@ -4,7 +4,7 @@ const milks = ["whole milk", "skim milk", "2% milk", "oat milk", "almond milk", 
 const addIns = ["splenda", "sweet n low", "sugar in the raw", "cinnamon", "sugar"];
 const syrups = ["caramel", "vanilla", "mocha", "hazelnut", "no", "pumpkin spice", "white chocolate"];
 const drinks = ["dark roast", "light roast", "medium roast", "americano", "espresso", "macchiato", "latte", "cold brew", "green tea", "black tea", "chai"];
-const temp = ["hot", "iced"];
+const temps = ["hot", "iced"];
 var names = ["milks", "addIns", "syrups", "drinks"];
 
 // global vars
@@ -12,16 +12,17 @@ var milkNum = Math.floor(Math.random()* milks.length);
 var addInNum = Math.floor(Math.random()* addIns.length);
 var syrupNum = Math.floor(Math.random()* syrups.length);
 var drinkNum = Math.floor(Math.random()* drinks.length);
-var tempNum = Math.floor(Math.random()* temp.length);
+var tempNum = Math.floor(Math.random()* temps.length);
+let cupID;
 
 var randMilk = milks[milkNum];
 var randAddIn = addIns[addInNum];
 var randSyrup = syrups[syrupNum];
 var randDrink = drinks[drinkNum];
-var randTemp = temp[tempNum];
+var randTemp = temps[tempNum];
 var myOrder = "";
-var correctRands = [randMilk, randAddIn, randSyrup, randDrink];
-var correctNums = [milkNum, addInNum, syrupNum, drinkNum];
+var correctRands = [randMilk, randAddIn, randSyrup, randDrink, randTemp];
+var correctNums = [milkNum, addInNum, syrupNum, drinkNum, tempNum];
 
 console.log(correctNums);
 
@@ -32,6 +33,7 @@ function randOrder(){
 }
 randOrder();
 
+// array of div ids
 var $objs = [];
 $('.options').each(function(){
     var id = $(this).attr('id');
@@ -42,7 +44,6 @@ console.log($objs);
 //creates gamne piece for user to move cup
 let cup = document.querySelector('.cup');
 let moveBy = 20;
- 
 window.addEventListener('load', () => {
     cup.style.position = 'absolute';
     cup.style.left = 0;
@@ -63,7 +64,7 @@ window.addEventListener('keyup', (e) => {
 	console.log(cupPos);
 });
 
-//bind buttons on document ready
+//start button on document ready, when clicked game starts
 $(document).ready(function() {
     $('.button').click(function() {
 		$('.button').animate({opacity: "0"});
@@ -71,13 +72,13 @@ $(document).ready(function() {
     });
 });
 
-let cupID;
+// start game function for button "start"
 function startGame(){
 	var width = $('.canvas').width(); //fill whole canvas
 	fallingImg(11, 100, -220, -20, width, 10, 120, 50, 3000, 8000, 12000);
 }
 
-//sprinkle falling elements
+// start falling elements in canvas (creates new divs, removes them once they leave the canvas)
 function fallingImg(maxVars, numTotal, y, x, spread, minRotate, maxRotate, minStartTime, maxStartTime, minTime, maxTime) {
 	var variation, className, leftMargin, time, startTime = 0, rotateImg;
 	for (var i=1; i <= numTotal; i++) {
@@ -103,7 +104,8 @@ function fallingImg(maxVars, numTotal, y, x, spread, minRotate, maxRotate, minSt
 				$(this).remove();	//clean up the element
 			}
 		});
-		/*
+
+/* this didn't work out - maybe it will eventually
 		var i;
 		if (y == 400){
 			if((leftMargin < (cupPos + 50)) && (leftMargin > cupPosition)){
@@ -125,27 +127,39 @@ function fallingImg(maxVars, numTotal, y, x, spread, minRotate, maxRotate, minSt
 		*/
 	}
 }
-var i, bool = false;
+
+// triggered on click of falling object - checks to see if it's in the correct order
+var i, counter = 0, bool = false;
 $(document).on('click', '.fallingImg', function(){
-// $objs+(correctRands+1)
-	for (i=0; i<4; i++){
+	for (i=0; i<5; i++){
 		let stringVar = "fallingImg " + $objs[i] + (correctNums[i]+1);
 		console.log($(this).attr("class"));
 		console.log(stringVar);
 		if($(this).attr("class") == stringVar){
 			console.log("correct!");
 			bool = true;
+			counter++;
 		}
 	}
 	if (bool == false){
-		gameOver();
+		gameOver(); // if incorrect order option is clicked
 	}
 	else if (bool == true){
-		bool = false;
+		bool = false; // to reset bool if correct order option is click
+	}
+
+	if (counter == 5)
+	{
+		win(); // if all 5 order options are clicked
 	}
 	$(this).remove();
   });
 
- function gameOver(){
+function gameOver(){
 	 $('.gameOver').animate({opacity: "1"});
+	 $('.fallingImg').remove();
+}
+function win(){
+	$('.youWon').animate({opacity: "1"});
+	$('.fallingImg').remove();
 }

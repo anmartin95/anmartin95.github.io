@@ -58,8 +58,17 @@ body{
     opacity: 0;
     font-size: 100px;
     background-color: white;
+    margin-left: 330px;
 }
-  
+.youWon{
+    opacity: 0;
+    font-size: 100px;
+    background-color: white;
+    margin-left: 330px;
+    margin-top: -50px;
+}
+
+/* all images for falling object class */
 .milks1 {width: 80px; height: 150px; background-image: url(images/milkPics/wholeMilk.png); }
 .milks2 {width: 80px; height: 150px; background-image: url(images/milkPics/skimMilk.png);}
 .milks3 {width: 80px; height: 150px; background-image: url(images/milkPics/2%Milk.png);}
@@ -97,6 +106,9 @@ body{
 .drinks9 {width: 80px; height: 126px; background-image: url(images/drinkPics/greenTea.png);}
 .drinks10 {width: 80px; height: 126px; background-image: url(images/drinkPics/blackTea.png);}
 .drinks11 {width: 80px; height: 126px; background-image: url(images/drinkPics/chaiTea.png);}
+
+.temps1 {width: 70px; height: 70px; background-image: url(images/noIce.png);}
+.temps2 {width: 70px; height: 70px; background-image: url(images/ice.png);}
 
 
   
