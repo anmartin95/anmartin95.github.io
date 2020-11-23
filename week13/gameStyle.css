@@ -43,20 +43,28 @@ body{
 .movingCup{
     height: 20px;
     width: 25px;
+    opacity: 0;
 }
 .cup img{
     position: absolute;
     cursor: pointer;
 }
 #hot{
-    margin-top: -110px;
+    margin-top: 120px;
     margin-left: 400px;
     height: 50px;
 }
 #iced{
     margin-top: -500px;
-    margin-left: 900px;
-    height: 30px;
+    margin-left: 800px;
+    height: 20px;
+    width: 15px;
+}
+.jar{
+    height: 20px;
+}
+.mug{
+    height: 20px;
 }
 .fallingImg {
     z-index: 90;

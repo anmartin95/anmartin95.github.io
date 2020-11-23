@@ -90,20 +90,18 @@ function fallingImg(maxVars, numTotal, y, x, spread, minRotate, maxRotate, minSt
 }
 
 //creates game piece 'cup' for user to move and collect order options
-
+let cup;
 if (cupID == "iced"){
-	$('.movingCup').css({"background-image": "url(images/jar.jpg)", "height": "20px"});
+	$('#jar').animate({opacity: "1"});
+	cup = document.getElementById("jar");
 }
 else if (cupID == "hot"){
-	$('.movingCup').css({"background-image": "url(images/jar.jpg)", "height": "20px"});
+	$('#mug').animate({opacity: "1"});
+	cup = document.getElementById("mug");
 }
-let cup = $('.movingCup');
-$('.movingCup').appendTo('.canvas');
 let moveBy = 10;
 window.addEventListener('load', () => {
-    cup.style.position = 'absolute';
-    cup.style.left = 0;
-    cup.style.bottom = 0;
+    cup.style({"position":"absolute", "left": "0", "bottom": "0"}) ;
 });
 window.addEventListener('keyup', (e) => {
     switch (e.key) {
@@ -115,10 +113,6 @@ window.addEventListener('keyup', (e) => {
             break;
     }
 });
-
-//function correctOption(){
-//	if (className==)
-//}
 
 
 
