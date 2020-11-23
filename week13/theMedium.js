@@ -44,11 +44,12 @@ $(document).ready(function() {
 });
 
 function startGame(){
-	//$('.choose').animate({opacity: "1"});
-	//$('.cup').click(function(){
-		//$('.cup').animate({opacity: "0"});
-	var width = $('.canvas').width(); //fill whole canvas
-	fallingImg(5, 100, -100, -20, width, 10, 120, 50, 3000, 3000, 7000);
+	$('.choose').animate({opacity: "1"});
+	$('.cup').click(function(){
+		$('.cup').animate({opacity: "0"});
+		var width = $('.canvas').width(); //fill whole canvas
+		fallingImg(11, 100, -100, -20, width, 10, 120, 50, 3000, 3000, 7000);
+	});
 }
 
 //sprinkle falling elements
@@ -61,7 +62,7 @@ function fallingImg(maxVars, numTotal, y, x, spread, minRotate, maxRotate, minSt
 		time = Math.floor((Math.random() * (maxTime-minTime)) + minTime); //random fall duration
 		rotateImg = Math.floor((Math.random() * (maxRotate-minRotate)) + minRotate);	//random rotation angle
 		startTime = startTime + Math.floor((Math.random() * (maxStartTime-minStartTime)) + minStartTime);
-		$element = $('<div class="fallingImg '+className+variation+'" style="top: '+y+'px; left: '+leftMargin+'px;" />');
+		$element = $('<div class="fallingImg '+className+variation+'" style="top: '+y+'px; left: '+leftMargin+'px; background-size: cover;" />');
 		$element.appendTo('.canvas');
 		$element.delay(startTime).animate({ top: 500, rotateZ: rotateImg}, {
 			duration: time,
