@@ -99,7 +99,6 @@ else if (cupID == "hot"){
 }
 let cup = $('.movingCup');
 $('.movingCup').appendTo('.canvas');
-console.log(cup);
 let moveBy = 10;
 window.addEventListener('load', () => {
     cup.style.position = 'absolute';
