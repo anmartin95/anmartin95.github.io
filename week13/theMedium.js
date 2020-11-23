@@ -55,17 +55,16 @@ function startGame(){
 var variation, className;
 //sprinkle falling elements
 function fallingImg(numTotal, y, x, spread, minRotate, maxRotate, minStartTime, maxStartTime, minTime, maxTime) {
-	var leftMargin, time, startTime = 0, rotateImg, classname, tempNum, numVars;
+	var leftMargin, time, startTime = 0, rotateImg, tempNum;
 	for (var i=1; i <= numTotal; i++) {
 		className = $objs[Math.floor(Math.random() * $objs.length)];;
 		tempNum = className.length;
-		console.log(tempNum);
 		variation = Math.floor((Math.random() * tempNum) + 1); //random CSS img
 		leftMargin = Math.floor((Math.random() * spread) + x); //set left position
 		time = Math.floor((Math.random() * (maxTime-minTime)) + minTime); //random fall duration
 		rotateImg = Math.floor((Math.random() * (maxRotate-minRotate)) + minRotate);	//random rotation angle
 		startTime = startTime + Math.floor((Math.random() * (maxStartTime-minStartTime)) + minStartTime);
-		$element = $('<div class="fallingImg '+classname+variation+'" style="top: '+y+'px; left: '+leftMargin+'px;" />');
+		$element = $('<div class="fallingImg '+className+variation+'" style="top: '+y+'px; left: '+leftMargin+'px;" />');
 		$element.appendTo('.canvas');
 		$element.delay(startTime).animate({ top: 510, rotateZ: rotateImg}, {
 			duration: time,

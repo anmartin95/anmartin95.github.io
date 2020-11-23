@@ -1,8 +1,3 @@
-html{
-    background-color: tan;
-    display: flex;
-    justify-content: center;
-}
 body{
     font-family: 'Crete Round', serif; 
     background-image: url(images/cafeBG.jpg);
@@ -70,41 +65,46 @@ body{
     background-position: center center;
 }
   
-.milks1 { width: 40px; height: 76px; background-image: url(images/milkPics/wholeMilk.png);}
-.milks2 {width: 40px; height: 76px; background-image: url(images/milkPics/skimMilk.png);}
-.milks3 {width: 40px; height: 76px; background-image: url(images/milkPics/2%Milk.png);}
-.milks4 {width: 40px; height: 76px; background-image: url(images/milkPics/oatMilk.png);}
-.milks5 {width: 40px; height: 76px; background-image: url(images/milkPics/almondMilk.png);}
-.milks6 {width: 40px; height: 76px; background-image: url(images/milkPics/coconutMilk.png);}
-.milks7 {width: 40px; height: 76px; background-image: url(images/milkPics/soyMilk.png);}
-.milks8 {width: 40px; height: 76px; background-image: url(images/milkPics/cream.png);}
-.milks9 {width: 40px; height: 76px; background-image: url(images/milkPics/foam.png);}
-.milks10 {width: 40px; height: 76px; background-image: url(images/milkPics/noMilk.png);}
+.milks1 {background-image: url(images/milkPics/wholeMilk.png);}
+.milks2 {background-image: url(images/milkPics/skimMilk.png);}
+.milks3 {background-image: url(images/milkPics/2%Milk.png);}
+.milks4 {background-image: url(images/milkPics/oatMilk.png);}
+.milks5 {background-image: url(images/milkPics/almondMilk.png);}
+.milks6 {background-image: url(images/milkPics/coconutMilk.png);}
+.milks7 {background-image: url(images/milkPics/soyMilk.png);}
+.milks8 {background-image: url(images/milkPics/cream.png);}
+.milks9 {background-image: url(images/milkPics/foam.png);}
+.milks10 {background-image: url(images/milkPics/noMilk.png);}
+/* width: 40px; height: 76px; */
   
-.addIns1 { width: 76px; height: 40px; background-image: url(images/addInPics/splenda.png);}
-.addIns2 {width: 76px; height: 40px; background-image: url(images/addInPics/sweetNLow.png);}
-.addIns3 {width: 76px; height: 40px; background-image: url(images/addInPics/sugarInTheRaw.png);}
-.addIns4 { width: 40px; height: 47px; background-image: url(images/addInPics/cinnamon.png);}
-.addIns5 {width: 40px; height: 47px; background-image: url(images/addInPics/sugar.png);}
+.addIns1 {background-image: url(images/addInPics/splenda.png);}
+.addIns2 {background-image: url(images/addInPics/sweetNLow.png);}
+.addIns3 {background-image: url(images/addInPics/sugarInTheRaw.png);}
+.addIns4 {background-image: url(images/addInPics/cinnamon.png);}
+.addIns5 {background-image: url(images/addInPics/sugar.png);}
+/* width 76px; height: 40px; 
+width: 40px; height: 47px; */
 
-.syrups1 { width: 40px; height: 100px; background-image: url(images/syrupPics/caramel.png);}
-.syrups2 {width: 40px; height: 100px; background-image: url(images/syrupPics/vanilla.png);}
-.syrups3 {width: 40px; height: 100px; background-image: url(images/syrupPics/mocha.png);}
-.syrups4 { width: 40px; height: 100px; background-image: url(images/syrupPics/hazelnut.png);}
-.syrups5 {width: 40px; height: 100px; background-image: url(images/syrupPics/noSyrup.png);}
-.syrups6 {width: 40px; height: 100px; background-image: url(images/syrupPics/pumpkinSpice.png);}
-.syrups7 { width: 40px; height: 100px; background-image: url(images/syrupPics/whiteChocolate.png);}
+.syrups1 {background-image: url(images/syrupPics/caramel.png);}
+.syrups2 {background-image: url(images/syrupPics/vanilla.png);}
+.syrups3 {background-image: url(images/syrupPics/mocha.png);}
+.syrups4 {background-image: url(images/syrupPics/hazelnut.png);}
+.syrups5 {background-image: url(images/syrupPics/noSyrup.png);}
+.syrups6 {background-image: url(images/syrupPics/pumpkinSpice.png);}
+.syrups7 {background-image: url(images/syrupPics/whiteChocolate.png);}
+/*width: 40px; height: 100px; */ 
 
-.drinks1 {width: 40px; height: 63px; background-image: url(images/drinkPics/darkRoast.png);}
-.drinks2 {width: 40px; height: 63px; background-image: url(images/drinkPics/lightRoast.png);}
-.drinks3 {width: 40px; height: 63px; background-image: url(images/drinkPics/mediumRoast.png);}
-.drinks4 {width: 40px; height: 63px; background-image: url(images/drinkPics/americano.png);}
-.drinks5 {width: 40px; height: 63px; background-image: url(images/drinkPics/espresso.png);}
-.drinks6 {width: 40px; height: 63px; background-image: url(images/drinkPics/macchiato.png);}
-.drinks7 { width: 40px; height: 63px; background-image: url(images/drinkPics/latte.png);}
-.drinks8 { width: 40px; height: 63px; background-image: url(images/drinkPics/coldBrew.png);}
-.drinks9 {width: 40px; height: 63px; background-image: url(images/drinkPics/greenTea.png);}
-.drinks10 {width: 40px; height: 63px; background-image: url(images/drinkPics/blackTea.png);}
-.drinks11 {width: 40px; height: 63px; background-image: url(images/drinkPics/chaiTea.png);}
+.drinks1 {background-image: url(images/drinkPics/darkRoast.png);}
+.drinks2 {background-image: url(images/drinkPics/lightRoast.png);}
+.drinks3 {background-image: url(images/drinkPics/mediumRoast.png);}
+.drinks4 {background-image: url(images/drinkPics/americano.png);}
+.drinks5 {background-image: url(images/drinkPics/espresso.png);}
+.drinks6 {background-image: url(images/drinkPics/macchiato.png);}
+.drinks7 {background-image: url(images/drinkPics/latte.png);}
+.drinks8 {background-image: url(images/drinkPics/coldBrew.png);}
+.drinks9 {background-image: url(images/drinkPics/greenTea.png);}
+.drinks10 {background-image: url(images/drinkPics/blackTea.png);}
+.drinks11 {background-image: url(images/drinkPics/chaiTea.png);}
+/*width: 40px; height: 63px; */
 
   
