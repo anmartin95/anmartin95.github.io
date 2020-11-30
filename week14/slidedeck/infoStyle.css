@@ -1,4 +1,38 @@
 body{
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    font-family: 'Playfair Display', serif;
+    color: white;
+    font-size: 27px;
+}
+h1{
+    font-size: 50px;
+    background-color: rgb(219, 182, 195);
+
+}
+img{
+    border-color: rgb(219, 182, 195);
+    width: 400px;
+    padding: 30px;
+}
+.container{
+    justify-content: space-around;
+}
+a{
+    background-color: rgb(219, 182, 195);
+    padding: 15px;
+    font-size: 20px;
+    text-decoration: none;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.button{
+    float: right;
+}
+.head{
+    padding: 20px;
 }
