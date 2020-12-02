@@ -1,7 +1,7 @@
 // flip book animation using jquery and flip.js library 
 $('#book').turn({
-  width: 1000,
-  height: 600,
+  width: 900,
+  height: 500,
 
   page: 1,
   autoCenter: true, 
