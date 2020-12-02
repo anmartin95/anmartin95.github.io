@@ -4,7 +4,7 @@ body{
 #book .page{
     background: white;
 }
-#flipbook .shadow, #flipbook.shadow{
+#book .shadow, #book.shadow{
   -webkit-box-shadow: 0 4px 10px #666;
   -moz-box-shadow: 0 4px 10px #666;
   -ms-box-shadow: 0 4px 10px #666;
