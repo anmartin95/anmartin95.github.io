@@ -11,14 +11,26 @@ body{
   -o-box-shadow: 0 4px 10px #666;
   box-shadow: 0 4px 10px #666;
 }
+#font1{
+    font-family: 'Marck Script', cursive;
+}
+#font2{
+    font-family: 'Monsieur La Doulaise', cursive;
+}
+#font3{
+    font-family: 'Indie Flower', cursive;
+}
+#font4{
+    font-family: 'The Girl Next Door', cursive;
+}
+#font5{
+    font-family: 'Limelight', cursive;
+}
+#font6{
+    font-family: 'Rock Salt', cursive;
+}
 /*
-font-family: 'Monsieur La Doulaise', cursive;
-font-family: 'Marck Script', cursive;
 font-family: 'Charm', cursive;
 font-family: 'Homemade Apple', cursive;
-font-family: 'Indie Flower', cursive;
-font-family: 'Limelight', cursive;
-font-family: 'Rock Salt', cursive;
-font-family: 'The Girl Next Door', cursive;
 font-family: 'Waiting for the Sunrise', cursive;
 */
