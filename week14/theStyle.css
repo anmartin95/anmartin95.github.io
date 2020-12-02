@@ -1,47 +1,17 @@
 body{
-    display: flex;
-    flex-direction: column;
-    background-color: black;
-    font-family: 'Playfair Display', serif;
-    font-size: 40px;
+    overflow: hidden;
 }
-.home{
-    align-items: center;
-    padding: 30px;
+#book .page{
+    background: white;
 }
-.button{
-    background-color: rgb(252, 230, 230);
-    padding: 20px;
-    font-size: 30px;
-}
-a{
-    text-decoration: none;
-}
-.head{
-    background-color: rgb(240, 184, 184);
-    justify-content: center;
-    color: white;
-    margin-top: 10%;
-    font-size: 50px;
-}
-label{
-    font-size: 25px;
-}
-#question1{
-    background-color: rgb(228, 174, 207);
-}
-.m{
-    background-color: rgb(236, 211, 227);
-}
-#question2{
-    background-color: rgb(240, 181, 181);
-}
-.t{
-    background-color: rgb(243, 215, 215);
-}
-#question3{
-    background-color: rgb(252, 192, 136);
-}
-.e{
-    background-color: rgb(253, 217, 181);
-}
+/*
+font-family: 'Monsieur La Doulaise', cursive;
+font-family: 'Marck Script', cursive;
+font-family: 'Charm', cursive;
+font-family: 'Homemade Apple', cursive;
+font-family: 'Indie Flower', cursive;
+font-family: 'Limelight', cursive;
+font-family: 'Rock Salt', cursive;
+font-family: 'The Girl Next Door', cursive;
+font-family: 'Waiting for the Sunrise', cursive;
+*/
