@@ -6,5 +6,5 @@ $('#book').turn({
   page: 1,
   autoCenter: true, 
 
-  duration: 2000, 
+  duration: 3000, 
 })
