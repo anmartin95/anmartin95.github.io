@@ -3,7 +3,7 @@ $('#book').turn({
   width: 1000,
   height: 600,
 
-  page:0,
+  page:1,
   autoCenter: true, 
 
   duration: 2000, 
