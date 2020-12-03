@@ -1,7 +1,5 @@
+
 body{
-    background-image: url(folkgif.gif);
-}
-body .intro{
     overflow: hidden;
     background-image: url(folkloreBG.jpg);
     background-size: auto;
@@ -40,6 +38,10 @@ a{
     text-align: center;
     font-size: 40px;
     margin-left: 600px;
+}
+main{
+    background-image: url(folkgif.gif);
+    background-size: auto;
 }
 #book .page {
     background-color: white;
