@@ -34,6 +34,10 @@ h2{
 a{
     text-decoration: none;
 }
+a:hover{
+    text-decoration: none;
+    font-size: 350px;
+}
 .sub{
     text-align: center;
     font-size: 40px;
@@ -41,7 +45,9 @@ a{
 }
 main{
     background-image: url(folkgif.gif);
-    background-size: auto;
+    background-size: cover;
+    height: 100%;
+    width: 60%;
 }
 #book .page {
     background-color: white;
