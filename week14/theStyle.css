@@ -1,13 +1,11 @@
 body{
+    background-image: url(folkgif.gif);
+}
+body .intro{
     overflow: hidden;
     background-image: url(folkloreBG.jpg);
-    background-size: cover;
+    background-size: auto;
     background-repeat: none;
-}
-body .main{
-    overflow: hidden;
-    background-image: url(ts2.gif);
-    background-size: cover;
 }
 #name{
     font-family: 'Marck Script', cursive;
