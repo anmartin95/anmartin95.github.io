@@ -2,6 +2,12 @@ body{
     overflow: hidden;
     background-image: url(folkloreBG.jpg);
     background-size: cover;
+    background-repeat: none;
+}
+body .main{
+    overflow: hidden;
+    background-image: url(ts2.gif);
+    background-size: cover;
 }
 #name{
     font-family: 'Marck Script', cursive;
@@ -63,6 +69,7 @@ a{
     -o-transition:margin-left 0.2s ease-in-out;
     -ms-transition:margin-left 0.2s ease-in-out;
     transition:margin-left 0.2s ease-in-out;
+    position: fixed;
   }
 #font1{
     font-family: 'Marck Script', cursive;
