@@ -1,43 +1,49 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Folklore</title>
-		<link rel="shortcut icon" type="image/png" href="iconFL.png"/>
-		<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
 		<meta charset="utf-8">
+		<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+		<title>Folklore</title>
+		<link rel="shortcut icon" type="image/png" href="images/iconFL.png"/>
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Charm&family=Homemade+Apple&family=Indie+Flower&family=Limelight&family=Marck+Script&family=Monsieur+La+Doulaise&family=Rock+Salt&family=The+Girl+Next+Door&family=Waiting+for+the+Sunrise&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="theStyle.css">
 		<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
         <script type="text/javascript" src="turnjs4/lib/turn.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="theStyle.css">
         <script src="theMedium.js" defer></script>
 	</head>
 	<body class="main">
         <main>
-		    <div id="book">
+		    <div id="flipbook">
 			<div class="hard" id="cover">
-				<div id="font2">Folklore</div>
-                <p>the folk story of betty and james</p>
+				<div class="bookTitle" id="font2">Folklore</div>
+                <p class="subheading" id="font2">the folk story of betty and james</p>
 			</div>
-			<div class="hard" id="pg1">
+			<div class="hard" id="seven">
 				<h1 id="font3">Seven</h1>
-				<p id="font2">taylor's childhood</p>
-				<p>tells of taylor’s childhood “I was high in the sky with pennsylvania under me” - taylor grew up in pennsylvania</p>
+				<p class="p1">“seven” tells of taylor’s childhood and her memories of growing up in Pennsylvania. It shows her growth and the changes throughout her life, yet also focuses on the things that have stayed the same. 
+				<div class="quote" id="font3">“I hit my peak at seven feet in the swing over the creek, I was too scared to jump in. But I was high in the sky, with Pennsylvania under me. Are there still beautiful things?"</div></p>
 			</div>
-			<div class="pg2">
-				<h1 id="font3">“passed down like folk songs, our love lasts so long”</h1>
-				<p>the introduction to a folklore of betty and james</p>
-				<p>analogy of taylor's life through a tale of folk songs</p>
+			<div class="seven">
+				<div class="quote" id="font3">“passed down like folk songs, our love lasts so long”</div>
+				<p class="p2">In mentioning the presence of folk stories in her childhood, she suggests how the folk songs all connect to her own life. This introduces the folk story of Betty and James that follows.</p>
+				<audio id="audio" src="audioFiles/seven.mp3"></audio>
+				<!-- <audio autoplay> 
+					<source src="audioFiles/seven.mp3" type="audio/mpeg" loop="loop">
+				</audio> -->
 			</div>
-			<div class="pg3">
+			<div class="betty">
 				<h1 id="font4">betty</h1>
 				<p>the story of betty and james . . . </p>
 			</div>
-			<div class="pg4">
+			<div class="betty">
 				<h1 id="font4">betty</h1>
 				<p>the story of betty and james . . . </p>
+				<!-- <audio id="betty">
+					<source src="audioFiles/betty.mp3" type="audio/mpeg" loop="loop">
+				</audio> -->
 			</div>
-			<div class="pg5">
+			<div class="mirrorball">
 				<h1 id="font5">mirrorball</h1>
 				<p>the school dance . . . </p>
 			</div>
