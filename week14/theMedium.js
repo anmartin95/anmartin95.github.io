@@ -1,5 +1,6 @@
 let songs = ["seven", "betty", "mirrorball", "august", "cardigan"];
 let index = 0;
+var songFile = new Audio();
 
 // flip book animation using jquery and flip.js library 
 $('#flipbook').turn({
@@ -12,31 +13,19 @@ $('#flipbook').turn({
   duration: 3000, 
   // play song on page turn
   when:{
-    turning:function(){songFile.playSong();
+    turning:function(){
+      index++;
+      console.log(index);
+      var tempSongFile = "audioFiles/" + songs[index] + ".mp3";
+      songFile.pause();
+      songFile.src = tempSongFile;
+      songFile.play();
   }}
 });
 
 // Turn to the page 10
 //$("#flipbook").turn("page", 10);
 
-// creates new audio and source tag for each page, passes respective song for page as argument
-function createAudioTag(song){
-  var newSong = document.createElement('audio');
-  var newSrc = document.createElement('source');
-  newSrc.setAttribute('src', song);
-  newSong.appendChild(newSrc);
-  newSong.load()
-  newSong.playSong=function(){
-    newSong.pause();
-    newSong.currentTime=0;
-    newSong.play();
-  }
-  return newSong;
-}
-
 console.log($('#flipbook').turn("direction"));
 
 // function nextSong(){}
-var tempSongFile = "audioFiles/" + songs[index] + ".mp3";
-index++;
-var songFile = createAudioTag(tempSongFile);
