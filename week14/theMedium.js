@@ -10,17 +10,30 @@ $('#flipbook').turn({
   autoCenter: true, 
 
   duration: 3000, 
-  /*when: {
-    turning: function(e, page, view) {  
-        var audio = document.getElementById("audio");
-        audio.play();
-    }
-} */
+  when:{
+    turning:function(){songFile.playSong();
+  }}
 });
 $("#flipbook").bind("turned", function(event, page, view) { 
   alert("Page: "+page);
 });
 
-
 // Turn to the page 10
 //$("#flipbook").turn("page", 10);
+
+function createAudioTag(song){
+  var newSong = document.createElement('audio');
+  var newSrc = document.createElement('source');
+  newSrc.setAttribute('src', song);
+  newSong.appendChild(newSrc);
+  newSong.load()
+  newSong.playSong=function(){
+    newSong.pause();
+    newSong.currentTime=0;
+    newSong.play();
+  }
+  return newSong;
+}
+
+var tempSongFile = "audioFiles/" + songs[index] + ".mp3";
+var songFile = createAudioTag(tempSongFile);
