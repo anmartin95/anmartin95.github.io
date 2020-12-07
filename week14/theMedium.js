@@ -1,4 +1,4 @@
-let songs = ["seven", "betty"];
+let songs = ["seven", "betty", "cardigan"];
 let index = 0;
 
 // flip book animation using jquery and flip.js library 
@@ -12,7 +12,6 @@ $('#flipbook').turn({
   duration: 3000, 
   when:{
     turning:function(){songFile.playSong();
-    index++;
   }}
 });
 
@@ -33,5 +32,7 @@ function createAudioTag(song){
   return newSong;
 }
 
+console.log(($('#flipbook').turn("direction"));
 var tempSongFile = "audioFiles/" + songs[index] + ".mp3";
+index++;
 var songFile = createAudioTag(tempSongFile);
