@@ -10,12 +10,12 @@ $('#flipbook').turn({
   autoCenter: true, 
 
   duration: 3000, 
-  when: {
+  /*when: {
     turning: function(e, page, view) {  
         var audio = document.getElementById("audio");
         audio.play();
     }
-}
+} */
 });
 $("#flipbook").bind("turned", function(event, page, view) { 
   alert("Page: "+page);
