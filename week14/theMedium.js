@@ -12,6 +12,7 @@ $('#flipbook').turn({
   duration: 3000, 
   when:{
     turning:function(){songFile.playSong();
+    index++;
   }}
 });
 
