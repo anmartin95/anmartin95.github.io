@@ -10,6 +10,7 @@ $('#flipbook').turn({
   autoCenter: true, 
 
   duration: 3000, 
+  // play song on page turn
   when:{
     turning:function(){songFile.playSong();
   }}
@@ -18,6 +19,7 @@ $('#flipbook').turn({
 // Turn to the page 10
 //$("#flipbook").turn("page", 10);
 
+// creates new audio and source tag for each page, passes respective song for page as argument
 function createAudioTag(song){
   var newSong = document.createElement('audio');
   var newSrc = document.createElement('source');
@@ -33,6 +35,8 @@ function createAudioTag(song){
 }
 
 console.log($('#flipbook').turn("direction"));
+
+// function nextSong(){}
 var tempSongFile = "audioFiles/" + songs[index] + ".mp3";
 index++;
 var songFile = createAudioTag(tempSongFile);
