@@ -14,9 +14,6 @@ $('#flipbook').turn({
     turning:function(){songFile.playSong();
   }}
 });
-$("#flipbook").bind("turned", function(event, page, view) { 
-  alert("Page: "+page);
-});
 
 // Turn to the page 10
 //$("#flipbook").turn("page", 10);
