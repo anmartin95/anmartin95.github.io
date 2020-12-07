@@ -1,18 +1,15 @@
 body{
     display: flex;
     flex-direction: column;
-    background-color: black;
+    background-color: gray;
     font-family: 'Playfair Display', serif;
     color: white;
     font-size: 27px;
 }
 h1{
     font-size: 50px;
-    background-color: rgb(219, 182, 195);
-
 }
 img{
-    border-color: rgb(219, 182, 195);
     width: 400px;
     padding: 30px;
 }
@@ -20,7 +17,6 @@ img{
     justify-content: space-around;
 }
 a{
-    background-color: rgb(219, 182, 195);
     padding: 15px;
     font-size: 20px;
     text-decoration: none;
