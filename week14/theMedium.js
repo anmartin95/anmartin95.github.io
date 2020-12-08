@@ -1,8 +1,9 @@
-let songs = ["seven", "betty", "mirrorball", "august", "cardigan"];
-let index = 0;
+//global vars
+let songs = ["seven", "betty", "mirrorball", "august", "cardigan"]; // array of song names for string concatenation
+let tempIndex; // var for index of correct song
 var songFile = new Audio();
 
-// flip book animation using jquery and flip.js library 
+// flip book animation using jquery and turn.js library 
 $('#flipbook').turn({
   width: 800,
   height: 575,
@@ -11,21 +12,18 @@ $('#flipbook').turn({
   autoCenter: true, 
 
   duration: 3000, 
-  // play song on page turn
-  when:{
-    turning:function(){
-      index++;
-      console.log(index);
-      var tempSongFile = "audioFiles/" + songs[index] + ".mp3";
-      songFile.pause();
-      songFile.src = tempSongFile;
-      songFile.play();
-  }}
 });
-
 // Turn to the page 10
 //$("#flipbook").turn("page", 10);
 
-console.log($('#flipbook').turn("direction"));
-
-// function nextSong(){}
+//event listener "turning" - each time a page is turned, 
+$("#flipbook").bind("turning", function(event, page, view) {
+  if ((page%2) == 0) // if page number is even (page turning right to left)
+    tempIndex = (page/2) - 1; // sets the index for songs array to the corresponding page about that song
+  else 
+    tempIndex = (page-3)/2;
+  songFile.pause(); // previous song pauses when page starts turning
+  var tempSongFile = "audioFiles/" + songs[tempIndex] + ".mp3";
+  songFile.src = tempSongFile;
+  songFile.play(); // new song plays
+});
