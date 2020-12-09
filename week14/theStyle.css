@@ -5,6 +5,7 @@ body{
     background-repeat: none;
     display: flex;
     justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
 }
 #name{
     font-family: 'Marck Script', cursive;
@@ -96,12 +97,16 @@ main{
     font-size: 30px;
 }
 h1{
-    font-size: 70px;
+    font-size: 35px;
     padding: 20px;
-    margin-top: -10px;
+    margin-bottom: -22px;
+    margin-top: -2px;
 }
 p{
     padding: 20px;
+}
+.p1{
+    font-size: 18px;
 }
 .quote{
     padding: 20px;

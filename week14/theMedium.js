@@ -1,5 +1,5 @@
 //global vars
-let songs = ["seven", "betty", "mirrorball", "august", "cardigan"]; // array of song names for string concatenation
+let songs = ["instrumental", "seven", "betty", "mirrorball", "august", "cardigan"]; // array of song names for string concatenation
 let tempIndex; // var for index of correct song
 var songFile = new Audio();
 
