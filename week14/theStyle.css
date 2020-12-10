@@ -126,7 +126,7 @@ img{
     width: 300px;
     border-radius: 100%;
     position: relative;
-    margin-left: 70px;
+    margin-right: 10px;
     margin-top: -20px;
     margin-bottom: -10px;
 }
@@ -147,6 +147,9 @@ img{
 }
 #font6{
     font-family: 'Rock Salt', cursive;
+}
+#appendedQuotes{
+    font-size: 40px;
 }
 /*
 font-family: 'Charm', cursive;
