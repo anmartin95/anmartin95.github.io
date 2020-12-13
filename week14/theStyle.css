@@ -5,10 +5,9 @@ body{
     background-repeat: none;
     display: flex;
     justify-content: center;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'IM Fell DW Pica', serif;
 }
-#name{
-    font-family: 'Marck Script', cursive;
+.name{
     font-size: 50px;
     width: 400px;
     position: absolute;
@@ -18,7 +17,6 @@ body{
 }
 .title{
     position: absolute;
-    font-family: 'Monsieur La Doulaise', cursive;
     text-align: center;
     color: white;
     display: flex;
@@ -29,13 +27,11 @@ body{
     letter-spacing: 5px;
 }
 h2{
-    background-image: url(images/folkgif.gif);
-    background-size: cover;
-    color: transparent;
-    -moz-background-clip: text;
+    background: url(images/folkgif.gif) no-repeat right top;
     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: cover;
     font-size: 330px;
-    position: relative;
 }
 a{
     text-decoration: none;
@@ -104,55 +100,82 @@ h1{
     margin-top: -2px;
 }
 p{
-    padding: 24px;
-    margin-top: -1px;
+    padding-left: 22px;
+    padding-right: 20px;
+    font-size: 20px;
     text-align: justify;
 }
-.p1{
-    font-size: 17px;
-    margin-bottom: -15px;
-}
 .quote{
-    padding: 22px;
-    margin-bottom: -40px;
-    margin-top: -30px;
-    font-size: 17px;
+    font-size: 19px;
+    padding-left: 22px;
+    padding-right: 20px;
 }
 .quote2{
-    padding: 22px;
     font-size: 25px;
+    padding-left: 22px;
+    padding-right: 20px;
 }
-img{
+.quote3{
+    font-size: 21px;
+    padding-left: 22px;
+    padding-right: 20px;
+}
+#sevenImg{
     width: 300px;
     border-radius: 100%;
     position: relative;
     margin-right: 10px;
-    margin-top: -20px;
-    margin-bottom: -10px;
+}
+#augustImg{
+    width: 150px;
+    height: 150px;
+    float: right;
+    position: relative;
+    padding: 10px;
+}
+#bettyImg{
+    width: 200px;
+    float: right;
+    margin: 10px;
+}
+.appendedQuotes{
+    font-size: 45px;
+    margin-top: -530px;
+    margin-left: 900px;
+    width: 240px;
+    font-family: 'Charm', cursive;
+    color: antiquewhite;
+    text-shadow: 0px 8px 8px rgb(2, 39, 2);
+    animation: textAppear 6s ease 3s 1 normal;
+}
+@keyframes textAppear{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 #font1{
-    font-family: 'Marck Script', cursive;
-}
-#font2{
-    font-family: 'Monsieur La Doulaise', cursive;
-}
-#font3{
     font-family: 'Indie Flower', cursive;
 }
+#font2{
+    font-family: 'Marck Script', cursive;
+}
+#font3{
+    font-family: 'Limelight', cursive;  
+}
 #font4{
-    font-family: 'The Girl Next Door', cursive;
+    font-family: 'Homemade Apple', cursive;
 }
 #font5{
-    font-family: 'Limelight', cursive;
+    font-family: 'The Girl Next Door', cursive;
 }
 #font6{
-    font-family: 'Rock Salt', cursive;
+    font-family: 'Waiting for the Sunrise', cursive;
 }
-#appendedQuotes{
-    font-size: 40px;
+#font7{
+    font-family: 'IM Fell Great Primer', serif;
 }
-/*
-font-family: 'Charm', cursive;
-font-family: 'Homemade Apple', cursive;
-font-family: 'Waiting for the Sunrise', cursive;
-*/
+#font8{
+    font-family: 'IM Fell DW Pica', serif;
+}
+#font9{
+    font-family: 'Monsieur La Doulaise', cursive;
+}
