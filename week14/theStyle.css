@@ -90,11 +90,11 @@ main{
 .bookTitle{
     font-size: 100px;
     margin-top: 150px;
-    margin-left: 50px;
+    margin-left: 40px;
 }
 .subheading{
     margin-left: 70px;
-    font-size: 30px;
+    font-size: 33px;
 }
 h1{
     font-size: 40px;
@@ -103,14 +103,31 @@ h1{
     margin-bottom: -20px;
     margin-top: -2px;
 }
+.dynast{
+    font-size: 22px;
+}
+.mball{
+    background-image: url(images/mirrorball.gif);
+    color: white;
+    margin-bottom: 20px;
+}
+.exi{
+    background-image: url(images/exile.jpg);
+    background-size: cover;
+    color: white;
+    margin-bottom: 10px;
+}
+.myTears{
+    background-image: url(images/myTearsBG.jpg);
+    background-size: cover;
+    color: whitesmoke;
+    margin-bottom: 30px;
+}
 p{
     padding-left: 22px;
     padding-right: 20px;
     font-size: 20px;
     text-align: justify;
-}
-p2{
-    float: right;
 }
 .quote{
     font-size: 19px;
@@ -127,6 +144,15 @@ p2{
     padding-left: 22px;
     padding-right: 20px;
 }
+.quote4{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: -5px;
+    margin-top: -5px;
+}
+#add{
+    font-size: 24px;
+}
 #sevenImg{
     width: 300px;
     border-radius: 100%;
@@ -134,8 +160,8 @@ p2{
     margin-left: 40px;
 }
 #augustImg{
-    width: 150px;
-    height: 150px;
+    width: 175px;
+    height: 175px;
     float: right;
     position: relative;
     padding: 10px;
@@ -147,22 +173,52 @@ p2{
     border-radius: 100%;
 }
 #cardiganImg{
-    width: 240px;
+    width: 258px;
     padding: 10px;
     float: right;
     position: relative;
 }
 #illicitImg{
-    width: 400px;
+    width: 410px;
+}
+#madImg{
+    width: 420px;
+}
+#peaceImg{
+    width: 420px;
+    height: 200px;
+}
+#oneImg{
+    width: 410px;
+}
+#epiphImg{
+    width: 250px;
+    float: right;
+    position: relative;
+    padding: 20px;
+}
+#tearsImg{
+    width: 415px;
+    height: 300px;
+}
+#stringImg{
+    width: 418px;
+}
+#lakesImg{
+    width: 170px;
+    height: 175px;
+    float: right;
+    position: relative;
+    padding: 5px;
 }
 .appendedQuotes{
     font-size: 45px;
-    margin-top: -530px;
+    margin-top: -570px;
     margin-left: 900px;
     width: 240px;
     font-family: 'Charm', cursive;
-    color: antiquewhite;
-    text-shadow: 0px 8px 8px rgb(2, 39, 2);
+    color: rgb(255, 251, 246);
+    text-shadow: 10px 8px 8px rgb(1, 14, 1);
     animation: textAppear 6s ease 3s 1 normal;
 }
 @keyframes textAppear{
