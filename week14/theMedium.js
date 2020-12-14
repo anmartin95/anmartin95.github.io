@@ -1,6 +1,6 @@
 //global vars
-let songs = ["instrumental", "seven", "betty", "mirrorball", "august", "cardigan"]; // array of song names for string concatenation
-let quotes = [" ", " ", "im only seventeen, I don’t know anything, but I know i miss you", "I want you to know I’m a mirrorball, I can change everything about me to fit in", "i can see us lost in the memory august sipped away like a bottle of wine, ‘cause you were never mine", "when you are young they assume you know nothing, but I knew you", "that's the thing about illicit affairs, and clandestine meetings, and longing stares"]
+let songs = ["instrumental", "seven", "betty", "mirrorball", "august", "cardigan", "illicitAffairs", "exile", "thisIsMeTrying", "madWoman", "the1", "peace", "hoax", "epiphany", "myTearsRicochet", "theLastGreatAmericanDynasty", "invisibleString", "theLakes"]; // array of song names for string concatenation
+let quotes = [" ", " ", "I'm only seventeen, I don’t know anything, but I know I miss you.", "I want you to know I’m a mirrorball, I can change everything about me to fit in.", "I can see us lost in the memory august sipped away like a bottle of wine, ‘cause you were never mine.", "When you are young they assume you know nothing, but I knew you.", "So you leave no trace behind, like you don't even exist.", "I think I’ve seen this film before, so im leaving out the side door", "I’ve been having a hard time adjusting, I had the shiniest wheels now they’re rusting", "and there's nothing like a mad woman, what a shame she went mad"]
 let tempIndex; // var for index of correct song
 var songFile = new Audio();
 
