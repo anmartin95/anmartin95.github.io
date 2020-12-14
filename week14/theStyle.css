@@ -26,7 +26,8 @@ body{
     margin-top: 250px;
     letter-spacing: 5px;
 }
-h2{
+/* fills main text of index page with a gif */
+h2{ 
     background: url(images/folkgif.gif) no-repeat right top;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -193,6 +194,7 @@ p{
 }
 #epiphImg{
     width: 250px;
+    height: 300px;
     float: right;
     position: relative;
     padding: 20px;
@@ -221,6 +223,7 @@ p{
     text-shadow: 10px 8px 8px rgb(1, 14, 1);
     animation: textAppear 6s ease 3s 1 normal;
 }
+/* fades in quotes on side of flipbook */
 @keyframes textAppear{
     0% {opacity: 0;}
     100% {opacity: 1;}

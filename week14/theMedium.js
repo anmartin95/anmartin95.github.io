@@ -35,9 +35,9 @@ $("#flipbook").bind("turning", function(event, page, view) {
   songFile.play(); // new song plays
 });
 
-function displayQuote(i, p){
+function displayQuote(i, p){ // appends quote of corresponding songs to side of book on page turn
   $(document).ready(function(){;
-    $(".appendedQuotes").empty();
+    $(".appendedQuotes").empty(); // removes previous quote
     $(".appendedQuotes").append("<b>" + quotes[i] + "</b>");
     $("b").attr('id', quotes);
   });
