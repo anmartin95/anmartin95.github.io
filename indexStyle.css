@@ -21,16 +21,26 @@ main{
     background-color: white;
     font-size: 25px;
     width: 1000px;
-    height: max-content;
+    height: 1500px;
     box-shadow: 1px 1px 8px rgb(139, 139, 139);
     margin-bottom: 400px;
 }
 .header{
-    padding: 20px;
+    padding: 60px;
+    font-size: 50px;
+    color: teal;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
 }
 a{
     text-decoration: none;
     color: rgb(139, 139, 139);
+    font-size: 40px;
+    padding: 30px;
 }
 a:hover{
     text-decoration: none;
@@ -45,71 +55,54 @@ h1:hover .sunflower{
     to 
     {transform: rotate(359deg);}
 }
-.stuff{
-    display: flex;
-    justify-content: flex-end;
-}
-.probtn{
-    background-color: thistle;
-    color: rgb(255, 243, 234);
-    padding: 15px;
-    border: none;
-    font-size: 25px;
-    width: 300px;
-    box-shadow: 4px 4px 8px rgb(139, 139, 139);
-}
-.projects{
-    position: relative;
-    display: inline-block;
-}
-.projectContent{
-    display: none;
-    position: absolute;
-    color: darksalmon;
-    background-color: white;
-    z-index: 1;
-}
-.projectContent a:hover{
-    color: gold;
-}
-.projects:hover .projectContent{
-    display: block;
-}
-.projectContent:hover .proBtn{
-    background-color: darkmagenta;
-    color: rgb(255, 243, 234);
-}
-.container{
-    display: flex;
-    justify-content: space-around;
-}
 .album{
-    width: 250px;
+    height: 130px;
+    margin-top: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 150px;
-    padding: 30px;
 }
-.album:hover{
-    background-image: url(myStuff/stars.gif);
-}
-.smallMoon{
+.albumTitle{
+    width: 400px;
+    height: 255px;
     display: flex;
     justify-content: center;
-    align-self: center;
-    flex-direction: column;
-    max-width: 270px;
-    height: 150px;
-    padding: 20px;
+    align-items: center;
 }
-.smallMoon:hover{
+.albumTitle:hover{
+    background-image: url(myStuff/stars.gif);
+}
+.albumDescription{
+    width: 650px;
+    text-align: center;
+    justify-content: center;
+}
+.smallMoon{
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 250px;
+}
+.moonTitle{
+    width: 300px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+}
+.moonDescription{
+    width: 650px;
+    text-align: center;
+    justify-content: center;
+}
+.moonTitle:hover{
     animation-name: crescent;
     animation-duration: 3s;
     animation-fill-mode: forwards;
 }
-.smallMoon:active{
+.moonTitle:active{
     animation-play-state: paused;
 }
 @keyframes crescent {
@@ -118,15 +111,20 @@ h1:hover .sunflower{
         border-radius: 100%;}
 }
 .game{
-    width: 250px;
+    height: 130px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 150px;
-    padding: 30px;
+    margin-top: 200px;
 }
-.game:hover{
+.gameTitle:hover{
     background-image: url(myStuff/coffee.gif);
     background-size: cover;
+}
+.gameTitle{
+    width: 1200px;
+    height: 255px;
+    display: flex;
+    justify-content: center;
 }

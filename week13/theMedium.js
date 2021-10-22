@@ -104,27 +104,6 @@ function fallingImg(maxVars, numTotal, y, x, spread, minRotate, maxRotate, minSt
 				$(this).remove();	//clean up the element
 			}
 		});
-
-/* this didn't work out - maybe it will eventually
-		var i;
-		if (y == 400){
-			if((leftMargin < (cupPos + 50)) && (leftMargin > cupPosition)){
-				console.log("success!");
-				for (i = 0; i<$objs.length; i++){
-					if(className == $objs[i]){
-						if(variation == (correctNums[i] + 1)){
-							$('.order').text('correct');
-							$(this).remove();	//clean up the element
-						}
-						else
-						{
-							gameOver();
-						}
-					}
-				}
-			}
-		}
-		*/
 	}
 }
 
