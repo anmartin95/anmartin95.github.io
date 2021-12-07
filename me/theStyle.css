@@ -12,15 +12,34 @@ main{
     flex-direction: column;
 }
 a{
-    margin-top: 300px;
+    background-color: rgb(228, 185, 192);
+    display: block;
+    margin-top: -350px;
+    width: 450px;
     text-decoration: none;
     border: 2px solid rgb(105, 91, 91);
     color: rgb(58, 58, 58);
 }
 a:hover{
-    box-shadow: 2px 2px 2px rgb(105, 91, 91);
+    box-shadow: 2px 2px 10px rgb(105, 91, 91);
     text-shadow: 2px 2px 2px rgb(105, 91, 91);
 }
 a:visited{
     color: rgb(58, 58, 58);
+}
+img{
+    opacity: 0;
+    display: none;
+    height: 400px;
+    width: 300px;
+    box-shadow: 2px 2px 10px rgb(105, 91, 91);
+}
+#imgDisplay2 img{
+    height: 600px;
+    width: 450px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

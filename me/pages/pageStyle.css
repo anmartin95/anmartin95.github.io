@@ -1,0 +1,15 @@
+body{
+    background-color: rgb(209, 208, 208);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+}
+p{
+    font-size: 32px;
+    margin-top: 1000px;
+    text-align: end;
+}
+.hidden1{
+    color: red;
+}
