@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> </title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="pageStyle.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    </head>
+    <body class="pg2">
+        <div id="typewriter4"></div>
+        <img src="../images/xmas.png">
+        <div class="container">
+            <div id="typewriter5"></div>
+            <form id="guessName">
+                <input type="text" id="nname" name="nname"><br>
+                <input class="name" type="submit">
+            </form>
+        </div>
+        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+        <script>
+        const typewriter4 = new Typewriter('#typewriter4', {
+            loop: false,
+        });
+    
+        typewriter4.typeString('his true breed, to some, a mystery, ')
+            .start()
+            .pauseFor(1000)
+            .typeString(' his fur is red but not quite shaggy, ');
+    
+        const typewriter5 = new Typewriter('#typewriter5',{
+            loop: false,
+        });
+        typewriter5.pauseFor(15000)
+            .start()
+            .typeString('if you don’t stop him, zoinks! he’s gonna eat your shoe!')
+            .pauseFor(1000)
+            .typeString(' my dog’s name is dexter, but he kinda looks like __________');
+        
+        $('#guessName').submit(function nameRiddle(){
+            const mname = document.getElementById("nname").value;
+            if (mname == "nicole")
+            {
+                document.getElementById("guessName").action = "page4inColor.html";
+            }
+            else
+            {
+                alert("the answer your looking for may be found at the UPPER Left corner");
+            }
+        });
+        </script>
+    </body>
+</html>

@@ -1,5 +1,42 @@
 body{
     display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    background-color: rgb(209, 208, 208);
+}
+#hidden1{
+    opacity: 0;
+    display: none;
+}
+#hidden2{
+    color: rgb(209, 208, 208);
+    width: max-content;
+}
+.margin1{
+    margin-top: 600px;
+    font-size: 32px;
+    text-align: center;
+}
+a{
+    padding: 30px;
+    text-decoration: none;
+    color: olivedrab;
+}
+a:hover{
+    background-color: olivedrab;
+    color: lightgray;
+}
+#typewriter{
+    padding: 150px;
+    text-align: center;
+}
+form{
+    margin-left: auto;
+    margin-right: auto;
+}
+/*body{
+    display: flex;
     justify-content: center;
     align-content: center;
     font-family: 'Montserrat', sans-serif;
@@ -43,3 +80,4 @@ img{
     justify-content: center;
     align-items: center;
 }
+*/

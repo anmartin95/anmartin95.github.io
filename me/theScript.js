@@ -1,3 +1,22 @@
+const typewriter = new Typewriter('#typewriter', {
+    loop: false,
+    });
+
+typewriter.typeString('this site is scattered with hidden messages and riddles.')
+    .start()
+    .pauseFor(3000)
+    .typeString(' answer them correctly to unlock new features and pages.')
+    .pauseFor(10000)
+    .deleteAll()
+    .pauseFor(20000)
+    .typeString('hint: look at the tab bar')
+    .pauseFor(5000)
+    .deleteAll();
+
+$("#hidden2").mouseenter(function(){
+    alert("Hint: look up at the tab bar");
+});
+/*
 // creates automatic slideshow of images that shift by 1 image every second
 function imageGallery()
 {
@@ -36,3 +55,4 @@ function imageGallery()
 }
 
 imageGallery();
+*/

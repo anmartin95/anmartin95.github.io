@@ -1,15 +1,69 @@
 body{
-    background-color: rgb(209, 208, 208);
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     font-family: 'Montserrat', sans-serif;
     font-size: 40px;
+    background-color: rgb(209, 208, 208);
 }
-p{
+#hidden1{
+    opacity: 0;
+    display: none;
+}
+#hidden2{
+    color: rgb(209, 208, 208);
+    width: max-content;
+}
+.margin1{
+    margin-top: 600px;
     font-size: 32px;
-    margin-top: 1000px;
-    text-align: end;
+    text-align: center;
 }
-.hidden1{
-    color: red;
+a{
+    text-decoration: none;
+    color: olivedrab;
+}
+a:hover{
+    background-color: olivedrab;
+    color: lightgray;
+}
+#typewriter{
+    padding: 150px;
+    text-align: center;
+}
+#typewriter2{
+    text-align: left;
+    padding: 20px;
+}
+#typewriter3{
+    height: 500px;
+}
+div{
+    padding: 20px;
+    width: 400px;
+}
+form{
+    margin-left: auto;
+    margin-right: auto;
+}
+img{
+    width: 600px;
+}
+.purple{
+    background-color: rgb(208, 192, 228);
+}
+.purpleLink a{
+    color: rgb(114, 55, 187);
+}
+.purpleLink a:hover{
+    background-color: rgb(114, 55, 187);
+    color: rgb(208, 192, 228);
+}
+.jacketsImg{
+    box-shadow: rgb(140, 73, 223);
+}
+.pg2{
+    background-color: rgb(236, 224, 216);
+}
+.pg3{
+    background-color: rgb(160, 201, 204);
 }

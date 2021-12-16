@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> </title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="pageStyle.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    </head>
+    <body class="pg3">
+        <div id="typewriter4"></div>
+        <img src="../images/leavesLines.png">
+        <div class="container">
+            <div id="typewriter5"></div>
+            <form id="guessW">
+                <input type="text" id="wname" name="wname"><br>
+                <input class="week" type="submit">
+            </form>
+        </div>
+        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+        <script>
+        const typewriter4 = new Typewriter('#typewriter4', {
+            loop: false,
+        });
+    
+        typewriter4.typeString('as friday bgins, all know it is clos, ')
+            .start()
+            .pauseFor(1000)
+            .typeString(' gon too soon onc sunday gos,');
+    
+        const typewriter5 = new Typewriter('#typewriter5',{
+            loop: false,
+        });
+        typewriter5.pauseFor(12000)
+            .start()
+            .typeString('this artists’ music, many knows');
+        
+        $('#guessW').submit(function weekRiddle(){
+            const weekend = document.getElementById("wname").value;
+            if (weekend == "the weeknd")
+            {
+                document.getElementById("guessW").action = "page3inColor.html";
+            }
+            else
+            {
+                alert("the answer your looking for may be found at the UPPER Left corner");
+            }
+        });
+        </script>
+    </body>
+</html>
