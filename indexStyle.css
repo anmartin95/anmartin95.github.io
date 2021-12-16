@@ -51,6 +51,26 @@ a:hover{
     to 
     {transform: rotate(359deg);}
 }
+.designTitle{
+    width: 300px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+}
+.designDescription{
+    width: 650px;
+    text-align: center;
+    justify-content: center;
+}
+.abstractDesign{
+    height: 130px;
+    margin-top: 50px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 .album{
     height: 130px;
     margin-top: 50px;
