@@ -19,12 +19,23 @@ body{
     text-align: center;
 }
 a{
+    float: right;
+    margin-top: 200px;
+    padding: 30px;
     text-decoration: none;
-    color: olivedrab;
+    color: rgb(231, 137, 28)
 }
 a:hover{
-    background-color: olivedrab;
-    color: lightgray;
+    padding: 30px;
+    background-color: rgb(231, 137, 28);
+    color: rgb(236, 224, 216);
+}
+.congrats{
+    color: rgb(231, 137, 28);
+    float: left;
+    margin-top: 200px;
+    padding: 30px;
+    width: 323px;
 }
 #typewriter{
     padding: 150px;

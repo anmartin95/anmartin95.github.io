@@ -22,41 +22,25 @@
         </div>
         <!-- -->
         <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-        <script type='text/javascript' src="theScript.js"></script>
+        <script>
+            const typewriter = new Typewriter('#typewriter', {
+                loop: false,
+            });
+
+            typewriter.typeString('this site is scattered with hidden messages and riddles.')
+                .start()
+                .pauseFor(3000)
+                .typeString(' answer them correctly to unlock new features and pages.')
+                .pauseFor(10000)
+                .deleteAll()
+                .pauseFor(20000)
+                .typeString('hint: look at the tab bar')
+                .pauseFor(5000)
+                .deleteAll();
+
+            $("#hidden2").mouseenter(function(){
+                alert("Hint: look up at the tab bar");
+            });
+        </script>
     </body>
 </html>
-<!--
-        <main>
-            <br>
-            <div class="container">
-                <div id="imgDisplay1" class="imgContainers">
-                    <img src="">
-                    <img src="images/xmas.png" class="img1">
-                    <img src="images/leaves.png" class="img1">
-                    <img src="images/puppy.jpg" class="img1">
-                    <img src="images/duane.jpg" class="img1">
-                    <img src="images/jackets.png" class="img1">
-                </div>
-                <div id="imgDisplay2" class="imgContainers">
-                    <img src="">
-                    <img src="images/leaves.png" class="img2">
-                    <img src="images/puppy.jpg" class="img2">
-                    <img src="images/duane.jpg" class="img2">
-                    <img src="images/jackets.png" class="img2">
-                    <img src="images/xmas.png" class="img2">
-                </div>
-                <div id="imgDisplay3" class="imgContainers">
-                    <img src="">
-                    <img src="images/puppy.jpg" class="img3">
-                    <img src="images/duane.jpg" class="img3">
-                    <img src="images/jackets.png" class="img3">
-                    <img src="images/xmas.png" class="img3">
-                    <img src="images/leaves.png" class="img3">
-                </div>
-            </div>
-            <center><a href="pages/home.html">welcome</a></center>
-        </main>
-    </body>
-    <script src="theScript.js"></script>
-</html>
--->

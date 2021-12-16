@@ -10,10 +10,10 @@
         <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     </head>
     <body class="pg2">
-        <div id="typewriter4"></div>
-        <img src="../images/xmas.png">
+        <div id="typewriter1"></div>
+        <img src="../images/xmasLines.png">
         <div class="container">
-            <div id="typewriter5"></div>
+            <div id="typewriter2"></div>
             <form id="guessName">
                 <input type="text" id="nname" name="nname"><br>
                 <input class="name" type="submit">
@@ -21,23 +21,23 @@
         </div>
         <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
         <script>
-        const typewriter4 = new Typewriter('#typewriter4', {
+        const typewriter1 = new Typewriter('#typewriter1', {
             loop: false,
         });
     
-        typewriter4.typeString('his true breed, to some, a mystery, ')
+        typewriter1.typeString('my middle name is not uncommon, ')
             .start()
             .pauseFor(1000)
-            .typeString(' his fur is red but not quite shaggy, ');
+            .typeString(' it’s shared with snookie, it rhymes with goal ');
     
-        const typewriter5 = new Typewriter('#typewriter5',{
+        const typewriter2 = new Typewriter('#typewriter2',{
             loop: false,
         });
-        typewriter5.pauseFor(15000)
+        typewriter2.pauseFor(15000)
             .start()
-            .typeString('if you don’t stop him, zoinks! he’s gonna eat your shoe!')
+            .typeString('nickname can be nicki, but not minaj, ')
             .pauseFor(1000)
-            .typeString(' my dog’s name is dexter, but he kinda looks like __________');
+            .typeString(' not saint nick, but saint _______');
         
         $('#guessName').submit(function nameRiddle(){
             const mname = document.getElementById("nname").value;

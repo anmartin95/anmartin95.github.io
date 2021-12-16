@@ -1,22 +1,3 @@
-const typewriter = new Typewriter('#typewriter', {
-    loop: false,
-    });
-
-typewriter.typeString('this site is scattered with hidden messages and riddles.')
-    .start()
-    .pauseFor(3000)
-    .typeString(' answer them correctly to unlock new features and pages.')
-    .pauseFor(10000)
-    .deleteAll()
-    .pauseFor(20000)
-    .typeString('hint: look at the tab bar')
-    .pauseFor(5000)
-    .deleteAll();
-
-$("#hidden2").mouseenter(function(){
-    alert("Hint: look up at the tab bar");
-});
-/*
 // creates automatic slideshow of images that shift by 1 image every second
 function imageGallery()
 {
@@ -26,8 +7,12 @@ function imageGallery()
     var images2 = imgContainer2.getElementsByTagName('img');
     var imgContainer3 = document.getElementById('imgDisplay3');
     var images3 = imgContainer3.getElementsByTagName('img');
+    var imgContainer4 = document.getElementById('imgDisplay4');
+    var images4 = imgContainer4.getElementsByTagName('img');
+    var imgContainer5 = document.getElementById('imgDisplay5');
+    var images5 = imgContainer5.getElementsByTagName('img');
     var i = 1;
-    if (i < images3.length)
+    if (i < images5.length)
     {
         setInterval(function ()
         {
@@ -43,16 +28,23 @@ function imageGallery()
             images3[0].style.opacity = 1;
             images3[0].style.display = 'inline';
 
+            images4[0].src = images4[i].src;
+            images4[0].style.opacity = 1;
+            images4[0].style.display = 'inline';
+
+            images5[0].src = images5[i].src;
+            images5[0].style.opacity = 1;
+            images5[0].style.display = 'inline';
+
             i++;
 
-            if(i === images3.length)
+            if(i === images5.length)
             {
                 i = 1;
             }
 
-        }, 1000);
+        }, 2000);
     }
 }
 
 imageGallery();
-*/

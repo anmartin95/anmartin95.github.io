@@ -9,14 +9,14 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
         <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     </head>
-    <body class="pg3">
+    <body class="pg2">
         <div id="typewriter1"></div>
-        <img src="../images/leavesLines.png">
+        <img src="../images/wallLines.png">
         <div class="container">
             <div id="typewriter2"></div>
-            <form id="guessW">
-                <input type="text" id="wname" name="wname"><br>
-                <input class="week" type="submit">
+            <form id="guessArtist">
+                <input type="text" id="aname" name="aname"><br>
+                <input class="name" type="submit">
             </form>
         </div>
         <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
@@ -25,23 +25,25 @@
             loop: false,
         });
     
-        typewriter1.typeString('as friday bgins, all know it is clos, ')
+        typewriter1.typeString('sometimes riddles can be trouble, trouble, trouble, ')
             .start()
             .pauseFor(1000)
-            .typeString(' gon too soon onc sunday gos,');
+            .typeString(' solvable only in your wildest dreams,');
     
         const typewriter2 = new Typewriter('#typewriter2',{
             loop: false,
         });
-        typewriter2.pauseFor(12000)
+        typewriter2.pauseFor(15000)
             .start()
-            .typeString('this artists’ music, many knows');
+            .typeString('or sometimes you know the answer all too well, ')
+            .pauseFor(1000)
+            .typeString(' and fearlessly, you answer what it means.');
         
-        $('#guessW').submit(function weekRiddle(){
-            const weekend = document.getElementById("wname").value;
-            if (weekend == "the weeknd")
+        $('#guessArtist').submit(function artistRiddle(){
+            const aname = document.getElementById("aname").value;
+            if (aname == "taylor swift")
             {
-                document.getElementById("guessW").action = "page3inColor.html";
+                document.getElementById("guessArtist").action = "page5inColor.html";
             }
             else
             {
