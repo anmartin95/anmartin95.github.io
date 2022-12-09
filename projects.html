@@ -4,46 +4,39 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=IM+Fell+DW+Pica:ital@1&family=IM+Fell+Great+Primer:ital@1&family=Indie+Flower&family=Limelight&family=Marck+Script&family=Monsieur+La+Doulaise&family=The+Girl+Next+Door&family=Waiting+for+the+Sunrise&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="indexStyle.css">
         <title>Amanda Martin's Repository</title>
     </head>
     <body>
-        <section id="site1">
-            <div class = "projects">
-                discover your astrological energy with . . . 
-            <div id="info">
-                <div id="info2">
-                <div id="head">
-                    <div class="moon">
-                        <a href="astrology/findYourSign.html">The Zodiac Sign Calculator</a>  
-                    </div>
+        <section id="projects">
+            <div class="nav">
+                <ul>
+                    <li><a id="nav" href="index.html">Home</a></li>
+                    <li><a id="nav" href="projects.html">My Projects</a></li>
+                    <li><a id="nav" href="https://www.linkedin.com/in/anmartin95/">Connect</a></li>
+                </ul>
+            </div>
+            <div id="gridContainer">
+                <div class="grid" id="site1">  
+                    <a href="astrology/findYourSign.html"><img id="pro" src="astrology.jpeg">
+                    <div id="astroName">Find Your Sign</div></a>
                 </div>
-                <div class="aboutSite">
-                    Learn about the twelve zodiac signs and their astrological significance - including your ruling sun sign.  Through numerous instances of user interactions - such as prompts to enter your birthday, hover elements in each page's design, and links between pages relating to each sign's features - this site offers ample opportunities to learn about astrology and the influence of the solar system.
+                <div class="grid" id="site2">
+                    <a href="cafeGame/index.html"><img id="pro" src="coffee.jpeg">
+                    <div id="cafeName">Cafe Java</div></a>
                 </div>
+                <div class="grid" id="site3">
+                    <a href="me/index.html"><img id="pro" src="puppyShifted.png">
+                    <div id="abstractName">Abstract Interaction</div></a>
+                </div>
+                <div class="grid" id="site4">
+                    <a href="folklore/index.html"><img id="pro" src="folklore.jpeg">
+                    <div id="folkloreName">Storybook</div></a>
                 </div>
             </div>
-            </div>
-        </section>
-        <section id="site2">
-            <div class = "projects">
-                enhance your barista skills with. . .  
-                <div id="info">
-                    <div id="info2">
-                    <div id="head">
-                            <a href="cafeGame/index.html">Cafe Java</a>  
-                    </div>
-                    <div class="aboutSite">
-                        This user-interactive game mimics a coffee shop experience aimed at collecting the falling images on a canvas that match the random generated coffee order.
-                    </div>
-                    </div>
-                </div>
-            </div>
-            <svg class="arrows">
-                <path class="a1" d="M0 0 L30 32 L60 0"></path>
-                <path class="a2" d="M0 20 L30 52 L60 20"></path>
-                <path class="a3" d="M0 40 L30 72 L60 40"></path>
-            </svg>
         </section>
     </body>
 </html>
