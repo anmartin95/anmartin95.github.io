@@ -1,8 +1,13 @@
-body{
+.intro{
     overflow: hidden;
     background-image: url(images/folkloreBG.jpg);
     background-size: cover;
     background-repeat: none;
+    display: flex;
+    justify-content: center;
+    font-family: 'IM Fell DW Pica', serif;
+}
+.myBook{
     display: flex;
     justify-content: center;
     font-family: 'IM Fell DW Pica', serif;
@@ -28,9 +33,7 @@ body{
 }
 /* fills main text of index page with a gif */
 h2{ 
-    background: url(images/folkgif.gif) no-repeat right top;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: black;
     background-size: cover;
     font-size: 330px;
 }
