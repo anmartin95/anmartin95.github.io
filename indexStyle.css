@@ -1,165 +1,177 @@
-body{
-    background-color: rgb(251, 247, 255);
+html, body{
     font-family: 'Source Code Pro', monospace;
-    display: flex;
-    justify-content: center;
+    color: rgb(0, 60, 0);
+    font-size: 30px;
+    height: 100%;
+    width: 100%;
 }
-h1{
-    justify-items: space-between;
+section{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: -8px;
+}
+.nav{
+    width: 100%;
+}
+#nav:visited{
+    color: white;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:rgb(0, 60, 0);
+    color: white;
+}
+li{
+    float:left;
+}
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+#info
+{
+    margin-left: 50px;
     padding: 40px;
-    color: rgb(17, 17, 70);
-    box-shadow: 1px 1px 8px rgb(139, 139, 139);
+    display: flex;
+    flex-direction: row;
 }
-.name{
-    font-size: 50px;
-}
-.info{
-    font-size: 15px;
-    flex-direction: column;
-}
-main{
-    background-color: white;
-    font-size: 25px;
+#info2{
+    margin-left: 50px;
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
     width: 80%;
-    box-shadow: 1px 1px 8px rgb(139, 139, 139);
-    padding-bottom: 50px;
 }
-.header{
-    padding: 60px;
-    font-size: 50px;
-    color: teal;
-    display: flex;
-    justify-content: center;
+#name{
+    font-size: 70px;
+    margin-left: 40px;
 }
-.container{
-    display: flex;
-    flex-direction: column;
+#location
+{
+    font-size: 25px;
+    margin-left: 40px;
+}
+#school{
+    font-size: 20px;
+    margin-left: 40px;
+}
+#contact{
+    font-size: 19px;
+    margin-left: 40px;
+}
+#blurb{
+    font-size: 20px;
+    margin-top: 150px;
+    margin-left: 40px;
+}
+img{
+    border-radius: 50%;
+    height: 52%;
+    width: auto;
+    float: right;
+    padding-top: -50px;
+}
+  
+  .arrows {
+      width: 60px;
+      height: 72px;
+      position: absolute;
+      left: 50%;
+      margin-left: -30px;
+      bottom: 20px;
+      padding-bottom: 100px;
+  }
+  
+  .arrows path {
+      stroke: #2994D1;
+      fill: transparent;
+      stroke-width: 1px;	
+      animation: arrow 2s infinite;
+      -webkit-animation: arrow 2s infinite; 
+  }
+  
+  @keyframes arrow
+  {
+  0% {opacity:0}
+  40% {opacity:1}
+  80% {opacity:0}
+  100% {opacity:0}
+  }
+  
+  @-webkit-keyframes arrow /*Safari and Chrome*/
+  {
+  0% {opacity:0}
+  40% {opacity:1}
+  80% {opacity:0}
+  100% {opacity:0}
+  }
+  
+  .arrows path.a1 {
+      animation-delay:-1s;
+      -webkit-animation-delay:-1s; /* Safari 和 Chrome */
+  }
+  
+  .arrows path.a2 {
+      animation-delay:-0.5s;
+      -webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+  }
+  
+  .arrows path.a3 {	
+      animation-delay:0s;
+      -webkit-animation-delay:0s; /* Safari 和 Chrome */
+  }
+.projects{
+    border-style: dotted;
+    border-width: thick;
+    text-align: center;
+    height: 90%;
+}
+#site1{
+    justify-content: space-between;
+    align-items: center;
+}
+.aboutSite{
+    width: 70%;
+    padding: 50px;
+    margin-top: 50px;
+    font-size: 20px;
+    text-align: left;
 }
 a{
     text-decoration: none;
-    color: rgb(139, 139, 139);
-    font-size: 40px;
-    padding: 30px;
+    color: black;
+}
+a:visited{
+    color: black;
 }
 a:hover{
-    text-decoration: none;
-    color: gold;
+    color: rgb(91, 13, 91);
 }
-@keyframes spin {
-    from 
-    {transform: rotate(0deg);}
-    to 
-    {transform: rotate(359deg);}
-}
-.designTitle{
-    width: 300px;
-    height: 250px;
-    display: flex;
-    justify-content: center;
-}
-.designDescription{
-    width: 650px;
-    text-align: center;
-    justify-content: center;
-}
-.abstractDesign{
-    height: 130px;
-    margin-top: 50px;
-    padding: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-.album{
-    height: 130px;
+.moon{
     margin-top: 50px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-.albumTitle{
-    width: 400px;
-    height: 255px;
-    display: flex;
     justify-content: center;
     align-items: center;
-}
-.albumTitle:hover{
-    background-image: url(myStuff/stars.gif);
-}
-.albumDescription{
-    width: 650px;
-    text-align: center;
-    justify-content: center;
-}
-.smallMoon{
-    height: 130px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-top: 250px;
-}
-.moonTitle{
-    width: 300px;
-    height: 250px;
-    display: flex;
-    justify-content: center;
-}
-.moonDescription{
-    width: 650px;
-    text-align: center;
-    justify-content: center;
-}
-.moonTitle:hover{
+    flex-direction: column;
+    max-width: 800px;
+    height: 300px;
+    padding: 20px;
     animation-name: crescent;
     animation-duration: 3s;
     animation-fill-mode: forwards;
 }
-.moonTitle:active{
-    animation-play-state: paused;
-}
+
 @keyframes crescent {
     from {border: transparent}
-    to {border-left: 40px solid black;
+    to {border-left: 50px solid black;
         border-radius: 100%;}
-}
-.game{
-    height: 130px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-top: 200px;
-}
-.gameTitle:hover{
-    background-image: url(myStuff/coffee.gif);
-    background-size: cover;
-}
-.gameTitle{
-    width: 1200px;
-    height: 255px;
-    display: flex;
-    justify-content: center;
-}
-.videoTitle{
-    width: 300px;
-    height: 250px;
-    display: flex;
-    justify-content: center;
-}
-.videoDescription{
-    width: 650px;
-    text-align: center;
-    justify-content: center;
-}
-.video{
-    height: 130px;
-    margin-top: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
 }
